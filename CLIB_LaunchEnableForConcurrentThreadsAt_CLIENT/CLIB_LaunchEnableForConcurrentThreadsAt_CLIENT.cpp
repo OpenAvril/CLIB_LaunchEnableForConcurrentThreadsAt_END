@@ -52,6 +52,7 @@
         else {
             stat_REG_get_ptr_flag_isMemberFunctionINSTANTIATED()[1] = false;
         }
+        return true;
     }
     void OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::CLIBLaunchEnableForConcurrentThreadsAtCLIENT::app_FUNCT_request_Wait_launch(void* obj, unsigned char* bytes)
     {
