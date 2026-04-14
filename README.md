@@ -1,7 +1,7 @@
 # OpenAvrilCLIB.
 ## Request, Wait, Launch Next Free Concurrent Thread.
 
-***
+
 ***
 ### Similar Rewritten Repository.
  - https://github.com/cameron314/concurrentqueue
