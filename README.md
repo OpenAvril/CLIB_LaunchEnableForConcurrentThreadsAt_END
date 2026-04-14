@@ -17,11 +17,11 @@ Version 17.13.4
 ## Compiler Terminal Commands.
 ### LIB_LaunchEnableForConcurrentThreadsAt_CLIENT.so
 ````
-g++ -fPIC -shared -o ./output/LIB_LaunchEnableForConcurrentThreadsAt_CLIENT.so ./LIB_LaunchEnableForConcurrentThreadsAt_CLIENT/LIB_LaunchEnableForConcurrentThreadsAt_CLIENT.cpp
+g++ -fPIC -shared -o ./output/CLIB_LaunchEnableForConcurrentThreadsAt_CLIENT.so ./CLIB_LaunchEnableForConcurrentThreadsAt_CLIENT/CLIB_LaunchEnableForConcurrentThreadsAt_CLIENT.cpp
 ````
 ### LIB_LaunchEnableForConcurrentThreadsAt_SERVER.so
 ````
-g++ -fPIC -shared -o ./output/LIB_LaunchEnableForConcurrentThreadsAt_SERVER.so ./LIB_LaunchEnableForConcurrentThreadsAt_SERVER/LIB_LaunchEnableForConcurrentThreadsAt_SERVER.cpp
+g++ -fPIC -shared -o ./output/CLIB_LaunchEnableForConcurrentThreadsAt_SERVER.so ./CLIB_LaunchEnableForConcurrentThreadsAt_SERVER/CLIB_LaunchEnableForConcurrentThreadsAt_SERVER.cpp
 ````
 
 ## How To Implement.
