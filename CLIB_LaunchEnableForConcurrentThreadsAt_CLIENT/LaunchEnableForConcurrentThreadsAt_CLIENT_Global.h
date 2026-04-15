@@ -16,9 +16,10 @@ namespace OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT
         bool dyn_REG_get_ptr_flag_thread_2STATE_ACTIVE();
         bool dyn_REG_get_ptr_flag_thread_2STATE_IDLE();
         uint8_t dyn_REG_get_number_Implemented_Threads();
+        static unsigned char* stat_CONVERT_bool_to_ByteArray(bool bool_Value);
         static unsigned char* stat_CONVERT_uint8_t_To_ByteArray(uint8_t uint8_t_Value);
+        static bool stat_CONVERT_ByteArray_To_bool(unsigned char* bytes);
         static uint8_t stat_CONVERT_ByteArray_To_uint8_t(unsigned char* bytes);
-        static class LaunchEnableForConcurrentThreadsAt_CLIENT_Framework* stat_CONVERT_Obj_To_ClassOf(void* obj);
     private:
         static std::array<bool, 3>* _stat_REG_ptr_flag_thread_2STATE;//NUMBER OF CONCURRENT THREADS.
         static uint8_t* _stat_REG_ptr_number_Implemented_Threads;

@@ -74,11 +74,19 @@ uint8_t OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForCo
 {
     return *stat_REG_get_ptr_number_Implemented_Threads();
 }
+unsigned char* OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT_Global::stat_CONVERT_bool_to_ByteArray(bool bool_Value)
+{
+    return reinterpret_cast<unsigned char*>(bool_Value);
+}
 unsigned char* OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT_Global::stat_CONVERT_uint8_t_To_ByteArray(uint8_t uint8_t_Value)
 {
     unsigned char* bytes_array;
     std::memcpy(&bytes_array, &uint8_t_Value, sizeof(uint8_t_Value));
-    return bytes_array;
+    return bytes_array;     
+}
+bool OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT_Global::stat_CONVERT_ByteArray_To_bool(unsigned char* bytes)
+{
+    return bytes[1] != 0; 
 }
 uint8_t OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT_Global::stat_CONVERT_ByteArray_To_uint8_t(unsigned char* bytes)
 {
