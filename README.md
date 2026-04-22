@@ -24,12 +24,8 @@ Version: 1.116.0.
 
 Terminal install of the above.
 ````
-sudo apt update
-sudo apt upgrade
 sudo apt install build-essential gdb
 sudo snap install --classic code
-sudo apt update
-sudo apt upgrade
 ````
 
 ---
