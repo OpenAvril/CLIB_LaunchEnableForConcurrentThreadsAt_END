@@ -32,7 +32,7 @@ sudo apt update
 sudo apt upgrade
 ````
 
-***
+---
 ## Building.
 ## Compiler Terminal Commands.
 ### LIB_LaunchEnableForConcurrentThreadsAt_CLIENT.so
@@ -45,7 +45,7 @@ g++ -fPIC -shared -o ./output/CLIB_LaunchEnableForConcurrentThreadsAt_CLIENT.so 
 g++ -fPIC -shared -o ./output/CLIB_LaunchEnableForConcurrentThreadsAt_SERVER.so ./CLIB_LaunchEnableForConcurrentThreadsAt_SERVER/CLIB_LaunchEnableForConcurrentThreadsAt_SERVER.cpp
 ````
 
-***
+---
 ## How To Implement.
 ### How To Guide - Stack Flow From Client Input Scanner To Server And Back To Client.
  - GitHub ReadMe - How To Guide.
