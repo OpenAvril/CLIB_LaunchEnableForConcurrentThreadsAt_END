@@ -1,8 +1,12 @@
-# OpenAvrilCLIB.
-## Request, Wait, Launch Next Free Concurrent Thread.
+# CLIB_LaunchEnableForConcurrentThreadsAt_END
 
+---
+## Branches.
+ - CLIB_LaunchQueForThreadsAt_End.
+ - CFSDImplementation_CLIB_LaunchQueForThreadsAt_End_WINDOWS
+ - CFSDImplementation_CLIB_LaunchQueForThreadsAt_End_LINUX
 
-***
+---
 ### Similar Rewritten Repository.
  - https://github.com/cameron314/concurrentqueue
 
