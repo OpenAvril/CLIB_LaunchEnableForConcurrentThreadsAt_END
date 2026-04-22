@@ -11,12 +11,26 @@
  - https://github.com/cameron314/concurrentqueue
 
 ---
-## Using C++.
+## Using.
 ### Ubuntu LINUX.
-Edition: Ubuntu 24.04.4 LTS.
+version: Ubuntu 24.04.4 LTS
 
 ### Visual Studio Code.
-Version 1.115.0.
+Version: 1.116.0.
+
+### Dependencies.
+#### GCC toolchain.
+#### VS Code.
+
+Terminal install of the above.
+````
+sudo apt update
+sudo apt upgrade
+sudo apt install build-essential gdb
+sudo snap install --classic code
+sudo apt update
+sudo apt upgrade
+````
 
 ***
 ## Building.
@@ -34,10 +48,10 @@ g++ -fPIC -shared -o ./output/CLIB_LaunchEnableForConcurrentThreadsAt_SERVER.so 
 ***
 ## How To Implement.
 ### How To Guide - Stack Flow From Client Input Scanner To Server And Back To Client.
- - [GitHub ReadMe - How To Guide.](https://github.com/OpenAvril/OpenAvrilCFSD-TEMPLATE-for-Concurrenct-Full-Stack-Development/blob/master/blob/How%20To%20Guide%20-%20Stack%20Flow%20From%20Client%20Input%20Scanner%20To%20Server%20And%20Back%20To%20Client.md)
+ - GitHub ReadMe - How To Guide.
 
 ### Wrapper Imports and Native IO.
- - [Wrapper Imports and Native IO](https://github.com/OpenAvril/OpenAvrilCFSD_APP_Templates/edit/master/blob/Wrapper_Imports.md)
+ - [Wrapper Imports and Native IO.](https://github.com/OpenAvril/CLIB_WriteQueForThreadsAt_STACK/blob/CLIB_WriteQueForThreadsAt_Stack/README/Import-Export%20Warpper(s).md)
 
 ***
 ## TestBench.
