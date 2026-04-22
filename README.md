@@ -19,13 +19,17 @@ version: Ubuntu 24.04.4 LTS
 Version: 1.116.0.
 
 ### Dependencies.
-#### GCC toolchain.
-#### VS Code.
-
-Terminal install of the above.
+ - #### GCC toolchain.
 ````
 sudo apt install build-essential gdb
+````
+ - #### VS Code.
+````
 sudo snap install --classic code
+````
+ - #### C/C++ Extension Pack.
+````
+code --install-extension ms-vscode.cpptools-extension-pack
 ````
 
 ---
