@@ -4,8 +4,7 @@
 ---
 ## Branches.
  - CLIB_LaunchQueForThreadsAt_End.
- - CFSDImplementation_CLIB_LaunchQueForThreadsAt_End_WINDOWS
- - CFSDImplementation_CLIB_LaunchQueForThreadsAt_End_LINUX
+ - Implementations_of_CLIB.
 
 ---
 ### Similar Rewritten Repository.
