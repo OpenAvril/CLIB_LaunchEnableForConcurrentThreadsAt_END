@@ -26,6 +26,7 @@
 ---
 ### Dependencies.
  #### - IntelliJ IDEA.
+ https://www.jetbrains.com/idea/
 ````
 sudo snap install intellij-idea-ultimate --classic
 ````
