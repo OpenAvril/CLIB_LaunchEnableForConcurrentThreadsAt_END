@@ -41,13 +41,6 @@ sudo apt install build-essential cmake gcc g++ gdb
 
 ---
 ## Building - Compiler Terminal Commands.
-### CLIB_OpenEpiCentre.so
-````
-g++ -fPIC -shared -o ./output/CLIB_OpenEpiCentre.so CLIB_OpenEpiCentre.h
-````
-
----
-## Building.
 ## Compiler Terminal Commands.
 ### LIB_LaunchEnableForConcurrentThreadsAt_END.so
 ````
