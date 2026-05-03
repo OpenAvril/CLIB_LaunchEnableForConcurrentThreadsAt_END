@@ -13,21 +13,37 @@
 
 ---
 ## Using.
-### Visual Studio Code.
-Version: 1.116.0.
+### LINUX Ubuntu.
+**version:** Ubuntu 24.04.4 LTS.
 
+### IntelliJ IDEA.
+**Version:** 2026.1.1
+
+**Extensions:**
+ - CMake.
+ - CLion C and C++.
+
+---
 ### Dependencies.
- - #### GCC toolchain.
+ #### - IntelliJ IDEA.
 ````
-sudo apt install build-essential gdb
+sudo snap install intellij-idea-ultimate --classic
 ````
- - #### VS Code.
+ #### - C/C++ toolchain (compiler, debugger, and build system).
 ````
-sudo snap install --classic code
+sudo apt update
+sudo apt install build-essential cmake gcc g++ gdb
 ````
- - #### C/C++ Extension Pack.
+ #### - CLion.
 ````
-code --install-extension ms-vscode.cpptools-extension-pack
+ sudo snap install clion --classic
+````
+
+---
+## Building - Compiler Terminal Commands.
+### CLIB_OpenEpiCentre.so
+````
+g++ -fPIC -shared -o ./output/CLIB_OpenEpiCentre.so CLIB_OpenEpiCentre.h
 ````
 
 ---
