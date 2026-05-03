@@ -1,4 +1,5 @@
-# CLIB_LaunchEnableForConcurrentThreadsAt_END
+# OpenAvrilCLIB.
+## Request, Wait, Launch Next Free Concurrent Thread.
 
 ---
 ## Branches.
@@ -12,9 +13,6 @@
 
 ---
 ## Using.
-### Ubuntu LINUX.
-version: Ubuntu 24.04.4 LTS
-
 ### Visual Studio Code.
 Version: 1.116.0.
 
@@ -35,9 +33,9 @@ code --install-extension ms-vscode.cpptools-extension-pack
 ---
 ## Building.
 ## Compiler Terminal Commands.
-### LIB_LaunchEnableForConcurrentThreadsAt_CLIENT.so
+### LIB_LaunchEnableForConcurrentThreadsAt_END.so
 ````
-g++ -fPIC -shared -o ./output/CLIB_LaunchEnableForConcurrentThreadsAt_CLIENT.so ./CLIB_LaunchEnableForConcurrentThreadsAt_CLIENT/CLIB_LaunchEnableForConcurrentThreadsAt_CLIENT.cpp
+g++ -fPIC -shared -o ./output/CLIB_LaunchEnableForConcurrentThreadsAt_END.so ./CLIB_LaunchEnableForConcurrentThreadsAt_END/CLIB_LaunchEnableForConcurrentThreadsAt_END.cpp
 ````
 
 ### LIB_LaunchEnableForConcurrentThreadsAt_SERVER.so
@@ -47,12 +45,8 @@ g++ -fPIC -shared -o ./output/CLIB_LaunchEnableForConcurrentThreadsAt_SERVER.so 
 
 ---
 ## How To Implement.
-### How To Guide - Stack Flow From Client Input Scanner To Server And Back To Client.
+### How To Guide - Stack Flow From END Input Scanner To Server And Back To END.
  - GitHub ReadMe - How To Guide.
 
 ### Wrapper Imports and Native IO.
  - [Wrapper Imports and Native IO.](https://github.com/OpenAvril/CLIB_WriteQueForThreadsAt_STACK/blob/CLIB_WriteQueForThreadsAt_Stack/README/Import-Export%20Warpper(s).md)
-
-***
-## TestBench.
- 
