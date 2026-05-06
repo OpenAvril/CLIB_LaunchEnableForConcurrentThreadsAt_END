@@ -1,0 +1,32 @@
+[
+{
+  "directory": "/home/brentonjames/IdeaProjects/CLIB_LaunchEnableForConcurrentThreadsAt_END/CLIB_LaunchEnableForConcurrentThreadsAt_END/cmake-build-debug",
+  "command": "/usr/bin/c++  -I/home/brentonjames/IdeaProjects/CLIB_LaunchEnableForConcurrentThreadsAt_END/CLIB_LaunchEnableForConcurrentThreadsAt_END/include -g -std=gnu++17 -fdiagnostics-color=always -o CMakeFiles/CLIB_LaunchEnableForConcurrentThreadsAt_END.dir/src/CLIB_LaunchEnableForConcurrentThreadsAt_END.cpp.o -c /home/brentonjames/IdeaProjects/CLIB_LaunchEnableForConcurrentThreadsAt_END/CLIB_LaunchEnableForConcurrentThreadsAt_END/src/CLIB_LaunchEnableForConcurrentThreadsAt_END.cpp",
+  "file": "/home/brentonjames/IdeaProjects/CLIB_LaunchEnableForConcurrentThreadsAt_END/CLIB_LaunchEnableForConcurrentThreadsAt_END/src/CLIB_LaunchEnableForConcurrentThreadsAt_END.cpp",
+  "output": "CMakeFiles/CLIB_LaunchEnableForConcurrentThreadsAt_END.dir/src/CLIB_LaunchEnableForConcurrentThreadsAt_END.cpp.o"
+},
+{
+  "directory": "/home/brentonjames/IdeaProjects/CLIB_LaunchEnableForConcurrentThreadsAt_END/CLIB_LaunchEnableForConcurrentThreadsAt_END/cmake-build-debug",
+  "command": "/usr/bin/c++  -I/home/brentonjames/IdeaProjects/CLIB_LaunchEnableForConcurrentThreadsAt_END/CLIB_LaunchEnableForConcurrentThreadsAt_END/include -g -std=gnu++17 -fdiagnostics-color=always -o CMakeFiles/CLIB_LaunchEnableForConcurrentThreadsAt_END.dir/src/LaunchEnableForConcurrentThreadsAt_END.cpp.o -c /home/brentonjames/IdeaProjects/CLIB_LaunchEnableForConcurrentThreadsAt_END/CLIB_LaunchEnableForConcurrentThreadsAt_END/src/LaunchEnableForConcurrentThreadsAt_END.cpp",
+  "file": "/home/brentonjames/IdeaProjects/CLIB_LaunchEnableForConcurrentThreadsAt_END/CLIB_LaunchEnableForConcurrentThreadsAt_END/src/LaunchEnableForConcurrentThreadsAt_END.cpp",
+  "output": "CMakeFiles/CLIB_LaunchEnableForConcurrentThreadsAt_END.dir/src/LaunchEnableForConcurrentThreadsAt_END.cpp.o"
+},
+{
+  "directory": "/home/brentonjames/IdeaProjects/CLIB_LaunchEnableForConcurrentThreadsAt_END/CLIB_LaunchEnableForConcurrentThreadsAt_END/cmake-build-debug",
+  "command": "/usr/bin/c++  -I/home/brentonjames/IdeaProjects/CLIB_LaunchEnableForConcurrentThreadsAt_END/CLIB_LaunchEnableForConcurrentThreadsAt_END/include -g -std=gnu++17 -fdiagnostics-color=always -o CMakeFiles/CLIB_LaunchEnableForConcurrentThreadsAt_END.dir/src/LaunchEnableForConcurrentThreadsAt_END_Control.cpp.o -c /home/brentonjames/IdeaProjects/CLIB_LaunchEnableForConcurrentThreadsAt_END/CLIB_LaunchEnableForConcurrentThreadsAt_END/src/LaunchEnableForConcurrentThreadsAt_END_Control.cpp",
+  "file": "/home/brentonjames/IdeaProjects/CLIB_LaunchEnableForConcurrentThreadsAt_END/CLIB_LaunchEnableForConcurrentThreadsAt_END/src/LaunchEnableForConcurrentThreadsAt_END_Control.cpp",
+  "output": "CMakeFiles/CLIB_LaunchEnableForConcurrentThreadsAt_END.dir/src/LaunchEnableForConcurrentThreadsAt_END_Control.cpp.o"
+},
+{
+  "directory": "/home/brentonjames/IdeaProjects/CLIB_LaunchEnableForConcurrentThreadsAt_END/CLIB_LaunchEnableForConcurrentThreadsAt_END/cmake-build-debug",
+  "command": "/usr/bin/c++  -I/home/brentonjames/IdeaProjects/CLIB_LaunchEnableForConcurrentThreadsAt_END/CLIB_LaunchEnableForConcurrentThreadsAt_END/include -g -std=gnu++17 -fdiagnostics-color=always -o CMakeFiles/CLIB_LaunchEnableForConcurrentThreadsAt_END.dir/src/LaunchEnableForConcurrentThreadsAt_END_Framework.cpp.o -c /home/brentonjames/IdeaProjects/CLIB_LaunchEnableForConcurrentThreadsAt_END/CLIB_LaunchEnableForConcurrentThreadsAt_END/src/LaunchEnableForConcurrentThreadsAt_END_Framework.cpp",
+  "file": "/home/brentonjames/IdeaProjects/CLIB_LaunchEnableForConcurrentThreadsAt_END/CLIB_LaunchEnableForConcurrentThreadsAt_END/src/LaunchEnableForConcurrentThreadsAt_END_Framework.cpp",
+  "output": "CMakeFiles/CLIB_LaunchEnableForConcurrentThreadsAt_END.dir/src/LaunchEnableForConcurrentThreadsAt_END_Framework.cpp.o"
+},
+{
+  "directory": "/home/brentonjames/IdeaProjects/CLIB_LaunchEnableForConcurrentThreadsAt_END/CLIB_LaunchEnableForConcurrentThreadsAt_END/cmake-build-debug",
+  "command": "/usr/bin/c++  -I/home/brentonjames/IdeaProjects/CLIB_LaunchEnableForConcurrentThreadsAt_END/CLIB_LaunchEnableForConcurrentThreadsAt_END/include -g -std=gnu++17 -fdiagnostics-color=always -o CMakeFiles/CLIB_LaunchEnableForConcurrentThreadsAt_END.dir/src/LaunchEnableForConcurrentThreadsAt_END_Global.cpp.o -c /home/brentonjames/IdeaProjects/CLIB_LaunchEnableForConcurrentThreadsAt_END/CLIB_LaunchEnableForConcurrentThreadsAt_END/src/LaunchEnableForConcurrentThreadsAt_END_Global.cpp",
+  "file": "/home/brentonjames/IdeaProjects/CLIB_LaunchEnableForConcurrentThreadsAt_END/CLIB_LaunchEnableForConcurrentThreadsAt_END/src/LaunchEnableForConcurrentThreadsAt_END_Global.cpp",
+  "output": "CMakeFiles/CLIB_LaunchEnableForConcurrentThreadsAt_END.dir/src/LaunchEnableForConcurrentThreadsAt_END_Global.cpp.o"
+}
+]
