@@ -42,14 +42,9 @@ sudo apt install build-essential cmake gcc g++ gdb
 ---
 ## Building - Compiler Terminal Commands.
 ## Compiler Terminal Commands.
-### LIB_LaunchEnableForConcurrentThreadsAt_END.so
+### CLIB_LaunchEnableForConcurrentThreadsAt_END.so
 ````
-g++ -fPIC -shared -o ./output/CLIB_LaunchEnableForConcurrentThreadsAt_END.so ./CLIB_LaunchEnableForConcurrentThreadsAt_END/CLIB_LaunchEnableForConcurrentThreadsAt_END.cpp
-````
-
-### LIB_LaunchEnableForConcurrentThreadsAt_SERVER.so
-````
-g++ -fPIC -shared -o ./output/CLIB_LaunchEnableForConcurrentThreadsAt_SERVER.so ./CLIB_LaunchEnableForConcurrentThreadsAt_SERVER/CLIB_LaunchEnableForConcurrentThreadsAt_SERVER.cpp
+g++ -fPIC -shared -o ./output/CLIB_LaunchEnableForConcurrentThreadsAt_END.so ./src/CLIB_LaunchEnableForConcurrentThreadsAt_END.cpp
 ````
 
 ---
