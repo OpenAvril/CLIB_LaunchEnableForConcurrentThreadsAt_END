@@ -3,7 +3,7 @@
 
 ---
 ## Branches.
- - CLIB_LaunchQueForThreadsAt_End.
+ - **CLIB_LaunchQueForThreadsAt_End.**
  - CFSDImplementation_CLIB.
 
 ---
