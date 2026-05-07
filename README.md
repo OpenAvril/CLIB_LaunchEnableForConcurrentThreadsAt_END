@@ -12,29 +12,49 @@
 
 ---
 ## Using.
-### Visual Studio Code.
-Version: 1.116.0.
+### LINUX Ubuntu.
+**version:** Ubuntu 24.04.4 LTS.
 
+### IntelliJ IDEA.
+**Version:** 2026.1.1
+
+**Extensions:**
+ - CMake.
+ - CLion C and C++.
+ - Compilation Database.
+
+---
 ### Dependencies.
- - #### GCC toolchain.
+#### - IntelliJ IDEA. (https://www.jetbrains.com/idea/download/?section=linux)
 ````
-sudo apt install build-essential gdb
+
 ````
- - #### VS Code.
+#### - C/C++ toolchain (compiler, debugger, and build system).
 ````
-sudo snap install --classic code
+
 ````
- - #### C/C++ Extension Pack.
+#### - Native Build Tools. (https://plugins.jetbrains.com/plugin/28796-native-build-tools)
 ````
-code --install-extension ms-vscode.cpptools-extension-pack
+
+````
+#### - CMake. (https://plugins.jetbrains.com/plugin/28794-cmake)
+````
+
+````
+#### - CLion. (https://plugins.jetbrains.com/plugin/28804-clion-c-and-c-)
+````
+
 ````
 
 ---
-## Building.
-## Compiler Terminal Commands.
-### LIB_LaunchEnableForConcurrentThreadsAt_END.so
+## Building - Compiler Terminal Commands.
+### CLIB_LaunchEnableForConcurrentThreadsAt_CLIENT.so
 ````
-g++ -fPIC -shared -o ./output/CLIB_LaunchEnableForConcurrentThreadsAt_END.so ./CLIB_LaunchEnableForConcurrentThreadsAt_END/CLIB_LaunchEnableForConcurrentThreadsAt_END/CLIB_LaunchEnableForConcurrentThreadsAt_END.cpp
+g++ -fPIC -shared -o ./output/CLIB_LaunchEnableForConcurrentThreadsAt_CLIENT.so ./src/CLIB_LaunchEnableForConcurrentThreadsAt_CLIENT.cpp
+````
+### CLIB_LaunchEnableForConcurrentThreadsAt_SERVER.so
+````
+g++ -fPIC -shared -o ./output/CLIB_LaunchEnableForConcurrentThreadsAt_SERVER.so ./src/CLIB_LaunchEnableForConcurrentThreadsAt_SERVER.cpp
 ````
 
 ---
