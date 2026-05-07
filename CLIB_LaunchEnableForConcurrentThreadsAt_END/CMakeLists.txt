@@ -6,7 +6,7 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Define the library (STATIC or SHARED)
-add_library(CLIB_LaunchEnableForConcurrentThreadsAt_END STATIC
+add_library(CLIB_LaunchEnableForConcurrentThreadsAt_END SHARED
         include/CLIB_LaunchEnableForConcurrentThreadsAt_END.h
         src/CLIB_LaunchEnableForConcurrentThreadsAt_END.cpp
         include/LaunchEnableForConcurrentThreadsAt_END.h

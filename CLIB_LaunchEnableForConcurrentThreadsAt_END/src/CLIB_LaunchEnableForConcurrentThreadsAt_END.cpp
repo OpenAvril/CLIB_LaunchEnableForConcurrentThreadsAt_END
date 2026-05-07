@@ -49,7 +49,7 @@ CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END_Framework* _ptr_Frame
     std::cout << "" << std::endl;
     return (void*)stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END_Framework();
     }
-    unsigned char* CLIBLaunchQueAtEND::CLIB_LaunchEnableForConcurrentThreadsAt_END::app_FUNCT_get_flag_isPGM_INSTNATIATED()
+    unsigned char* CLIBLaunchQueAtEND::CLIB_LaunchEnableForConcurrentThreadsAt_END::app_FUNCT_get_flag_isPGM_INSTANTIATED()
     {
         if (stat_REG_get_ptr_flag_isMemberFunctionINSTANTIATED()[1] == false) {
             return LaunchEnableForConcurrentThreadsAt_END_Global::stat_CONVERT_bool_to_ByteArray(stat_REG_get_ptr_flag_isMemberFunctionINSTANTIATED()[0]);

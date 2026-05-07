@@ -9,8 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/CLIB_LaunchEnableForConcurrentThreadsAt_END.dir/src/LaunchEnableForConcurrentThreadsAt_END_Framework.cpp.o.d"
   "CMakeFiles/CLIB_LaunchEnableForConcurrentThreadsAt_END.dir/src/LaunchEnableForConcurrentThreadsAt_END_Global.cpp.o"
   "CMakeFiles/CLIB_LaunchEnableForConcurrentThreadsAt_END.dir/src/LaunchEnableForConcurrentThreadsAt_END_Global.cpp.o.d"
-  "libCLIB_LaunchEnableForConcurrentThreadsAt_END.a"
   "libCLIB_LaunchEnableForConcurrentThreadsAt_END.pdb"
+  "libCLIB_LaunchEnableForConcurrentThreadsAt_END.so"
 )
 
 # Per-language clean rules from dependency scanning.
