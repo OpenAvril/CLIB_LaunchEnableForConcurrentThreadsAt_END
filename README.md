@@ -4,8 +4,7 @@
 ---
 ## Branches.
  - CLIB_LaunchQueForThreadsAt_End.
- - CFSDImplementation_CLIB_LaunchQueForThreadsAt_End_WINDOWS
- - CFSDImplementation_CLIB_LaunchQueForThreadsAt_End_LINUX
+ - CFSDImplementation_CLIB.
 
 ---
 ### Similar Rewritten Repository.
@@ -36,11 +35,6 @@ code --install-extension ms-vscode.cpptools-extension-pack
 ### LIB_LaunchEnableForConcurrentThreadsAt_END.so
 ````
 g++ -fPIC -shared -o ./output/CLIB_LaunchEnableForConcurrentThreadsAt_END.so ./CLIB_LaunchEnableForConcurrentThreadsAt_END/CLIB_LaunchEnableForConcurrentThreadsAt_END/CLIB_LaunchEnableForConcurrentThreadsAt_END.cpp
-````
-
-### LIB_LaunchEnableForConcurrentThreadsAt_SERVER.so
-````
-g++ -fPIC -shared -o ./output/CLIB_LaunchEnableForConcurrentThreadsAt_SERVER.so ./CLIB_LaunchEnableForConcurrentThreadsAt_SERVER/CLIB_LaunchEnableForConcurrentThreadsAt_SERVER/CLIB_LaunchEnableForConcurrentThreadsAt_SERVER.cpp
 ````
 
 ---
