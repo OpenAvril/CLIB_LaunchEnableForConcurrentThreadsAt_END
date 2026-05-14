@@ -59,4 +59,4 @@ g++ -fPIC -shared -o ./output/CLIB_LaunchEnableForConcurrentThreadsAt_SERVER.so 
  - GitHub ReadMe - How To Guide.
 
 ### Wrapper Imports and Native IO.
- - [Wrapper Imports and Native IO.](https://github.com/OpenAvril/CLIB_WriteQueForThreadsAt_STACK/blob/CLIB_WriteQueForThreadsAt_Stack/README/Import-Export%20Warpper(s).md)
+ - [Wrapper Imports and Native IO.](https://github.com/OpenAvril/CLIB_LaunchEnableForConcurrentThreadsAt_END/blob/CLIB_LaunchQueForThreadsAt_End/README/Import-Export%20Warpper(s).md)
