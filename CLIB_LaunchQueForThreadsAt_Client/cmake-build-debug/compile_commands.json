@@ -1,8 +1,0 @@
-[
-{
-  "directory": "/home/brentonjames/CLionProjects/CLIB_LaunchQueForThreadsAt_END/CLIB_LaunchQueForThreadsAt_Client/cmake-build-debug",
-  "command": "/usr/bin/c++ -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/CLIB_LaunchQueForThreadsAt_Client.dir/library.cpp.o -c /home/brentonjames/CLionProjects/CLIB_LaunchQueForThreadsAt_END/CLIB_LaunchQueForThreadsAt_Client/library.cpp",
-  "file": "/home/brentonjames/CLionProjects/CLIB_LaunchQueForThreadsAt_END/CLIB_LaunchQueForThreadsAt_Client/library.cpp",
-  "output": "/home/brentonjames/CLionProjects/CLIB_LaunchQueForThreadsAt_END/CLIB_LaunchQueForThreadsAt_Client/cmake-build-debug/CMakeFiles/CLIB_LaunchQueForThreadsAt_Client.dir/library.cpp.o"
-}
-]
