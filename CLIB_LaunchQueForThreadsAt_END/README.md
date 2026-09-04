@@ -48,5 +48,12 @@ g++ -fPIC -shared -o ./output/CLIB_LaunchEnableForConcurrentThreadsAt_SERVER.so 
 ### How To Guide - Stack Flow From END Input Scanner To Server And Back To END.
  - GitHub ReadMe - How To Guide.
 
+#### CLIB_LaunchQue
+ - edit four lines of code that have the comment "//todo: number of concurrent threads." with applied number of threads for concurrency.
+
+---
 ### Wrapper Imports and Native IO.
  - [Wrapper Imports and Native IO.](https://github.com/OpenAvril/CLIB_WriteQueForThreadsAt_STACK/blob/CLIB_WriteQueForThreadsAt_Stack/README/Import-Export%20Warpper(s).md)
+
+---
+---

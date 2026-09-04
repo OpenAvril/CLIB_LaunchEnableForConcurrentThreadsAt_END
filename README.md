@@ -48,7 +48,7 @@ sudo snap install clion --classic
 
 ---
 ## Building - Compiler Terminal Commands.
-### CLIB_WriteEnableForThreadsAt_STACK.so
+### CLIB_LaunchEnableForConcurrentThreadsAt_END.so
 ````
 cmake -B build
 ````
@@ -59,7 +59,14 @@ cmake --build build
 ---
 ## How To Implement.
 ### How To Guide - Stack Flow From END Input Scanner To Server And Back To END.
- - GitHub ReadMe - How To Guide.
+- GitHub ReadMe - How To Guide.
 
+#### CLIB_LaunchQue
+- edit four lines of code that have the comment "//todo: number of concurrent threads." with applied number of threads for concurrency.
+
+---
 ### Wrapper Imports and Native IO.
- - [Wrapper Imports and Native IO.](https://github.com/OpenAvril/CLIB_LaunchEnableForConcurrentThreadsAt_END/blob/CLIB_LaunchQueForThreadsAt_End/README/Import-Export%20Warpper(s).md)
+- Wrapper Imports and Native IO.
+
+---
+---

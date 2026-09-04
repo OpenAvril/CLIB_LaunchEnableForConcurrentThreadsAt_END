@@ -1,32 +1,30 @@
 #ifndef CLIB_LAUNCHENABLEFORCONCURRENTTHREADSAT_END_CLIB_LAUNCHENABLEFORCONCURRENTTHREADSAT_END_H
 #define CLIB_LAUNCHENABLEFORCONCURRENTTHREADSAT_END_CLIB_LAUNCHENABLEFORCONCURRENTTHREADSAT_END_H
-extern "C"
-{
-    namespace CLIBLaunchQueAtEND
-    {
-        class CLIB_LaunchEnableForConcurrentThreadsAt_END
-        {
+#include "LaunchEnableForConcurrentThreadsAt_END__Framework.h"
+extern "C" {
+    namespace CLIBLaunchQueAtEND {
+        class CLIB_LaunchEnableForConcurrentThreadsAt_END {
         public:
-            static void* app_FUNCT_generate_Program();
-            static unsigned char* app_FUNCT_get_flag_isPGM_INSTANTIATED();
-            static void app_FUNCT_request_Wait_launch(unsigned char* bytes);
-            static void app_FUNCT_terminate_Progaram();
-            static void app_FUNCT_thread_End(unsigned char* bytes);
-            static unsigned char* app_REG_get_coreId_To_launch();
-            static unsigned char* app_REG_get_Flag_Active();
-            static unsigned char* app_REG_get_Flag_ConcurrentCoreState(unsigned char* bytes);
-            static unsigned char* app_REG_get_Flag_Idle();
-            static unsigned char* app_REG_get_State_launchBit();
-            static void app_REG_set_Flag_ConcurrentCoreState(unsigned char* bytesThreadId, unsigned char* byteBool);
+            static void* CLIB_LaunchEnableForConcurrentThreadsAt_END__App_FUNCT_generate_Program();
+            static void CLIB_LaunchEnableForConcurrentThreadsAt_END__App_FUNCT_request_Wait_launch(unsigned char* bytes);
+            static void CLIB_LaunchEnableForConcurrentThreadsAt_END__App_FUNCT_terminate_Progaram();
+            static void CLIB_LaunchEnableForConcurrentThreadsAt_END__App_FUNCT_thread_End(unsigned char* bytes);
+            static unsigned char* CLIB_LaunchEnableForConcurrentThreadsAt_END__App_REG_get_coreId_To_launch();
+            static unsigned char* CLIB_LaunchEnableForConcurrentThreadsAt_END__App_REG_get_Flag_Active();
+            static unsigned char* CLIB_LaunchEnableForConcurrentThreadsAt_END__App_REG_get_Flag_ConcurrentCoreState(unsigned char* bytes);
+            static unsigned char* CLIB_LaunchEnableForConcurrentThreadsAt_END__App_REG_get_Flag_Idle();
+            static unsigned char* CLIB_LaunchEnableForConcurrentThreadsAt_END__App_REG_get_FLAG_isPGM_INSTANTIATED();
+            static unsigned char* CLIB_LaunchEnableForConcurrentThreadsAt_END__App_REG_get_State_launchBit();
+            static void CLIB_LaunchEnableForConcurrentThreadsAt_END__App_REG_set_Flag_ConcurrentCoreState(unsigned char* bytesThreadId, unsigned char* byteBool);
         private:
-            static void stat_app_FUNCT_Calc_IsAllINSTANTIATED();
-            static void stat_boot1_CLASS_DEFINE_LaunchEnableForConcurrentThreadsAt_END_Framework();
-            static void stat_boot3_CLASS_INITIALISE_LaunchEnableForConcurrentThreadsAt_END_Framework();
-            static class LaunchEnableForConcurrentThreadsAt_END_Framework* stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END_Framework();
-            static void stat_REG_boot1_DEFINE_flag_isMemberFunctionINSTANTIATED();
-            static void stat_REG_boot2_SUBSTANTIATE_flag_isMemberFunctionINSTANTIATED();
-            static void stat_REG_boot3_INITIALISE_flag_isMemberFunctionINSTANTIATED();
-            static bool* stat_REG_get_ptr_flag_isMemberFunctionINSTANTIATED();
+            static void CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_app_FUNCT_Calc_IsAllINSTANTIATED();
+            static void CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_boot1_CLASS_DEFINE_LaunchEnableForConcurrentThreadsAt_END__Framework();
+            static void CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_boot3_CLASS_INITIALISE_LaunchEnableForConcurrentThreadsAt_END__Framework();
+            static class LaunchEnableForConcurrentThreadsAt_END__Framework* CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END__Framework();
+            static void CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_REG_boot1_DEFINE_flag_isMemberFunctionINSTANTIATED();
+            static void CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_REG_boot2_SUBSTANTIATE_flag_isMemberFunctionINSTANTIATED();
+            static void CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_REG_boot3_INITIALISE_flag_isMemberFunctionINSTANTIATED();
+            static bool* CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED();
         };
     }
 }

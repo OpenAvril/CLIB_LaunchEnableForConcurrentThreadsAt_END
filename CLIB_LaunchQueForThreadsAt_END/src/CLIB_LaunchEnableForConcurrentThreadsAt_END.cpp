@@ -1,37 +1,50 @@
-#include <iostream>
 #include "../include/CLIB_LaunchEnableForConcurrentThreadsAt_END.h"
-#include "../include/LaunchEnableForConcurrentThreadsAt_END.h"
-#include "../include/LaunchEnableForConcurrentThreadsAt_END_Control.h"
-#include "../include/LaunchEnableForConcurrentThreadsAt_END_Framework.h"
-#include "../include/LaunchEnableForConcurrentThreadsAt_END_Global.h"
-CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END_Framework* _ptr_Framework_LaunchEnableForConcurrentThreadsAt_END;
-    bool* _stat_REG_flag_isMemberFunctionINSTANTIATED;
+
+#include <climits>
+
+#include "../include/LaunchEnableForConcurrentThreadsAt_END__App.h"
+#include "../include/LaunchEnableForConcurrentThreadsAt_END__App__Control.h"
+#include "../include/LaunchEnableForConcurrentThreadsAt_END__Global.h"
+#include <iostream>
+    CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END__Framework* CLIB_LaunchEnableForConcurrentThreadsAt_END__dyn_CLASS_ptr_Framework_LaunchEnableForConcurrentThreadsAt_END;
+    bool* CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_REG_flag_isMemberFunctionINSTANTIATED;
 // public.
-    void* CLIBLaunchQueAtEND::CLIB_LaunchEnableForConcurrentThreadsAt_END::app_FUNCT_generate_Program()
-    {
-    std::cout << "started Classes - DECLARE, DEFINE INITIALISE, Registers - DECLARE." << std::endl;
-    stat_boot1_CLASS_DEFINE_LaunchEnableForConcurrentThreadsAt_END_Framework();
-    stat_boot3_CLASS_INITIALISE_LaunchEnableForConcurrentThreadsAt_END_Framework();
-    std::cout << "done Classes - DECLARE, DEFINE INITIALISE, Registers - DECLARE." << std::endl;
+    void* CLIBLaunchQueAtEND::CLIB_LaunchEnableForConcurrentThreadsAt_END::CLIB_LaunchEnableForConcurrentThreadsAt_END__App_FUNCT_generate_Program() {
+		std::cout << "entered app_FUNCT_generate_Program()." << std::endl;
 
-    std::cout << "started Registers - DEFINE" << std::endl;
-    stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END_Framework()->boot1_REG_DEFINE_LaunchEnableForConcurrentThreadsAt_END_Framework(stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END_Framework());
-    std::cout << "done Registers - DEFINE." << std::endl;
+		std::cout << "started Architecture Framework CLASS - DECLARE DEFINE INITIALISE." << std::endl;
+		CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_boot1_CLASS_DEFINE_LaunchEnableForConcurrentThreadsAt_END__Framework();
+		CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_boot3_CLASS_INITIALISE_LaunchEnableForConcurrentThreadsAt_END__Framework();
+		std::cout << "started Architecture Framework CLASS - DECLARE DEFINE INITIALISE." << std::endl;
 
-    std::cout << "started Registers - SUBSTANTIATE." << std::endl;
-    stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END_Framework()->boot2_REG_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_END_Framework(stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END_Framework());
-    std::cout << "done Registers - SUBSTANTIATE." << std::endl;
+		std::cout << "started LaunchEnableForConcurrentThreadsAt_END_Global Meta-Data and Settings." << std::endl;
+		CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END__Framework()->dyn_CLASS_create_LaunchEnableForConcurrentThreadsAt_END_Global_and_Settings();
+		CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END__Framework()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END__Global()->boot1_REG_DEFINE_LaunchEnableForConcurrentThreadsAt_END__Global();
+		CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END__Framework()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END__Global()->boot2_REG_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_END__Global();
+		CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END__Framework()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END__Global()->boot3_REG_INITIALISE_LaunchEnableForConcurrentThreadsAt_END__Global();
+		std::cout << "done LaunchEnableForConcurrentThreadsAt_END_Global Meta-Data and Settings." << std::endl;
 
-    std::cout << "started Registers - INITIALISE." << std::endl;
-    stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END_Framework()->boot3_REG_INITIALISE_LaunchEnableForConcurrentThreadsAt_END_Framework(stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END_Framework());
-    std::cout << "done Registers - INITIALISE." << std::endl;
+		std::cout << "started Independent STRUCT(s) - DECLARE DEFINE INITIALISE, Registers - DECLARE SUBSTANTIATE INITIALISE." << std::endl;
+		std::cout << "done Independent STRUCT(s) - DECLARE DEFINE INITIALISE, Registers - DECLARE SUBSTANTIATE INITIALISE." << std::endl;
 
-    std::cout << "started Program - INSTANTIATION." << std::endl;
-    stat_REG_boot1_DEFINE_flag_isMemberFunctionINSTANTIATED();
-    stat_REG_boot2_SUBSTANTIATE_flag_isMemberFunctionINSTANTIATED();
-    stat_REG_boot3_INITIALISE_flag_isMemberFunctionINSTANTIATED();
-    stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END_Framework()->boot4_PGM_INSTANTIATION_LaunchEnableForConcurrentThreadsAt_END_Framework(stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END_Framework());
-    std::cout << "done Program - INSTANTIATION." << std::endl;
+		std::cout << "started Architecture Application CLASS(s) - DECLARE DEFINE INITIALISE, Registers - DECLARE SUBSTANTIATE INITIALISE." << std::endl;
+		CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END__Framework()->dyn_CLASS_create_Architecture();
+		std::cout << "started Registers - DEFINE" << std::endl;
+		CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END__Framework()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END__App()->dyn_CLASS_get_LaunchEnableForConcurrentThreadsAt_END__App__Control()->dyn_REG_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_END__App__Control();
+		std::cout << "done Registers - DEFINE." << std::endl;
+		std::cout << "started Registers - SUBSTANTIATE." << std::endl;
+		CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END__Framework()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END__App()->dyn_CLASS_get_LaunchEnableForConcurrentThreadsAt_END__App__Control()->dyn_REG_boot2_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_END__App__Control();
+		std::cout << "done Registers - SUBSTANTIATE." << std::endl;
+		std::cout << "started Registers - INITIALISE." << std::endl;
+		CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END__Framework()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END__App()->dyn_CLASS_get_LaunchEnableForConcurrentThreadsAt_END__App__Control()->dyn_REG_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_END__App__Control();
+		std::cout << "done Registers - INITIALISE." << std::endl;
+		std::cout << "done Architecture Application CLASS(s) - DECLARE DEFINE INITIALISE, Registers - DECLARE SUBSTANTIATE INITIALISE." << std::endl;
+
+		std::cout << "started Program - INSTANTIATION." << std::endl;
+		CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_REG_boot1_DEFINE_flag_isMemberFunctionINSTANTIATED();
+		CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_REG_boot2_SUBSTANTIATE_flag_isMemberFunctionINSTANTIATED();
+		CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_REG_boot3_INITIALISE_flag_isMemberFunctionINSTANTIATED();
+		std::cout << "done Program - INSTANTIATION." << std::endl;
 
     std::cout << "" << std::endl;
     std::cout << "        ,     \\      /      ," << std::endl;
@@ -47,151 +60,168 @@ CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END_Framework* _ptr_Frame
     std::cout << "|/                //               \\| " << std::endl;
     std::cout << "`                 V                 '" << std::endl;
     std::cout << "" << std::endl;
-    return (void*)stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END_Framework();
+    return (void*)CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END__Framework();
     }
-    unsigned char* CLIBLaunchQueAtEND::CLIB_LaunchEnableForConcurrentThreadsAt_END::app_FUNCT_get_flag_isPGM_INSTANTIATED()
+    void CLIBLaunchQueAtEND::CLIB_LaunchEnableForConcurrentThreadsAt_END::CLIB_LaunchEnableForConcurrentThreadsAt_END__App_FUNCT_request_Wait_launch(unsigned char* bytes)
     {
-        if (stat_REG_get_ptr_flag_isMemberFunctionINSTANTIATED()[1] == false) {
-            return LaunchEnableForConcurrentThreadsAt_END_Global::stat_CONVERT_bool_to_ByteArray(stat_REG_get_ptr_flag_isMemberFunctionINSTANTIATED()[0]);
+        if (!CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED()[1]) {
+            CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END__Framework()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END__App()->dyn_APP_FUNCT_LaunchEnableForConcurrentThreadsAt_END__thread_Start(CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END__Framework(), CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END__Global::stat_CONVERT_LaunchEnableForConcurrentThreadsAt_END__Global__ByteArray_To_uint8_t(bytes));
         }
         else {
-            stat_REG_get_ptr_flag_isMemberFunctionINSTANTIATED()[1] = false;
-            return LaunchEnableForConcurrentThreadsAt_END_Global::stat_CONVERT_bool_to_ByteArray(true);
+            CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED()[1] = !CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED()[1];
+            CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_app_FUNCT_Calc_IsAllINSTANTIATED();
         }
     }
-    void CLIBLaunchQueAtEND::CLIB_LaunchEnableForConcurrentThreadsAt_END::app_FUNCT_request_Wait_launch(unsigned char* bytes)
+    void CLIBLaunchQueAtEND::CLIB_LaunchEnableForConcurrentThreadsAt_END::CLIB_LaunchEnableForConcurrentThreadsAt_END__App_FUNCT_terminate_Progaram()
     {
-        if (stat_REG_get_ptr_flag_isMemberFunctionINSTANTIATED()[2] == false) {
-            stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END_Framework()->dyn_CLASS_get_ptr_LaunchConcurrency()->app_thread_Start(stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END_Framework(), CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END_Global::stat_CONVERT_ByteArray_To_uint8_t(bytes));
+        if (!CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED()[2]) {
+            delete CLIB_LaunchEnableForConcurrentThreadsAt_END__dyn_CLASS_ptr_Framework_LaunchEnableForConcurrentThreadsAt_END;
         }
         else {
-            stat_REG_get_ptr_flag_isMemberFunctionINSTANTIATED()[2] = false;
+            CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED()[2] = !CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED()[2];
+            CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_app_FUNCT_Calc_IsAllINSTANTIATED();
         }
     }
-    void CLIBLaunchQueAtEND::CLIB_LaunchEnableForConcurrentThreadsAt_END::app_FUNCT_terminate_Progaram()
+    void CLIBLaunchQueAtEND::CLIB_LaunchEnableForConcurrentThreadsAt_END::CLIB_LaunchEnableForConcurrentThreadsAt_END__App_FUNCT_thread_End(unsigned char* bytes)
     {
-        if (stat_REG_get_ptr_flag_isMemberFunctionINSTANTIATED()[3] == false) {
-            delete _ptr_Framework_LaunchEnableForConcurrentThreadsAt_END;
+        if (!CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED()[3]) {
+            CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END__Framework()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END__App()->dyn_APP_FUNCT_LaunchEnableForConcurrentThreadsAt_END__thread_End(CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END__Framework(), (uint8_t)*bytes);
         }
         else {
-            stat_REG_get_ptr_flag_isMemberFunctionINSTANTIATED()[3] = false;
+            CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED()[3] = !CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED()[3];
+            CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_app_FUNCT_Calc_IsAllINSTANTIATED();
         }
     }
-    void CLIBLaunchQueAtEND::CLIB_LaunchEnableForConcurrentThreadsAt_END::app_FUNCT_thread_End(unsigned char* bytes)
+    unsigned char* CLIBLaunchQueAtEND::CLIB_LaunchEnableForConcurrentThreadsAt_END::CLIB_LaunchEnableForConcurrentThreadsAt_END__App_REG_get_coreId_To_launch()
     {
-        if (stat_REG_get_ptr_flag_isMemberFunctionINSTANTIATED()[4] == false) {
-            stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END_Framework()->dyn_CLASS_get_ptr_LaunchConcurrency()->app_thread_End(stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END_Framework(), (uint8_t)*bytes);
+        uint8_t* result = nullptr;
+        result = new uint8_t(UINT8_MAX);
+        if (!CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED()[4]) {
+            *result = CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END__Framework()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END__App()->dyn_CLASS_get_LaunchEnableForConcurrentThreadsAt_END__App__Control()->dyn_REG_get_LaunchEnableForConcurrentThreadsAt_END__Item_On_list_for_Que_Of_CoreTolaunch(0);
         }
         else {
-            stat_REG_get_ptr_flag_isMemberFunctionINSTANTIATED()[4] = false;
+            CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED()[4] = !CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED()[4];
+            CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_app_FUNCT_Calc_IsAllINSTANTIATED();
         }
+        return CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END__Global::stat_CONVERT_LaunchEnableForConcurrentThreadsAt_END__Global__uint8_t_To_ByteArray(*result);
     }
-    unsigned char* CLIBLaunchQueAtEND::CLIB_LaunchEnableForConcurrentThreadsAt_END::app_REG_get_coreId_To_launch()
+    unsigned char* CLIBLaunchQueAtEND::CLIB_LaunchEnableForConcurrentThreadsAt_END::CLIB_LaunchEnableForConcurrentThreadsAt_END__App_REG_get_Flag_Active()
     {
-        if (stat_REG_get_ptr_flag_isMemberFunctionINSTANTIATED()[5] == false) {
-            return CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END_Global::stat_CONVERT_uint8_t_To_ByteArray(stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END_Framework()->dyn_CLASS_get_ptr_LaunchConcurrency()->dyn_CLASS_get_ptr_LaunchConcurrency_Control()->dyn_REG_get_Item_On_list_for_Que_Of_CoreTolaunch(0));
+        bool* result = nullptr;
+        result = new bool(true);
+        if (!CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED()[5]) {
+            *result = CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END__Framework()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END__Global()->dyn_REG_get_LaunchEnableForConcurrentThreadsAt_END__Global__ptr_FLAG_thread_2STATE_ACTIVE();
         }
         else {
-            stat_REG_get_ptr_flag_isMemberFunctionINSTANTIATED()[5] = false;
-            return CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END_Global::stat_CONVERT_uint8_t_To_ByteArray(UINT8_MAX);
+            CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED()[5] = !CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED()[5];
+            CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_app_FUNCT_Calc_IsAllINSTANTIATED();
         }
+        return LaunchEnableForConcurrentThreadsAt_END__Global::stat_CONVERT_LaunchEnableForConcurrentThreadsAt_END__Global__bool_to_ByteArray(*result);
     }
-    unsigned char* CLIBLaunchQueAtEND::CLIB_LaunchEnableForConcurrentThreadsAt_END::app_REG_get_Flag_Active()
+    unsigned char* CLIBLaunchQueAtEND::CLIB_LaunchEnableForConcurrentThreadsAt_END::CLIB_LaunchEnableForConcurrentThreadsAt_END__App_REG_get_Flag_ConcurrentCoreState(unsigned char* bytes)
     {
-        if (stat_REG_get_ptr_flag_isMemberFunctionINSTANTIATED()[6] == false) {
-            return LaunchEnableForConcurrentThreadsAt_END_Global::stat_CONVERT_bool_to_ByteArray(stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END_Framework()->dyn_CLASS_get_ptr_LaunchConcurrency()->dyn_CLASS_get_ptr_Global()->dyn_REG_get_ptr_flag_thread_2STATE_ACTIVE());
+        bool* result = nullptr;
+        result = new bool(true);
+        if (!CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED()[6]) {
+            *result = CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END__Framework()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END__App()->dyn_CLASS_get_LaunchEnableForConcurrentThreadsAt_END__App__Control()->dyn_REG_get_LaunchEnableForConcurrentThreadsAt_END__Item_On_list_Of_STATE_For_ConcurrentCore(CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END__Global::stat_CONVERT_LaunchEnableForConcurrentThreadsAt_END__Global__ByteArray_To_uint8_t(bytes));
         }
         else {
-            stat_REG_get_ptr_flag_isMemberFunctionINSTANTIATED()[6] = false;
-            return LaunchEnableForConcurrentThreadsAt_END_Global::stat_CONVERT_bool_to_ByteArray(true);
+            CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED()[6] = !CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED()[6];
+            CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_app_FUNCT_Calc_IsAllINSTANTIATED();
         }
+        return LaunchEnableForConcurrentThreadsAt_END__Global::stat_CONVERT_LaunchEnableForConcurrentThreadsAt_END__Global__bool_to_ByteArray(*result);
     }
-    unsigned char* CLIBLaunchQueAtEND::CLIB_LaunchEnableForConcurrentThreadsAt_END::app_REG_get_Flag_ConcurrentCoreState(unsigned char* bytes)
-    {
-        if (stat_REG_get_ptr_flag_isMemberFunctionINSTANTIATED()[7] == false) {
-            return LaunchEnableForConcurrentThreadsAt_END_Global::stat_CONVERT_bool_to_ByteArray(stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END_Framework()->dyn_CLASS_get_ptr_LaunchConcurrency()->dyn_CLASS_get_ptr_LaunchConcurrency_Control()->dyn_REG_get_Item_On_list_Of_STATE_For_ConcurrentCore(CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END_Global::stat_CONVERT_ByteArray_To_uint8_t(bytes)));
+    unsigned char* CLIBLaunchQueAtEND::CLIB_LaunchEnableForConcurrentThreadsAt_END::CLIB_LaunchEnableForConcurrentThreadsAt_END__App_REG_get_Flag_Idle() {
+        bool* result = nullptr;
+        result = new bool(true);
+        if (!CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED()[7]) {
+            *result = CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END__Framework()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END__Global()->dyn_REG_get_LaunchEnableForConcurrentThreadsAt_END__Global__ptr_FLAG_thread_2STATE_IDLE();
         }
         else {
-            stat_REG_get_ptr_flag_isMemberFunctionINSTANTIATED()[7] = false;
-            return LaunchEnableForConcurrentThreadsAt_END_Global::stat_CONVERT_bool_to_ByteArray(true);
+            CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED()[7] = !CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED()[7];
+            CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_app_FUNCT_Calc_IsAllINSTANTIATED();
         }
+        return LaunchEnableForConcurrentThreadsAt_END__Global::stat_CONVERT_LaunchEnableForConcurrentThreadsAt_END__Global__bool_to_ByteArray(*result);
     }
-    unsigned char* CLIBLaunchQueAtEND::CLIB_LaunchEnableForConcurrentThreadsAt_END::app_REG_get_Flag_Idle()
-    {
-        if (stat_REG_get_ptr_flag_isMemberFunctionINSTANTIATED()[8] == false) {
-            return LaunchEnableForConcurrentThreadsAt_END_Global::stat_CONVERT_bool_to_ByteArray(stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END_Framework()->dyn_CLASS_get_ptr_LaunchConcurrency()->dyn_CLASS_get_ptr_Global()->dyn_REG_get_ptr_flag_thread_2STATE_IDLE());
+    unsigned char* CLIBLaunchQueAtEND::CLIB_LaunchEnableForConcurrentThreadsAt_END::CLIB_LaunchEnableForConcurrentThreadsAt_END__App_REG_get_FLAG_isPGM_INSTANTIATED() {
+        bool* result = nullptr;
+        result = new bool(true);
+        if (!CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED()[0]) {
+            *result = CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED()[0];
         }
         else {
-            stat_REG_get_ptr_flag_isMemberFunctionINSTANTIATED()[8] = false;
-            return LaunchEnableForConcurrentThreadsAt_END_Global::stat_CONVERT_bool_to_ByteArray(LaunchEnableForConcurrentThreadsAt_END_Global::stat_CONVERT_bool_to_ByteArray(true));
+            CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED()[0] = !CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED()[0];
+            CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_app_FUNCT_Calc_IsAllINSTANTIATED();
         }
+        return LaunchEnableForConcurrentThreadsAt_END__Global::stat_CONVERT_LaunchEnableForConcurrentThreadsAt_END__Global__bool_to_ByteArray(*result);
     }
-    unsigned char* CLIBLaunchQueAtEND::CLIB_LaunchEnableForConcurrentThreadsAt_END::app_REG_get_State_launchBit()
-    {
-        if (stat_REG_get_ptr_flag_isMemberFunctionINSTANTIATED()[9] == false) {
-            return LaunchEnableForConcurrentThreadsAt_END_Global::stat_CONVERT_bool_to_ByteArray(stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END_Framework()->dyn_CLASS_get_ptr_LaunchConcurrency()->dyn_CLASS_get_ptr_LaunchConcurrency_Control()->dyn_REG_get_Item_On_list_Of_STATE_For_ConcurrentCore(stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END_Framework()->dyn_CLASS_get_ptr_LaunchConcurrency()->dyn_CLASS_get_ptr_LaunchConcurrency_Control()->dyn_REG_get_Item_On_list_for_Que_Of_CoreTolaunch(0)));
+    unsigned char* CLIBLaunchQueAtEND::CLIB_LaunchEnableForConcurrentThreadsAt_END::CLIB_LaunchEnableForConcurrentThreadsAt_END__App_REG_get_State_launchBit() {
+        bool* result = nullptr;
+        result = new bool(true);
+        if (!CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED()[8]) {
+            *result = CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END__Framework()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END__App()->dyn_CLASS_get_LaunchEnableForConcurrentThreadsAt_END__App__Control()->dyn_REG_get_LaunchEnableForConcurrentThreadsAt_END__Item_On_list_Of_STATE_For_ConcurrentCore(CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END__Framework()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END__App()->dyn_CLASS_get_LaunchEnableForConcurrentThreadsAt_END__App__Control()->dyn_REG_get_LaunchEnableForConcurrentThreadsAt_END__Item_On_list_for_Que_Of_CoreTolaunch(0));
         }
         else {
-            stat_REG_get_ptr_flag_isMemberFunctionINSTANTIATED()[9] = false;
-            return LaunchEnableForConcurrentThreadsAt_END_Global::stat_CONVERT_bool_to_ByteArray(true);
+            CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED()[8] = !CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED()[8];
+            CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_app_FUNCT_Calc_IsAllINSTANTIATED();
         }
+        return LaunchEnableForConcurrentThreadsAt_END__Global::stat_CONVERT_LaunchEnableForConcurrentThreadsAt_END__Global__bool_to_ByteArray(*result);
     }
-    void CLIBLaunchQueAtEND::CLIB_LaunchEnableForConcurrentThreadsAt_END::app_REG_set_Flag_ConcurrentCoreState(unsigned char* bytesThreadId, unsigned char*  byteBool)
+    void CLIBLaunchQueAtEND::CLIB_LaunchEnableForConcurrentThreadsAt_END::CLIB_LaunchEnableForConcurrentThreadsAt_END__App_REG_set_Flag_ConcurrentCoreState(unsigned char* bytesThreadId, unsigned char*  byteBool)
     {
-        if (stat_REG_get_ptr_flag_isMemberFunctionINSTANTIATED()[10] == false) {
-            stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END_Framework()->dyn_CLASS_get_ptr_LaunchConcurrency()->dyn_CLASS_get_ptr_LaunchConcurrency_Control()->set_Item_On_list_Of_STATE_For_ConcurrentCore(stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END_Framework()->dyn_CLASS_get_ptr_LaunchConcurrency()->dyn_CLASS_get_ptr_Global()->stat_CONVERT_ByteArray_To_uint8_t(bytesThreadId), byteBool);
+        if (!CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED()[9]) {
+            CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END__Framework()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END__App()->dyn_CLASS_get_LaunchEnableForConcurrentThreadsAt_END__App__Control()->dyn_REG_set_LaunchEnableForConcurrentThreadsAt_END__Item_On_list_Of_STATE_For_ConcurrentCore(CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END__Global::stat_CONVERT_LaunchEnableForConcurrentThreadsAt_END__Global__ByteArray_To_uint8_t(bytesThreadId), byteBool);
         }
         else {
-            stat_REG_get_ptr_flag_isMemberFunctionINSTANTIATED()[10] = false;
-            stat_app_FUNCT_Calc_IsAllINSTANTIATED();//INSTANTIATE this member function last.
+            CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED()[9] = !CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED()[9];
+            CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_app_FUNCT_Calc_IsAllINSTANTIATED();
         }
     }
 // private.
-    void CLIBLaunchQueAtEND::CLIB_LaunchEnableForConcurrentThreadsAt_END::stat_app_FUNCT_Calc_IsAllINSTANTIATED()
+    void CLIBLaunchQueAtEND::CLIB_LaunchEnableForConcurrentThreadsAt_END::CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_app_FUNCT_Calc_IsAllINSTANTIATED()
     {
-        stat_REG_get_ptr_flag_isMemberFunctionINSTANTIATED()[0] = false;
-        for (uint8_t memberFunctionId = 1; memberFunctionId < sizeof(*stat_REG_get_ptr_flag_isMemberFunctionINSTANTIATED()); memberFunctionId++)
-        {
-            if (stat_REG_get_ptr_flag_isMemberFunctionINSTANTIATED()[memberFunctionId] == true)
-            {
-                stat_REG_get_ptr_flag_isMemberFunctionINSTANTIATED()[0] = true;
+        CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED()[0] = false;
+        for (int memberFunctionId = 1; memberFunctionId < sizeof(*CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED()); memberFunctionId++) {
+            if (CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED()[memberFunctionId]) {
+                CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED()[0] = CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED()[memberFunctionId];
+                break;
             }
         }
     }
-    void CLIBLaunchQueAtEND::CLIB_LaunchEnableForConcurrentThreadsAt_END::stat_boot1_CLASS_DEFINE_LaunchEnableForConcurrentThreadsAt_END_Framework()
+    void CLIBLaunchQueAtEND::CLIB_LaunchEnableForConcurrentThreadsAt_END::CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_boot1_CLASS_DEFINE_LaunchEnableForConcurrentThreadsAt_END__Framework()
     {
-        _ptr_Framework_LaunchEnableForConcurrentThreadsAt_END = NULL;
+        CLIB_LaunchEnableForConcurrentThreadsAt_END__dyn_CLASS_ptr_Framework_LaunchEnableForConcurrentThreadsAt_END = nullptr;
     }
-    void CLIBLaunchQueAtEND::CLIB_LaunchEnableForConcurrentThreadsAt_END::stat_boot3_CLASS_INITIALISE_LaunchEnableForConcurrentThreadsAt_END_Framework()
+    void CLIBLaunchQueAtEND::CLIB_LaunchEnableForConcurrentThreadsAt_END::CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_boot3_CLASS_INITIALISE_LaunchEnableForConcurrentThreadsAt_END__Framework()
     {
-        _ptr_Framework_LaunchEnableForConcurrentThreadsAt_END = new CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END_Framework();
-        while (stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END_Framework() == NULL) {}
+        CLIB_LaunchEnableForConcurrentThreadsAt_END__dyn_CLASS_ptr_Framework_LaunchEnableForConcurrentThreadsAt_END = new CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END__Framework();
+        while (CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END__Framework() == nullptr) {}
     }
-    CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END_Framework* CLIBLaunchQueAtEND::CLIB_LaunchEnableForConcurrentThreadsAt_END::stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END_Framework()
+    CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END__Framework* CLIBLaunchQueAtEND::CLIB_LaunchEnableForConcurrentThreadsAt_END::CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END__Framework()
     {
-        return _ptr_Framework_LaunchEnableForConcurrentThreadsAt_END;
+        return CLIB_LaunchEnableForConcurrentThreadsAt_END__dyn_CLASS_ptr_Framework_LaunchEnableForConcurrentThreadsAt_END;
     }
-    void CLIBLaunchQueAtEND::CLIB_LaunchEnableForConcurrentThreadsAt_END::stat_REG_boot1_DEFINE_flag_isMemberFunctionINSTANTIATED()
+    void CLIBLaunchQueAtEND::CLIB_LaunchEnableForConcurrentThreadsAt_END::CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_REG_boot1_DEFINE_flag_isMemberFunctionINSTANTIATED()
     {
-        _stat_REG_flag_isMemberFunctionINSTANTIATED = NULL;
+        CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_REG_flag_isMemberFunctionINSTANTIATED = nullptr;
     }
-    void CLIBLaunchQueAtEND::CLIB_LaunchEnableForConcurrentThreadsAt_END::stat_REG_boot2_SUBSTANTIATE_flag_isMemberFunctionINSTANTIATED()
+    void CLIBLaunchQueAtEND::CLIB_LaunchEnableForConcurrentThreadsAt_END::CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_REG_boot2_SUBSTANTIATE_flag_isMemberFunctionINSTANTIATED()
     {
-        _stat_REG_flag_isMemberFunctionINSTANTIATED = new bool[11]();
-        while (stat_REG_get_ptr_flag_isMemberFunctionINSTANTIATED() == NULL) { }
-        for (uint8_t index = 0; index < sizeof(*stat_REG_get_ptr_flag_isMemberFunctionINSTANTIATED()); index++)
+        CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_REG_flag_isMemberFunctionINSTANTIATED = new bool[10]();
+        while (CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED() == nullptr) { }
+        for (int index = 0; index < sizeof(*CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED()); index++)
         {
-            _stat_REG_flag_isMemberFunctionINSTANTIATED[index] = true;
+            CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_REG_flag_isMemberFunctionINSTANTIATED[index] = true;
         }
     }
-    void CLIBLaunchQueAtEND::CLIB_LaunchEnableForConcurrentThreadsAt_END::stat_REG_boot3_INITIALISE_flag_isMemberFunctionINSTANTIATED()
+    void CLIBLaunchQueAtEND::CLIB_LaunchEnableForConcurrentThreadsAt_END::CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_REG_boot3_INITIALISE_flag_isMemberFunctionINSTANTIATED()
     {
-        for (uint8_t index = 0; index < sizeof(*stat_REG_get_ptr_flag_isMemberFunctionINSTANTIATED()); index++)
+        for (int index = 0; index < sizeof(*CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED()); index++)
         {
-            _stat_REG_flag_isMemberFunctionINSTANTIATED[index] = true;
+            CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_REG_flag_isMemberFunctionINSTANTIATED[index] = true;
         }
     }
-    bool* CLIBLaunchQueAtEND::CLIB_LaunchEnableForConcurrentThreadsAt_END::stat_REG_get_ptr_flag_isMemberFunctionINSTANTIATED()
+    bool* CLIBLaunchQueAtEND::CLIB_LaunchEnableForConcurrentThreadsAt_END::CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED()
     {
-        return _stat_REG_flag_isMemberFunctionINSTANTIATED;
+        return CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_REG_flag_isMemberFunctionINSTANTIATED;
     }
