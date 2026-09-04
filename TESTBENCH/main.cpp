@@ -3,7 +3,8 @@
 int main()
 {
     CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END__Framework* obj = nullptr;
-    obj = (CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END__Framework*)CLIBLaunchQueAtEND::CLIB_LaunchEnableForConcurrentThreadsAt_END::CLIB_LaunchEnableForConcurrentThreadsAt_END__App_FUNCT_generate_Program();
+    obj = static_cast<CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END__Framework*>(
+        CLIBLaunchQueAtEND::CLIB_LaunchEnableForConcurrentThreadsAt_END::CLIB_LaunchEnableForConcurrentThreadsAt_END__App_FUNCT_generate_Program());
 
     return 0;
 }

@@ -1,10 +1,10 @@
 #ifndef CLIB_WRITEENABLEFORTHREADSAT_ServerLaunchQue_ConditionCode_H
 #define CLIB_WRITEENABLEFORTHREADSAT_ServerLaunchQue_ConditionCode_H
-#include "WriteEnableForThreadsAt_ServerLaunchQue_ConditionCode__Framework.h"
+#include "../include/WriteEnableForThreadsAt_ServerLaunchQue_ConditionCode__Framework.h"
 extern "C"
 {
     namespace CLIBWriteQueAtServerLaunchQue_ConditionCode {
-        class CLIB_WriteEnableForThreadsAt_ServerLaunchQue_ConditionCode {
+        class CLIB_WriteEnableForThreadsAt_END_LaunchQueConditionCode {
         public:
 
             static void* CLIB_WriteEnableForThreadsAt_ServerLaunchQue_ConditionCode__App_FUNCT_generate_Program();

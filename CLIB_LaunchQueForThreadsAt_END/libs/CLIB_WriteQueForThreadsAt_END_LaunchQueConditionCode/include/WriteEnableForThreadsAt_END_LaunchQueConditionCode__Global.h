@@ -3,10 +3,10 @@
 #include <array>
 #include <cstdint>
 namespace CLIBWriteQueAtServerLaunchQue_ConditionCode {
-    class WriteEnableForThreadsAt_ServerLaunchQue_ConditionCode__Global {
+    class WriteEnableForThreadsAt_END_LaunchQueConditionCode__Global {
     public:
-        WriteEnableForThreadsAt_ServerLaunchQue_ConditionCode__Global();
-        ~WriteEnableForThreadsAt_ServerLaunchQue_ConditionCode__Global();
+        WriteEnableForThreadsAt_END_LaunchQueConditionCode__Global();
+        ~WriteEnableForThreadsAt_END_LaunchQueConditionCode__Global();
         void dyn_REG_boot0_DECLARE_WriteEnableForThreadsAt_ServerLaunchQue_ConditionCode__Global();
         void dyn_REG_boot1_DEFINE_WriteEnableForThreadsAt_ServerLaunchQue_ConditionCode__Global();
         void dyn_REG_boot2_SUBSTANTIATE_WriteEnableForThreadsAt_ServerLaunchQue_ConditionCode__Global();

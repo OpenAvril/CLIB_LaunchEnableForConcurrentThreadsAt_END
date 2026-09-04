@@ -4,11 +4,11 @@
 #include <list>
 namespace CLIBWriteQueAtServerLaunchQue_ConditionCode
 {
-    class WriteEnableForThreadsAt_ServerLaunchQue_ConditionCode__Control
+    class WriteEnableForThreadsAt_END_LaunchQueConditionCode__Control
     {
     public:
-        WriteEnableForThreadsAt_ServerLaunchQue_ConditionCode__Control();
-        ~WriteEnableForThreadsAt_ServerLaunchQue_ConditionCode__Control();
+        WriteEnableForThreadsAt_END_LaunchQueConditionCode__Control();
+        ~WriteEnableForThreadsAt_END_LaunchQueConditionCode__Control();
         void dyn_APP_FUNCT_WriteEnableForThreadsAt_ServerLaunchQue_ConditionCode__Control__dynamicIn(class WriteEnableForThreadsAt_ServerLaunchQue_ConditionCode__Framework* obj, uint8_t coreId);
         void dyn_APP_FUNCT_WriteEnableForThreadsAt_ServerLaunchQue_ConditionCode__Control__dynamicOut(class WriteEnableForThreadsAt_ServerLaunchQue_ConditionCode__Framework* obj, uint8_t coreId);
         void dyn_APP_FUNCT_WriteEnableForThreadsAt_ServerLaunchQue_ConditionCode__Control__writeEnable_Activate(class WriteEnableForThreadsAt_ServerLaunchQue_ConditionCode__Framework* obj, uint8_t coreId);
