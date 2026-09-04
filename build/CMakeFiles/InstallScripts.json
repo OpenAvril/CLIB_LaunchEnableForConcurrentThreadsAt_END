@@ -1,9 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"/home/brenton-james/CLionProjects/CLIB_LaunchQue/build/cmake_install.cmake",
-		"/home/brenton-james/CLionProjects/CLIB_LaunchQue/build/CLIB_LaunchQueForThreadsAt_END/cmake_install.cmake",
-		"/home/brenton-james/CLionProjects/CLIB_LaunchQue/build/TESTBENCH/cmake_install.cmake"
-	],
-	"Parallel" : false
-}
