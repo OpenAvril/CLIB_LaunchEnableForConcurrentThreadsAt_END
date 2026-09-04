@@ -172,7 +172,7 @@
         _stat_REG_LaunchEnableForConcurrentThreadsAt_END__App__Control__ptr_list_for_Que_Of_CoreTolaunch = nullptr;
     }
     void CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END__App__Control::stat_REG_boot2_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_END__ptr_list_Of_launchActive_Count_For_ThreadID() {
-        _stat_REG_LaunchEnableForConcurrentThreadsAt_END__App__Control__ptr_list_Of_launchActive_Count_For_ThreadID = new std::list<uint64_t>(1);
+        _stat_REG_LaunchEnableForConcurrentThreadsAt_END__App__Control__ptr_list_Of_launchActive_Count_For_ThreadID = new std::list<uint64_t>();
         _stat_REG_LaunchEnableForConcurrentThreadsAt_END__App__Control__ptr_list_Of_launchActive_Count_For_ThreadID->resize(CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END__Global::stat_REG_get_LaunchEnableForConcurrentThreadsAt_END__Global__number_Implemented_Threads());
         while (stat_REG_get_LaunchEnableForConcurrentThreadsAt_END__ptr_list_Of_launchActive_Count_For_ThreadID() == nullptr) {}
         for (uint8_t index = 0; index < CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END__Global::stat_REG_get_LaunchEnableForConcurrentThreadsAt_END__Global__number_Implemented_Threads(); index++) {
@@ -182,7 +182,7 @@
         }
     }
     void CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END__App__Control::stat_REG_boot2_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_END__ptr_list_Of_launchIdle_Count_For_ThreadID() {
-        _stat_REG_LaunchEnableForConcurrentThreadsAt_END__App__Control__ptr_list_Of_launchIdle_Count_For_ThreadID = new std::list<uint64_t>(1);
+        _stat_REG_LaunchEnableForConcurrentThreadsAt_END__App__Control__ptr_list_Of_launchIdle_Count_For_ThreadID = new std::list<uint64_t>();
         while (stat_REG_get_LaunchEnableForConcurrentThreadsAt_END__ptr_list_Of_launchIdle_Count_For_ThreadID() == nullptr) {}
         _stat_REG_LaunchEnableForConcurrentThreadsAt_END__App__Control__ptr_list_Of_launchIdle_Count_For_ThreadID->resize(CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END__Global::stat_REG_get_LaunchEnableForConcurrentThreadsAt_END__Global__number_Implemented_Threads());
         for (uint8_t index = 0; index < CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END__Global::stat_REG_get_LaunchEnableForConcurrentThreadsAt_END__Global__number_Implemented_Threads(); index++) {
@@ -192,7 +192,7 @@
         }
     }
     void CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END__App__Control::stat_REG_boot2_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_END__ptr_list_Of_STATE_For_ConcurrentCore() {
-        _stat_REG_LaunchEnableForConcurrentThreadsAt_END__App__Control__ptr_list_Of_STATE_For_ConcurrentCore = new std::list<bool>(1);
+        _stat_REG_LaunchEnableForConcurrentThreadsAt_END__App__Control__ptr_list_Of_STATE_For_ConcurrentCore = new std::list<bool>();
         while (stat_REG_get_LaunchEnableForConcurrentThreadsAt_END__ptr_list_Of_STATE_For_ConcurrentCore() == nullptr) {}
         _stat_REG_LaunchEnableForConcurrentThreadsAt_END__App__Control__ptr_list_Of_STATE_For_ConcurrentCore->resize(CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END__Global::stat_REG_get_LaunchEnableForConcurrentThreadsAt_END__Global__number_Implemented_Threads());
         for (uint8_t index = 0; index < CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END__Global::stat_REG_get_LaunchEnableForConcurrentThreadsAt_END__Global__number_Implemented_Threads(); index++) {
@@ -202,7 +202,7 @@
         }
     }
     void CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END__App__Control::stat_REG_boot2_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_END__ptr_list_for_Que_Of_CoreTolaunch() {
-        _stat_REG_LaunchEnableForConcurrentThreadsAt_END__App__Control__ptr_list_for_Que_Of_CoreTolaunch = new std::list<uint8_t>(1);
+        _stat_REG_LaunchEnableForConcurrentThreadsAt_END__App__Control__ptr_list_for_Que_Of_CoreTolaunch = new std::list<uint8_t>();
         while (stat_REG_get_LaunchEnableForConcurrentThreadsAt_END__ptr_List_QUE_Of_CoreTolaunch() == nullptr) {}
         _stat_REG_LaunchEnableForConcurrentThreadsAt_END__App__Control__ptr_list_for_Que_Of_CoreTolaunch->resize(CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END__Global::stat_REG_get_LaunchEnableForConcurrentThreadsAt_END__Global__number_Implemented_Threads());
         for (uint8_t index = 0; index < CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END__Global::stat_REG_get_LaunchEnableForConcurrentThreadsAt_END__Global__number_Implemented_Threads(); index++) {
