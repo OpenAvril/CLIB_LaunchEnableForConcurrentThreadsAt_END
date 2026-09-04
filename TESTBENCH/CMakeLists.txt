@@ -5,6 +5,7 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}../CLIB_LaunchQueForThreadsAt_END/include)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}../CLIB_LaunchQueForThreadsAt_END/libs/CLIB_WriteQueForThreadsAt_END_LaunchQueConditionCode/include)
 
 link_directories(${CMAKE_CURRENT_SOURCE_DIR}/libs)
 

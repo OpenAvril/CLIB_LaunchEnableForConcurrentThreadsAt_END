@@ -1,4 +1,5 @@
 #include "../include/LaunchEnableForConcurrentThreadsAt_END__App.h"
+#include "../include/LaunchEnableForConcurrentThreadsAt_END__Execute.h"
 #include <iostream>
     CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END__App__Control* CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END__App::_stat_CLASS_LaunchEnableForConcurrentThreadsAt_END__App__Control;
     CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END__Execute* CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END__App::_stat_CLASS_LaunchEnableForConcurrentThreadsAt_END__App__Ececute;
@@ -25,6 +26,9 @@
     }
     CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END__App__Control* CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END__App::dyn_CLASS_get_LaunchEnableForConcurrentThreadsAt_END__App__Control() {
         return stat_CLASS_get_LaunchEnableForConcurrentThreadsAt_END__App__WriteEnable_Control();
+    }
+    CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END__Execute* CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END__App::dyn_CLASS_get_LaunchEnableForConcurrentThreadsAt_END__Execute() {
+        return stat_CLASS_get_LaunchEnableForConcurrentThreadsAt_END__Execute();
     }
     void CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END__App::dyn_REG_boot1_REG_DEFINE_LaunchEnableForConcurrentThreadsAt_END__App() {
 	    std::cout << "entered boot1_REG_DEFINE_LaunchEnableForConcurrentThreadsAt_END()." << std::endl;
@@ -67,7 +71,10 @@
     }
     void CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END__App::stat_CLASS_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_END__Execute() {
         _stat_CLASS_LaunchEnableForConcurrentThreadsAt_END__App__Ececute = new CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END__Execute();
-        while (stat_CLASS_get_LaunchEnableForConcurrentThreadsAt_END__App__WriteEnable_Control() == nullptr) { }
+        while (stat_CLASS_get_LaunchEnableForConcurrentThreadsAt_END__Execute() == nullptr) { }
+    }
+    CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END__App__Control* CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END__App::stat_CLASS_get_LaunchEnableForConcurrentThreadsAt_END__App__WriteEnable_Control() {
+        return _stat_CLASS_LaunchEnableForConcurrentThreadsAt_END__App__Control;
     }
     CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END__Execute* CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END__App::stat_CLASS_get_LaunchEnableForConcurrentThreadsAt_END__Execute() {
         return _stat_CLASS_LaunchEnableForConcurrentThreadsAt_END__App__Ececute;
