@@ -1,16 +1,16 @@
-#ifndef CLIB_WRITEENABLEFORTHREADSAT_ServerLaunchQue_ConditionCode_WRITEENABLEFORTHREADSAT_ServerLaunchQue_ConditionCode__FRAMEWORK__GLOBAL_H
-#define CLIB_WRITEENABLEFORTHREADSAT_ServerLaunchQue_ConditionCode_WRITEENABLEFORTHREADSAT_ServerLaunchQue_ConditionCode__FRAMEWORK__GLOBAL_H
+#ifndef CLIB_WRITEENABLEFORTHREADSAT_ServerLaunchQue_ConditionCode_WriteQueForThreadsAt_END_LaunchQueConditionCode__Framework__GLOBAL_H
+#define CLIB_WRITEENABLEFORTHREADSAT_ServerLaunchQue_ConditionCode_WriteQueForThreadsAt_END_LaunchQueConditionCode__Framework__GLOBAL_H
 #include <array>
 #include <cstdint>
 namespace CLIBWriteQueAtServerLaunchQue_ConditionCode {
-    class WriteEnableForThreadsAt_END_LaunchQueConditionCode__Global {
+    class WriteQueForThreadsAt_END_LaunchQueConditionCode__Global {
     public:
-        WriteEnableForThreadsAt_END_LaunchQueConditionCode__Global();
-        ~WriteEnableForThreadsAt_END_LaunchQueConditionCode__Global();
-        void dyn_REG_boot0_DECLARE_WriteEnableForThreadsAt_ServerLaunchQue_ConditionCode__Global();
-        void dyn_REG_boot1_DEFINE_WriteEnableForThreadsAt_ServerLaunchQue_ConditionCode__Global();
-        void dyn_REG_boot2_SUBSTANTIATE_WriteEnableForThreadsAt_ServerLaunchQue_ConditionCode__Global();
-        void dyn_REG_boot3_INITIALISE_WriteEnableForThreadsAt_ServerLaunchQue_ConditionCode__Global();
+        WriteQueForThreadsAt_END_LaunchQueConditionCode__Global();
+        ~WriteQueForThreadsAt_END_LaunchQueConditionCode__Global();
+        void dyn_REG_boot0_DECLARE_WriteQueForThreadsAt_END_LaunchQueConditionCode__Global();
+        void dyn_REG_boot1_DEFINE_WriteQueForThreadsAt_END_LaunchQueConditionCode__Global();
+        void dyn_REG_boot2_SUBSTANTIATE_WriteQueForThreadsAt_END_LaunchQueConditionCode__Global();
+        void dyn_REG_boot3_INITIALISE_WriteQueForThreadsAt_END_LaunchQueConditionCode__Global();
         std::array<bool,2> dyn_REG_get_ptr_CONST_WriteEnableForThreadsAt_ServerLaunchQue_ConditionCode__2bitFLAG_IDLE();
         std::array<bool,2> dyn_REG_get_ptr_CONST_WriteEnableForThreadsAt_ServerLaunchQue_ConditionCode__2bitFLAG_WAIT();
         std::array<bool,2> dyn_REG_get_ptr_CONST_WriteEnableForThreadsAt_ServerLaunchQue_ConditionCode__2bitFLAG_WRITE();

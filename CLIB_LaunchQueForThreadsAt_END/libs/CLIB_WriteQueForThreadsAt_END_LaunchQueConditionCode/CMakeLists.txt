@@ -5,11 +5,11 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_library(CLIB_WriteQueForThreadsAt_END_LaunchQueConditionCode STATIC
-        src/CLIB_WriteEnableForThreadsAt_END_LaunchQueConditionCode.cpp
-        src/WriteEnableForThreadsAt_END_LaunchQueConditionCode__Framework.cpp
-        src/WriteEnableForThreadsAt_END_LaunchQueConditionCode__Global.cpp
-        src/WriteEnableForThreadsAt_END_LaunchQueConditionCode__App.cpp
-        src/WriteEnableForThreadsAt_END_LaunchQueConditionCode__Control.cpp
+        src/CLIB_WriteQueForThreadsAt_END_LaunchQueConditionCode.cpp
+        src/WriteQueForThreadsAt_END_LaunchQueConditionCode__Framework.cpp
+        src/WriteQueForThreadsAt_END_LaunchQueConditionCode__Global.cpp
+        src/WriteQueForThreadsAt_END_LaunchQueConditionCode__App.cpp
+        src/WriteQueForThreadsAt_END_LaunchQueConditionCode__Control.cpp
 )
 
 target_include_directories(${PROJECT_NAME}

@@ -44,6 +44,7 @@
 		CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_REG_boot1_DEFINE_flag_isMemberFunctionINSTANTIATED();
 		CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_REG_boot2_SUBSTANTIATE_flag_isMemberFunctionINSTANTIATED();
 		CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_REG_boot3_INITIALISE_flag_isMemberFunctionINSTANTIATED();
+        CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END__Framework()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END__App()->dyn_CLASS_get_LaunchEnableForConcurrentThreadsAt_END__Execute()->dyn_PGM_boot4_INSTANTIATE_LaunchEnableForConcurrentThreadsAt_END__Execute(CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END__Framework());
 		std::cout << "done Program - INSTANTIATION." << std::endl;
 
     std::cout << "" << std::endl;
