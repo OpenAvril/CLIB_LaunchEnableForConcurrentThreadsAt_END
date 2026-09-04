@@ -3,8 +3,8 @@
 
 ---
 ## Branches.
- - **CLIB_LaunchQueForThreadsAt_End.**
- - CFSDImplementation_CLIB.
+ - CLIB_LaunchQueForThreadsAt_End.
+ - **CFSDImplementation_CLIB.**
 
 ---
 ### Similar Rewritten Repository.
