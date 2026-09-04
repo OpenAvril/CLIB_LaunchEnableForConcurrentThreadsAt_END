@@ -1,6 +1,5 @@
 #ifndef CLIB_LAUNCHENABLEFORCONCURRENTTHREADSAT_END_LaunchEnableForConcurrentThreadsAt_END__App__Control_H
 #define CLIB_LAUNCHENABLEFORCONCURRENTTHREADSAT_END_LaunchEnableForConcurrentThreadsAt_END__App__Control_H
-
 #include <cstdint>
 #include <list>
 namespace CLIBLaunchQueAtEND {

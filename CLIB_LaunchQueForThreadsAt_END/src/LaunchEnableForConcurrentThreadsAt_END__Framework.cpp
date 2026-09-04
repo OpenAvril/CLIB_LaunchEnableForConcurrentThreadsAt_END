@@ -26,35 +26,35 @@
 		return stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END__Global();
 	}
 	void CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END__Framework::dyn_REG_boot0_DECLARE_LaunchEnableForConcurrentThreadsAt_END__Framework() {
-		std::cout << "entered boot0_CLASS_DECLARE_LaunchEnableForConcurrentThreadsAt_END__Framework()." << std::endl;
-		std::cout << "exiting boot0_CLASS_DECLARE_LaunchEnableForConcurrentThreadsAt_END__Framework()." << std::endl;
+		std::cout << "entered dyn_REG_boot0_DECLARE_LaunchEnableForConcurrentThreadsAt_END__Framework()." << std::endl;
+		std::cout << "exiting dyn_REG_boot0_DECLARE_LaunchEnableForConcurrentThreadsAt_END__Framework()." << std::endl;
 	}
 	void CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END__Framework::dyn_REG_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_END__Framework() {
-		std::cout << "entered boot1_CLASS_DEFINE_LaunchEnableForConcurrentThreadsAt_END__Framework()." << std::endl;
-		std::cout << "exiting boot1_CLASS_DEFINE_LaunchEnableForConcurrentThreadsAt_END__Framework()." << std::endl;
+		std::cout << "entered dyn_REG_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_END__Framework()." << std::endl;
+		std::cout << "exiting dyn_REG_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_END__Framework()." << std::endl;
 	}
 	void CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END__Framework::dyn_REG_boot2_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_END__Framework() {
 		std::cout << "entered dyn_REG_boot2_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_END__Framework()." << std::endl;
 		std::cout << "exiting dyn_REG_boot2_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_END__Framework()." << std::endl;
 	}
 	void CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END__Framework::dyn_REG_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_END__Framework() {
-		std::cout << "entered boot3_REG_INITIALISE_LaunchEnableForConcurrentThreadsAt_END__Framework()." << std::endl;
-		std::cout << "exiting boot3_REG_INITIALISE_LaunchEnableForConcurrentThreadsAt_END__Framework()." << std::endl;
+		std::cout << "entered dyn_REG_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_END__Framework()." << std::endl;
+		std::cout << "exiting dyn_REG_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_END__Framework()." << std::endl;
 	}
 	void CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END__Framework::stat_CLASS_boot0_DECLARE_LaunchEnableForConcurrentThreadsAt_END__Framework() {
-		std::cout << "entered boot0_REG_DECLARE_LaunchEnableForConcurrentThreadsAt_END__Framework()." << std::endl;
-		std::cout << "exiting boot0_REG_DECLARE_LaunchEnableForConcurrentThreadsAt_END__Framework()." << std::endl;
+		std::cout << "entered stat_CLASS_boot0_DECLARE_LaunchEnableForConcurrentThreadsAt_END__Framework()." << std::endl;
+		std::cout << "exiting stat_CLASS_boot0_DECLARE_LaunchEnableForConcurrentThreadsAt_END__Framework()." << std::endl;
 	}
 	void CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END__Framework::stat_CLASS_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_END__Framework() {
-		std::cout << "entered boot1_REG_DEFINE_LaunchEnableForConcurrentThreadsAt_END__Framework()." << std::endl;
+		std::cout << "entered stat_CLASS_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_END__Framework()." << std::endl;
 		stat_CLASS_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_END__App();
 		stat_CLASS_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_END__Global();
-		std::cout << "exiting boot1_REG_DEFINE_LaunchEnableForConcurrentThreadsAt_END__Framework()." << std::endl;
+		std::cout << "exiting stat_CLASS_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_END__Framework()." << std::endl;
 	}
 	void CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END__Framework::stat_CLASS_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_END__Framework() {
-		std::cout << "entered boot3_CLASS_INITIALISE_LaunchEnableForConcurrentThreadsAt_END__Framework()." << std::endl;
+		std::cout << "entered stat_CLASS_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_END__Framework()." << std::endl;
 		stat_CLASS_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_END__App();
-		std::cout << "exiting boot3_CLASS_INITIALISE_LaunchEnableForConcurrentThreadsAt_END__Framework()." << std::endl;
+		std::cout << "exiting stat_CLASS_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_END__Framework()." << std::endl;
 	}
 	void CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END__Framework::stat_CLASS_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_END__Global() {
 		std::cout << "entered stat_CLASS_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_END__Global()." << std::endl;
