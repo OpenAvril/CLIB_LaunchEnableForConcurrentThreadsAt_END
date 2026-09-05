@@ -5,11 +5,11 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_library(CLIB_LaunchQueForThreadsAt_END STATIC
-        libs/CLIB_WriteQueForThreadsAt_END_LaunchQueConditionCode/src/CLIB_WriteQueForThreadsAt_END_LaunchQueConditionCode.cpp
-        libs/CLIB_WriteQueForThreadsAt_END_LaunchQueConditionCode/src/WriteQueForThreadsAt_END_LaunchQueConditionCode__Framework.cpp
-        libs/CLIB_WriteQueForThreadsAt_END_LaunchQueConditionCode/src/WriteQueForThreadsAt_END_LaunchQueConditionCode__Global.cpp
-        libs/CLIB_WriteQueForThreadsAt_END_LaunchQueConditionCode/src/WriteQueForThreadsAt_END_LaunchQueConditionCode__App.cpp
-        libs/CLIB_WriteQueForThreadsAt_END_LaunchQueConditionCode/src/WriteQueForThreadsAt_END_LaunchQueConditionCode__Control.cpp
+        libs/CLIB_WriteQueForThreadsAt_END_LaunchQueConditionCode/src/CLIB_WriteEnableForThreadsAt_END_LaunchQueConditionCode.cpp
+        libs/CLIB_WriteQueForThreadsAt_END_LaunchQueConditionCode/src/WriteEnableForThreadsAt_END_LaunchQueConditionCode__Framework.cpp
+        libs/CLIB_WriteQueForThreadsAt_END_LaunchQueConditionCode/src/WriteEnableForThreadsAt_END_LaunchQueConditionCode__Global.cpp
+        libs/CLIB_WriteQueForThreadsAt_END_LaunchQueConditionCode/src/WriteEnableForThreadsAt_END_LaunchQueConditionCode__App.cpp
+        libs/CLIB_WriteQueForThreadsAt_END_LaunchQueConditionCode/src/WriteEnableForThreadsAt_END_LaunchQueConditionCode__Control.cpp
         src/CLIB_LaunchEnableForConcurrentThreadsAt_END.cpp
         src/LaunchEnableForConcurrentThreadsAt_END__Framework.cpp
         src/LaunchEnableForConcurrentThreadsAt_END__Global.cpp
