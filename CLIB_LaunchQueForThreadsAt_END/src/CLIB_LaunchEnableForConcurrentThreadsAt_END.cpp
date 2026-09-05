@@ -33,7 +33,7 @@
 		CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END__Framework()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END__App()->dyn_CLASS_get_LaunchEnableForConcurrentThreadsAt_END__App__Control()->dyn_REG_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_END__App__Control();
 		std::cout << "done Registers - DEFINE." << std::endl;
 		std::cout << "started Registers - SUBSTANTIATE." << std::endl;
-		CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END__Framework()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END__App()->dyn_CLASS_get_LaunchEnableForConcurrentThreadsAt_END__App__Control()->dyn_REG_boot2_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_END__App__Control();
+		CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END__Framework()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END__App()->dyn_CLASS_get_LaunchEnableForConcurrentThreadsAt_END__App__Control()->dyn_REG_boot2_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_END__App__Control(CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END__Framework());
 		std::cout << "done Registers - SUBSTANTIATE." << std::endl;
 		std::cout << "started Registers - INITIALISE." << std::endl;
 		CLIB_LaunchEnableForConcurrentThreadsAt_END__stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END__Framework()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END__App()->dyn_CLASS_get_LaunchEnableForConcurrentThreadsAt_END__App__Control()->dyn_REG_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_END__App__Control();

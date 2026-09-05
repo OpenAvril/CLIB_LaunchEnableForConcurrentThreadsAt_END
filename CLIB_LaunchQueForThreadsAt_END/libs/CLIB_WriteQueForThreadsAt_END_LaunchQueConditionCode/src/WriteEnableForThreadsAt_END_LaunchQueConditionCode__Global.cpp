@@ -203,7 +203,7 @@ void CLIBWriteQueAtEND_LaunchQueConditionCode::WriteEnableForThreadsAt_END_Launc
 }
 void CLIBWriteQueAtEND_LaunchQueConditionCode::WriteEnableForThreadsAt_END_LaunchQueConditionCode__Global::stat_REG_boot3_INITIALISE_ptr_WriteEnableForThreadsAt_END_LaunchQueConditionCode__number_Of_Implemented_Threads()
 {
-    *_stat_REG_ptr_WriteEnableForThreadsAt_END_LaunchQueConditionCode__number_Of_Implemented_Threads = static_cast<uint8_t>(2);
+    *_stat_REG_ptr_WriteEnableForThreadsAt_END_LaunchQueConditionCode__number_Of_Implemented_Threads = static_cast<uint8_t>(3);
 }
 std::array<bool,2>* CLIBWriteQueAtEND_LaunchQueConditionCode::WriteEnableForThreadsAt_END_LaunchQueConditionCode__Global::stat_REG_get_ptr_CONST_WriteEnableForThreadsAt_END_LaunchQueConditionCode__2bitFLAG_IDLE()
 {

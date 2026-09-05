@@ -22,7 +22,6 @@ namespace CLIBLaunchQueAtEND {
         static unsigned char* stat_CONVERT_LaunchEnableForConcurrentThreadsAt_END__Global__uint8_t_To_ByteArray(uint8_t uint8_t_Value);
         static bool stat_CONVERT_LaunchEnableForConcurrentThreadsAt_END__Global__ByteArray_To_bool(unsigned char* bytes);
         static uint8_t stat_CONVERT_LaunchEnableForConcurrentThreadsAt_END__Global__ByteArray_To_uint8_t(unsigned char* bytes);
-        static uint8_t stat_REG_get_LaunchEnableForConcurrentThreadsAt_END__Global__number_Implemented_Threads();
     private:
         static std::array<bool, 3>* _stat_REG_LaunchEnableForConcurrentThreadsAt_END__Global__ptr_FLAG_thread_2STATE;//todo: number of concurrent threads.
         static uint8_t* _stat_REG_LaunchEnableForConcurrentThreadsAt_END__Global__ptr_number_Implemented_Threads;//todo: number of concurrent threads.

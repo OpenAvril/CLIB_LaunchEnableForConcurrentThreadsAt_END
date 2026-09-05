@@ -53,6 +53,7 @@
     bool CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END__Global::dyn_REG_get_LaunchEnableForConcurrentThreadsAt_END__Global__ptr_FLAG_thread_2STATE_IDLE() {
         return false;
     }
+
     uint8_t CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END__Global::dyn_REG_get_LaunchEnableForConcurrentThreadsAt_END__Global__number_Implemented_Threads() {
         return *stat_REG_get_LaunchEnableForConcurrentThreadsAt_END__Global__ptr_number_Implemented_Threads();
     }
@@ -71,9 +72,6 @@
         uint8_t cpp_uint8_t_value;
         std::memcpy(&cpp_uint8_t_value, bytes, sizeof(cpp_uint8_t_value));
         return cpp_uint8_t_value;
-    }
-    uint8_t CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END__Global::stat_REG_get_LaunchEnableForConcurrentThreadsAt_END__Global__number_Implemented_Threads() {
-        return *stat_REG_get_LaunchEnableForConcurrentThreadsAt_END__Global__ptr_number_Implemented_Threads();
     }
 // private.
     void CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END__Global::stat_REG_boot1_DEFINE_FLAG_LaunchEnableForConcurrentThreadsAt_END__Global__thread_2STATE() {

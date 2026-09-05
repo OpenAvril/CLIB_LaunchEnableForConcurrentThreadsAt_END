@@ -11,7 +11,7 @@ namespace CLIBLaunchQueAtEND {
         void dyn_App_FUNCT_LaunchEnableForConcurrentThreadsAt_END__App__Control__launchEnable_SortQue(class LaunchEnableForConcurrentThreadsAt_END__Framework* obj, uint8_t number_Implemented_Threads);
         void dyn_App_FUNCT_LaunchEnableForConcurrentThreadsAt_END__App__Control__launchQue_Update(class LaunchEnableForConcurrentThreadsAt_END__Framework* obj, uint8_t number_Implemented_Threads);
         void dyn_REG_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_END__App__Control();
-        void dyn_REG_boot2_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_END__App__Control();
+        void dyn_REG_boot2_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_END__App__Control(class LaunchEnableForConcurrentThreadsAt_END__Framework* obj);
         void dyn_REG_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_END__App__Control();
         uint64_t dyn_REG_get_LaunchEnableForConcurrentThreadsAt_END__Item_On_list_Of_launchActive_Count_For_ThreadID(uint8_t threadID);
         uint64_t dyn_REG_get_LaunchEnableForConcurrentThreadsAt_END__Item_On_list_Of_launchIdle_Count_For_ThreadID(uint8_t threadID);
@@ -35,10 +35,10 @@ namespace CLIBLaunchQueAtEND {
         static void stat_REG_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_END__ptr_list_Of_launchIdle_Count_For_ThreadID();
         static void stat_REG_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_END__ptr_list_Of_STATE_For_ConcurrentCore();
         static void stat_REG_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_END__ptr_list_for_Que_Of_CoreTolaunch();
-        static void stat_REG_boot2_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_END__ptr_list_Of_launchActive_Count_For_ThreadID();
-        static void stat_REG_boot2_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_END__ptr_list_Of_launchIdle_Count_For_ThreadID();
-        static void stat_REG_boot2_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_END__ptr_list_Of_STATE_For_ConcurrentCore();
-        static void stat_REG_boot2_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_END__ptr_list_for_Que_Of_CoreTolaunch();
+        static void stat_REG_boot2_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_END__ptr_list_Of_launchActive_Count_For_ThreadID(class LaunchEnableForConcurrentThreadsAt_END__Framework* obj);
+        static void stat_REG_boot2_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_END__ptr_list_Of_launchIdle_Count_For_ThreadID(class LaunchEnableForConcurrentThreadsAt_END__Framework* obj);
+        static void stat_REG_boot2_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_END__ptr_list_Of_STATE_For_ConcurrentCore(class LaunchEnableForConcurrentThreadsAt_END__Framework* obj);
+        static void stat_REG_boot2_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_END__ptr_list_for_Que_Of_CoreTolaunch(class LaunchEnableForConcurrentThreadsAt_END__Framework* obj);
         static void stat_REG_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_END__ptr_list_Of_launchActive_Count_For_ThreadID();
         static void stat_REG_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_END__ptr_list_Of_launchIdle_Count_For_ThreadID();
         static void stat_REG_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_END__ptr_list_Of_STATE_For_ConcurrentCore();
