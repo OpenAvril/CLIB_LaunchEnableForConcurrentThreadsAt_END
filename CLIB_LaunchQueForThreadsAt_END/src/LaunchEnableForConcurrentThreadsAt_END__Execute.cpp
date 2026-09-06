@@ -1,9 +1,7 @@
 #include "../include/LaunchEnableForConcurrentThreadsAt_END__Execute.h"
-#include "../libs/CLIB_WriteQueForThreadsAt_END_LaunchQueConditionCode/include/WriteEnableForThreadsAt_END_LaunchQueConditionCode__Global.h"
-#include <iostream>
-
 #include "CLIB_WriteEnableForThreadsAt_END_LaunchQueConditionCode.h"
-void* CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END__Execute::_stat_PGM_CLIB_WriteQueForThreadsAt_ServerLaunchQue_ConditionCode;
+#include <iostream>
+    void* CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END__Execute::_stat_PGM_CLIB_WriteQueForThreadsAt_ServerLaunchQue_ConditionCode;
 // public.
     CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END__Execute::LaunchEnableForConcurrentThreadsAt_END__Execute() {
         std::cout << "entered CONSTRUCTOR of LaunchEnableForConcurrentThreadsAt_END_Execute()." << std::endl;

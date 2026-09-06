@@ -3,10 +3,8 @@
 #include "../include/WriteEnableForThreadsAt_END_LaunchQueConditionCode__Framework.h"
 #include "../include/WriteEnableForThreadsAt_END_LaunchQueConditionCode__Global.h"
 #include <array>
-#include <cstdint>
 #include <iostream>
 #include <iterator>
-#include <list>
     bool* CLIBWriteQueAtEND_LaunchQueConditionCode::WriteEnableForThreadsAt_END_LaunchQueConditionCode__Control::_stat_REG_FLAG_WriteEnableForThreadsAt_END_LaunchQueConditionCode__FLAG_Control__isWriteStartThreadRELASE_ONE;
     bool* CLIBWriteQueAtEND_LaunchQueConditionCode::WriteEnableForThreadsAt_END_LaunchQueConditionCode__Control::_stat_REG_FLAG_WriteEnableForThreadsAt_END_LaunchQueConditionCode__FLAG_Control__isWriteStartThreadRELASE_REMAINING;
     bool* CLIBWriteQueAtEND_LaunchQueConditionCode::WriteEnableForThreadsAt_END_LaunchQueConditionCode__Control::_stat_REG_FLAG_WriteEnableForThreadsAt_END_LaunchQueConditionCode__FLAG_Control__isWriteEndThreadRELASE_ONE;

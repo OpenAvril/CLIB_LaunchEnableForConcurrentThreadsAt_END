@@ -1,8 +1,7 @@
 #include "../include/LaunchEnableForConcurrentThreadsAt_END__App__Control.h"
 #include "../include/LaunchEnableForConcurrentThreadsAt_END__App.h"
 #include "../include/LaunchEnableForConcurrentThreadsAt_END__Framework.h"
-#include "../include/LaunchEnableForConcurrentThreadsAt_END__Global.h"
-#include <cstdint>
+#include "../include/WriteEnableForThreadsAt_END_LaunchQueConditionCode__Global.h"
 #include <iostream>
     std::list<uint64_t>* CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END__App__Control::_stat_REG_LaunchEnableForConcurrentThreadsAt_END__App__Control__ptr_list_Of_launchActive_Count_For_ThreadID;
     std::list<uint64_t>* CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END__App__Control::_stat_REG_LaunchEnableForConcurrentThreadsAt_END__App__Control__ptr_list_Of_launchIdle_Count_For_ThreadID;
@@ -22,8 +21,8 @@
         delete _stat_REG_LaunchEnableForConcurrentThreadsAt_END__App__Control__ptr_list_for_Que_Of_CoreTolaunch;
     }
     void CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END__App__Control::dyn_App_FUNCT_LaunchEnableForConcurrentThreadsAt_END__App__Control__launchEnable_SortQue(CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END__Framework* obj, uint8_t number_Implemented_Threads) {
-        for (uint8_t concurrentThreadId_A = 0; concurrentThreadId_A < number_Implemented_Threads - 2; concurrentThreadId_A++) {
-            for (uint8_t concurrentThreadId_B = concurrentThreadId_A + 1; concurrentThreadId_B < number_Implemented_Threads - 1; concurrentThreadId_B++) {
+        for (int concurrentThreadId_A = 0; concurrentThreadId_A < number_Implemented_Threads - 2; concurrentThreadId_A++) {
+            for (int concurrentThreadId_B = concurrentThreadId_A + 1; concurrentThreadId_B < number_Implemented_Threads - 1; concurrentThreadId_B++) {
                 if (obj->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END__App()->dyn_CLASS_get_LaunchEnableForConcurrentThreadsAt_END__App__Control()->dyn_REG_get_LaunchEnableForConcurrentThreadsAt_END__Item_On_list_Of_STATE_For_ConcurrentCore(dyn_REG_get_LaunchEnableForConcurrentThreadsAt_END__Item_On_list_for_Que_Of_CoreTolaunch(concurrentThreadId_A)) == obj->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END__Global()->dyn_REG_get_LaunchEnableForConcurrentThreadsAt_END__Global__ptr_FLAG_thread_2STATE_ACTIVE()) {
                     if (obj->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END__App()->dyn_CLASS_get_LaunchEnableForConcurrentThreadsAt_END__App__Control()->dyn_REG_get_LaunchEnableForConcurrentThreadsAt_END__Item_On_list_Of_STATE_For_ConcurrentCore(dyn_REG_get_LaunchEnableForConcurrentThreadsAt_END__Item_On_list_for_Que_Of_CoreTolaunch(concurrentThreadId_B)) == obj->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END__Global()->dyn_REG_get_LaunchEnableForConcurrentThreadsAt_END__Global__ptr_FLAG_thread_2STATE_IDLE()) {
                         obj->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END__App()->dyn_CLASS_get_LaunchEnableForConcurrentThreadsAt_END__App__Control()->dyn_App_FUNCT_LaunchEnableForConcurrentThreadsAt_END__App__Control__launchEnable_ShiftQueValues(obj, concurrentThreadId_A, concurrentThreadId_B);
@@ -45,7 +44,7 @@
         }
     }
     void CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END__App__Control::dyn_App_FUNCT_LaunchEnableForConcurrentThreadsAt_END__App__Control__launchQue_Update(CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END__Framework* obj, uint8_t number_Implemented_Threads) {
-        for (uint8_t index = 0; index < number_Implemented_Threads; index++) {
+        for (int index = 0; index < number_Implemented_Threads; index++) {
             switch (obj->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END__App()->dyn_CLASS_get_LaunchEnableForConcurrentThreadsAt_END__App__Control()->dyn_REG_get_LaunchEnableForConcurrentThreadsAt_END__Item_On_list_Of_STATE_For_ConcurrentCore(index)) {
                 case false: {
                     obj->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END__App()->dyn_CLASS_get_LaunchEnableForConcurrentThreadsAt_END__App__Control()->dyn_REG_set_LaunchEnableForConcurrentThreadsAt_END__Item_On_list_Of_launchActive_Count_For_ThreadID(index, 0);
@@ -73,11 +72,8 @@
     void CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END__App__Control::dyn_REG_boot2_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_END__App__Control(class LaunchEnableForConcurrentThreadsAt_END__Framework* obj) {
         std::cout << "entered dyn_REG_boot2_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_END__App__Control()" << std::endl;
         stat_REG_boot2_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_END__ptr_list_Of_launchActive_Count_For_ThreadID(obj);
-        std::cout << "testpoint: ALPHA." << std::endl;
         stat_REG_boot2_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_END__ptr_list_Of_launchIdle_Count_For_ThreadID(obj);
-        std::cout << "testpoint: BRAVO." << std::endl;
         stat_REG_boot2_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_END__ptr_list_Of_STATE_For_ConcurrentCore(obj);
-        std::cout << "testpoint: CHARLIE." << std::endl;
         stat_REG_boot2_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_END__ptr_list_for_Que_Of_CoreTolaunch(obj);
         std::cout << "exiting dyn_REG_boot2_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_END__App__Control()" << std::endl;
     }
@@ -176,25 +172,20 @@
         _stat_REG_LaunchEnableForConcurrentThreadsAt_END__App__Control__ptr_list_for_Que_Of_CoreTolaunch = nullptr;
     }
     void CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END__App__Control::stat_REG_boot2_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_END__ptr_list_Of_launchActive_Count_For_ThreadID(class LaunchEnableForConcurrentThreadsAt_END__Framework* obj) {
-        std::cout << "testpoint: ALPHA - ALPHA." << std::endl;
         _stat_REG_LaunchEnableForConcurrentThreadsAt_END__App__Control__ptr_list_Of_launchActive_Count_For_ThreadID = new std::list<uint64_t>();
-        std::cout << "testpoint: ALPHA - BRAVO." << std::endl;
         while (stat_REG_get_LaunchEnableForConcurrentThreadsAt_END__ptr_list_Of_launchActive_Count_For_ThreadID() == nullptr) {}
-        std::cout << "testpoint: ALPHA - CHARLIE." << std::endl;
-        stat_REG_get_LaunchEnableForConcurrentThreadsAt_END__ptr_list_Of_launchActive_Count_For_ThreadID()->resize(obj->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END__Global()->dyn_REG_get_LaunchEnableForConcurrentThreadsAt_END__Global__number_Implemented_Threads());
-        std::cout << "testpoint: ALPHA - DELTA." << std::endl;
+        stat_REG_get_LaunchEnableForConcurrentThreadsAt_END__ptr_list_Of_launchActive_Count_For_ThreadID()->resize(3);//todo: number of concurrent threads.
+        //stat_REG_get_LaunchEnableForConcurrentThreadsAt_END__ptr_list_Of_launchActive_Count_For_ThreadID()->resize(obj->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END__Global()->dyn_REG_get_LaunchEnableForConcurrentThreadsAt_END__Global__number_Implemented_Threads());//todo: number of concurrent threads.
         for (int index = 0; index < stat_REG_get_LaunchEnableForConcurrentThreadsAt_END__ptr_list_Of_launchActive_Count_For_ThreadID()->size(); index++) {
-            std::cout << "testpoint: ALPHA - ECHO loop." << std::endl;
             auto temp = stat_REG_get_LaunchEnableForConcurrentThreadsAt_END__ptr_list_Of_launchActive_Count_For_ThreadID()->begin();
             std::advance(temp, index);
             *temp = UINT64_MAX;
         }
-        std::cout << "testpoint: ALPHA - FOXTROT." << std::endl;
     }
     void CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END__App__Control::stat_REG_boot2_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_END__ptr_list_Of_launchIdle_Count_For_ThreadID(class LaunchEnableForConcurrentThreadsAt_END__Framework* obj) {
         _stat_REG_LaunchEnableForConcurrentThreadsAt_END__App__Control__ptr_list_Of_launchIdle_Count_For_ThreadID = new std::list<uint64_t>();
         while (stat_REG_get_LaunchEnableForConcurrentThreadsAt_END__ptr_list_Of_launchIdle_Count_For_ThreadID() == nullptr) {}
-        stat_REG_get_LaunchEnableForConcurrentThreadsAt_END__ptr_list_Of_launchIdle_Count_For_ThreadID()->resize(obj->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END__Global()->dyn_REG_get_LaunchEnableForConcurrentThreadsAt_END__Global__number_Implemented_Threads());
+        stat_REG_get_LaunchEnableForConcurrentThreadsAt_END__ptr_list_Of_launchIdle_Count_For_ThreadID()->resize(3);//todo: number of concurrent threads.
         for (int index = 0; index < stat_REG_get_LaunchEnableForConcurrentThreadsAt_END__ptr_list_Of_launchIdle_Count_For_ThreadID()->size(); index++) {
             auto temp = stat_REG_get_LaunchEnableForConcurrentThreadsAt_END__ptr_list_Of_launchIdle_Count_For_ThreadID()->begin();
             std::advance(temp, index);
@@ -204,7 +195,7 @@
     void CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END__App__Control::stat_REG_boot2_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_END__ptr_list_Of_STATE_For_ConcurrentCore(class LaunchEnableForConcurrentThreadsAt_END__Framework* obj) {
         _stat_REG_LaunchEnableForConcurrentThreadsAt_END__App__Control__ptr_list_Of_STATE_For_ConcurrentCore = new std::list<bool>();
         while (stat_REG_get_LaunchEnableForConcurrentThreadsAt_END__ptr_list_Of_STATE_For_ConcurrentCore() == nullptr) {}
-        stat_REG_get_LaunchEnableForConcurrentThreadsAt_END__ptr_list_Of_STATE_For_ConcurrentCore()->resize(obj->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END__Global()->dyn_REG_get_LaunchEnableForConcurrentThreadsAt_END__Global__number_Implemented_Threads());
+        stat_REG_get_LaunchEnableForConcurrentThreadsAt_END__ptr_list_Of_STATE_For_ConcurrentCore()->resize(3);//todo: number of concurrent threads.
         for (int index = 0; index < stat_REG_get_LaunchEnableForConcurrentThreadsAt_END__ptr_list_Of_STATE_For_ConcurrentCore()->size(); index++) {
             auto temp = stat_REG_get_LaunchEnableForConcurrentThreadsAt_END__ptr_list_Of_STATE_For_ConcurrentCore()->begin();
             std::advance(temp, index);
@@ -214,7 +205,7 @@
     void CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END__App__Control::stat_REG_boot2_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_END__ptr_list_for_Que_Of_CoreTolaunch(class LaunchEnableForConcurrentThreadsAt_END__Framework* obj) {
         _stat_REG_LaunchEnableForConcurrentThreadsAt_END__App__Control__ptr_list_for_Que_Of_CoreTolaunch = new std::list<uint8_t>();
         while (stat_REG_get_LaunchEnableForConcurrentThreadsAt_END__ptr_List_QUE_Of_CoreTolaunch() == nullptr) {}
-        stat_REG_get_LaunchEnableForConcurrentThreadsAt_END__ptr_List_QUE_Of_CoreTolaunch()->resize(obj->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_END__Global()->dyn_REG_get_LaunchEnableForConcurrentThreadsAt_END__Global__number_Implemented_Threads());
+        stat_REG_get_LaunchEnableForConcurrentThreadsAt_END__ptr_List_QUE_Of_CoreTolaunch()->resize(3);//todo: number of concurrent threads.
         for (int index = 0; index < stat_REG_get_LaunchEnableForConcurrentThreadsAt_END__ptr_List_QUE_Of_CoreTolaunch()->size(); index++) {
             auto temp = stat_REG_get_LaunchEnableForConcurrentThreadsAt_END__ptr_List_QUE_Of_CoreTolaunch()->begin();
             std::advance(temp, index);

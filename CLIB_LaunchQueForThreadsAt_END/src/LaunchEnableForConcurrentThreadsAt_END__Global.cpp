@@ -1,6 +1,4 @@
 #include "../include/LaunchEnableForConcurrentThreadsAt_END__Global.h"
-#include <array>
-#include <cstdint>
 #include <cstring>
 #include <iostream>
     std::array<bool, 3>* CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END__Global::_stat_REG_LaunchEnableForConcurrentThreadsAt_END__Global__ptr_FLAG_thread_2STATE;
