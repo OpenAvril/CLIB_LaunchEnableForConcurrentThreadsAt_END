@@ -3,8 +3,8 @@
 
 ---
 ## Branches.
- - **CLIB_LaunchQueForThreadsAt_End.**
- - CFSDImplementation_CLIB.
+ - CLIB_LaunchQueForThreadsAt_End.
+ - **CFSDImplementation_CLIB.**
 
 ---
 ### Similar Rewritten Repository.
@@ -55,6 +55,14 @@ cmake -B build
 ````
 cmake --build build
 ````
+*** manual copy built library file to testbench libs folder ***
+````
+cmake -B build
+````
+````
+cmake --build build
+````
+*** run TESTBENCH ***
 
 ---
 ## How To Implement.
