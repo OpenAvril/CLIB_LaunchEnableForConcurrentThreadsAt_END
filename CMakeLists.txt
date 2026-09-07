@@ -6,5 +6,5 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 #add_subdirectory(CLIB_LaunchQueForThreadsAt_Client)
 add_subdirectory(CLIB_LaunchQueForThreadsAt_Server)
-#add_subdirectory(CLIB_LaunchQueForThreadsAt_END)
+add_subdirectory(CLIB_LaunchQueForThreadsAt_END)
 add_subdirectory(TESTBENCH)
