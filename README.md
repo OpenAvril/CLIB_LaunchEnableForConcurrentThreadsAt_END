@@ -49,19 +49,26 @@ sudo snap install clion --classic
 ---
 ## Building - Compiler Terminal Commands.
 ### CLIB_LaunchEnableForConcurrentThreadsAt_END.so
+
+*** Load Root CMake Project ***
+
 ````
 cmake -B build
 ````
 ````
 cmake --build build
 ````
-*** manual copy built library file to testbench libs folder ***
+*** manual copy build library file to libs folder in TESTBENCH ***
+
+*** Reload Root CMake Project ***
+
 ````
 cmake -B build
 ````
 ````
 cmake --build build
 ````
+
 *** run TESTBENCH ***
 
 ---
