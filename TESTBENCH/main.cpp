@@ -1,9 +1,9 @@
 #include <iostream>
-#include "../CLIB_LaunchQueForThreadsAt_Server/include//CLIB_LaunchEnableForConcurrentThreadsAt_Server.h"
+#include "../CLIB_LaunchQueForThreadsAt_END//include/CLIB_LaunchEnableForConcurrentThreadsAt_END.h"
 int main()
 {
-    CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Framework* obj = nullptr;
-    obj = static_cast<CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Framework*>(CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__App_FUNCT_generate_Program());
+    CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END__Framework* obj = nullptr;
+    obj = static_cast<CLIBLaunchQueAtEND::LaunchEnableForConcurrentThreadsAt_END__Framework*>(CLIBLaunchQueAtEND::CLIB_LaunchEnableForConcurrentThreadsAt_END::CLIB_LaunchEnableForConcurrentThreadsAt_END__App_FUNCT_generate_Program());
 
     return 0;
 }
