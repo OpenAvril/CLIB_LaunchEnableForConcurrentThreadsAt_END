@@ -73,7 +73,7 @@ cmake --build build
 
 ---
 ## How To Implement.
-### How To Guide - Stack Flow From END Input Scanner To Server And Back To END.
+### How To Guide - Stack Flow From END Input Scanner To ENDS And Back To END.
 - GitHub ReadMe - How To Guide.
 
 #### CLIB_LaunchQue
