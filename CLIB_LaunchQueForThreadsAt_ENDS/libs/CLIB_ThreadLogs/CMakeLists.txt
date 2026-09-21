@@ -11,18 +11,18 @@ add_library(CLIB_ThreadLogs STATIC
         src/CLIB_ThreadLogs_Framework_App.cpp
         src/CLIB_ThreadLogs_Framework_App_Algorithms.cpp
         src/CLIB_ThreadLogs_Framework_App_Execute.cpp
-        libs/CLIB_WriteQueForThreadsAt_DataCluster/src/ClusterAccess.cpp
-        libs/CLIB_WriteQueForThreadsAt_DataCluster/src/ClusterAccess_Framework.cpp
-        libs/CLIB_WriteQueForThreadsAt_DataCluster/src/ClusterAccess_Framework_Global.cpp
-        libs/CLIB_WriteQueForThreadsAt_DataCluster/src/ClusterAccess_Framework_App.cpp
-        libs/CLIB_WriteQueForThreadsAt_DataCluster/src/ClusterAccess_Framework_App_Control.cpp
+        libs/CLIB_WriteQueForThreadsAt_LoggingThread/src/LoggingThread.cpp
+        libs/CLIB_WriteQueForThreadsAt_LoggingThread/src/LoggingThread_Framework.cpp
+        libs/CLIB_WriteQueForThreadsAt_LoggingThread/src/LoggingThread_Framework_Global.cpp
+        libs/CLIB_WriteQueForThreadsAt_LoggingThread/src/LoggingThread_Framework_App.cpp
+        libs/CLIB_WriteQueForThreadsAt_LoggingThread/src/LoggingThread_Framework_App_Control.cpp
 )
 
 target_include_directories(CLIB_ThreadLogs PUBLIC
         "${CMAKE_CURRENT_SOURCE_DIR}/include"
-        "${CMAKE_CURRENT_SOURCE_DIR}/libs/CLIB_WriteQueForThreadsAt_DataCluster/include"
+        "${CMAKE_CURRENT_SOURCE_DIR}/libs/CLIB_ForThreadsAt_DataCluster/include"
 )
 
 target_link_libraries(CLIB_ThreadLogs PRIVATE
-        CLIB_WriteQueForThreadsAt_DataCluster
+        CLIB_ForThreadsAt_DataCluster
 )

@@ -1,119 +1,119 @@
-#include "../include/LaunchEnableForConcurrentThreadsAt_ENDS_Global.h"
+#include "../include/LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global.h"
 #include <cstring>
 #include <iostream>
-    std::array<bool, 3>* CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Global::_stat_REG_LaunchEnableForConcurrentThreadsAt_ENDS_Global_ptr_FLAG_thread_2STATE;
-    uint8_t* CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Global::_stat_REG_LaunchEnableForConcurrentThreadsAt_ENDS_Global_ptr_number_Implemented_Threads;
+    std::array<bool, 3>* CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global::_stat_REG_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global_ptr_FLAG_thread_2STATE;
+    uint8_t* CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global::_stat_REG_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global_ptr_number_Implemented_Threads;
 // public.
-    CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Global::LaunchEnableForConcurrentThreadsAt_ENDS_Global() {
-        boot0_CLASS_DECLARE_LaunchEnableForConcurrentThreadsAt_ENDS_Global();
-        boot1_CLASS_DEFINE_LaunchEnableForConcurrentThreadsAt_ENDS_Global();
-        boot3_CLASS_INITIALISE_LaunchEnableForConcurrentThreadsAt_ENDS_Global();
-        boot0_REG_DECLARE_LaunchEnableForConcurrentThreadsAt_ENDS_Global();
+    CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global::LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global() {
+        boot0_CLASS_DECLARE_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global();
+        boot1_CLASS_DEFINE_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global();
+        boot3_CLASS_INITIALISE_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global();
+        boot0_REG_DECLARE_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global();
     }
-    CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Global::~LaunchEnableForConcurrentThreadsAt_ENDS_Global() {
-        delete _stat_REG_LaunchEnableForConcurrentThreadsAt_ENDS_Global_ptr_FLAG_thread_2STATE;
-        delete _stat_REG_LaunchEnableForConcurrentThreadsAt_ENDS_Global_ptr_number_Implemented_Threads;
+    CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global::~LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global() {
+        delete _stat_REG_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global_ptr_FLAG_thread_2STATE;
+        delete _stat_REG_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global_ptr_number_Implemented_Threads;
     }
-    void CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Global::boot0_CLASS_DECLARE_LaunchEnableForConcurrentThreadsAt_ENDS_Global() {
-        std::cout << "entered boot0_CLASS_DECLARE_LaunchEnableForConcurrentThreadsAt_ENDS_Global()." << std::endl;
-        std::cout << "exiting boot0_CLASS_DECLARE_LaunchEnableForConcurrentThreadsAt_ENDS_Global()." << std::endl;
+    void CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global::boot0_CLASS_DECLARE_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global() {
+        std::cout << "entered boot0_CLASS_DECLARE_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global()." << std::endl;
+        std::cout << "exiting boot0_CLASS_DECLARE_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global()." << std::endl;
     }
-    void CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Global::boot1_CLASS_DEFINE_LaunchEnableForConcurrentThreadsAt_ENDS_Global() {
-        std::cout << "entered boot1_CLASS_DEFINE_LaunchEnableForConcurrentThreadsAt_ENDS_Global()." << std::endl;
-        std::cout << "exiting boot1_CLASS_DEFINE_LaunchEnableForConcurrentThreadsAt_ENDS_Global()." << std::endl;
+    void CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global::boot1_CLASS_DEFINE_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global() {
+        std::cout << "entered boot1_CLASS_DEFINE_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global()." << std::endl;
+        std::cout << "exiting boot1_CLASS_DEFINE_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global()." << std::endl;
     }
-    void CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Global::boot3_CLASS_INITIALISE_LaunchEnableForConcurrentThreadsAt_ENDS_Global() {
-        std::cout << "entered boot3_CLASS_INITIALISE_LaunchEnableForConcurrentThreadsAt_ENDS_Global()" << std::endl;
-        std::cout << "exiting boot3_CLASS_INITIALISE_LaunchEnableForConcurrentThreadsAt_ENDS_Global()" << std::endl;
+    void CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global::boot3_CLASS_INITIALISE_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global() {
+        std::cout << "entered boot3_CLASS_INITIALISE_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global()" << std::endl;
+        std::cout << "exiting boot3_CLASS_INITIALISE_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global()" << std::endl;
     }
-    void CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Global::boot0_REG_DECLARE_LaunchEnableForConcurrentThreadsAt_ENDS_Global() {
-        std::cout << "entered boot0_REG_DECLARE_LaunchEnableForConcurrentThreadsAt_ENDS_Global()" << std::endl;
-        std::cout << "exiting boot0_REG_DECLARE_LaunchEnableForConcurrentThreadsAt_ENDS_Global()" << std::endl;
+    void CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global::boot0_REG_DECLARE_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global() {
+        std::cout << "entered boot0_REG_DECLARE_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global()" << std::endl;
+        std::cout << "exiting boot0_REG_DECLARE_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global()" << std::endl;
     }
-    void CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Global::boot1_REG_DEFINE_LaunchEnableForConcurrentThreadsAt_ENDS_Global() {
-        std::cout << "entered boot1_REG_DEFINE_LaunchEnableForConcurrentThreadsAt_ENDS_Global()" << std::endl;
-        std::cout << "exiting boot1_REG_DEFINE_LaunchEnableForConcurrentThreadsAt_ENDS_Global()" << std::endl;
+    void CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global::boot1_REG_DEFINE_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global() {
+        std::cout << "entered boot1_REG_DEFINE_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global()" << std::endl;
+        std::cout << "exiting boot1_REG_DEFINE_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global()" << std::endl;
     }
-    void CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Global::boot2_REG_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_ENDS_Global() {
-        std::cout << "entered boot2_REG_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_ENDS_Global()" << std::endl;
-        std::cout << "exiting boot2_REG_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_ENDS_Global()" << std::endl;
+    void CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global::boot2_REG_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global() {
+        std::cout << "entered boot2_REG_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global()" << std::endl;
+        std::cout << "exiting boot2_REG_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global()" << std::endl;
     }
-    void CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Global::boot3_REG_INITIALISE_LaunchEnableForConcurrentThreadsAt_ENDS_Global() {
-        std::cout << "entered boot3_REG_INITIALISE_LaunchEnableForConcurrentThreadsAt_ENDS_Global()" << std::endl;
-        std::cout << "exiting boot3_REG_INITIALISE_LaunchEnableForConcurrentThreadsAt_ENDS_Global()" << std::endl;
+    void CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global::boot3_REG_INITIALISE_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global() {
+        std::cout << "entered boot3_REG_INITIALISE_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global()" << std::endl;
+        std::cout << "exiting boot3_REG_INITIALISE_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global()" << std::endl;
     }
-    void CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Global::boot4_PGM_INSTANTIATION_LaunchEnableForConcurrentThreadsAt_ENDS_Global() {
+    void CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global::boot4_PGM_INSTANTIATION_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global() {
 
     }
-    bool CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Global::dyn_REG_get_LaunchEnableForConcurrentThreadsAt_ENDS_Global_ptr_FLAG_thread_2STATE_ACTIVE() {
+    bool CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global::dyn_REG_get_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global_ptr_FLAG_thread_2STATE_ACTIVE() {
         return true;
     }
-    bool CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Global::dyn_REG_get_LaunchEnableForConcurrentThreadsAt_ENDS_Global_ptr_FLAG_thread_2STATE_IDLE() {
+    bool CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global::dyn_REG_get_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global_ptr_FLAG_thread_2STATE_IDLE() {
         return false;
     }
 
-    uint8_t CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Global::dyn_REG_get_LaunchEnableForConcurrentThreadsAt_ENDS_Global_number_Implemented_Threads() {
-        return *stat_REG_get_LaunchEnableForConcurrentThreadsAt_ENDS_Global_ptr_number_Implemented_Threads();
+    uint8_t CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global::dyn_REG_get_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global_number_Implemented_Threads() {
+        return *stat_REG_get_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global_ptr_number_Implemented_Threads();
     }
-    unsigned char* CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Global::stat_CONVERT_LaunchEnableForConcurrentThreadsAt_ENDS_Global_bool_to_ByteArray(bool bool_Value) {
+    unsigned char* CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global::stat_CONVERT_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global_bool_to_ByteArray(bool bool_Value) {
         return reinterpret_cast<unsigned char*>(bool_Value);
     }
-    unsigned char* CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Global::stat_CONVERT_LaunchEnableForConcurrentThreadsAt_ENDS_Global_uint8_t_To_ByteArray(uint8_t uint8_t_Value) {
+    unsigned char* CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global::stat_CONVERT_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global_uint8_t_To_ByteArray(uint8_t uint8_t_Value) {
         unsigned char* bytes_array;
         std::memcpy(&bytes_array, &uint8_t_Value, sizeof(uint8_t_Value));
         return bytes_array;
     }
-    bool CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Global::stat_CONVERT_LaunchEnableForConcurrentThreadsAt_ENDS_Global_ByteArray_To_bool(unsigned char* bytes) {
+    bool CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global::stat_CONVERT_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global_ByteArray_To_bool(unsigned char* bytes) {
         return bytes[1] != 0;
     }
-    uint8_t CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Global::stat_CONVERT_LaunchEnableForConcurrentThreadsAt_ENDS_Global_ByteArray_To_uint8_t(unsigned char* bytes) {
+    uint8_t CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global::stat_CONVERT_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global_ByteArray_To_uint8_t(unsigned char* bytes) {
         uint8_t cpp_uint8_t_value;
         std::memcpy(&cpp_uint8_t_value, bytes, sizeof(cpp_uint8_t_value));
         return cpp_uint8_t_value;
     }
 // private.
-    void CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Global::stat_REG_boot1_DEFINE_FLAG_LaunchEnableForConcurrentThreadsAt_ENDS_Global_thread_2STATE() {
-        _stat_REG_LaunchEnableForConcurrentThreadsAt_ENDS_Global_ptr_FLAG_thread_2STATE = nullptr;
+    void CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global::stat_REG_boot1_DEFINE_FLAG_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global_thread_2STATE() {
+        _stat_REG_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global_ptr_FLAG_thread_2STATE = nullptr;
     }
-    void CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Global::stat_REG_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_ENDS_Global_number_Implemented_Threads()
+    void CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global::stat_REG_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global_number_Implemented_Threads()
     {
-        _stat_REG_LaunchEnableForConcurrentThreadsAt_ENDS_Global_ptr_number_Implemented_Threads = nullptr;
+        _stat_REG_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global_ptr_number_Implemented_Threads = nullptr;
     }
-    void CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Global::stat_REG_boot2_SUBSTANTIATE_FLAG_LaunchEnableForConcurrentThreadsAt_ENDS_Global_thread_2STATE() {
+    void CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global::stat_REG_boot2_SUBSTANTIATE_FLAG_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global_thread_2STATE() {
         std::cout << "entered stat_REG_boot2_SUBSTANTIATE_flag_thread_2STATE()" << std::endl;
-        _stat_REG_LaunchEnableForConcurrentThreadsAt_ENDS_Global_ptr_FLAG_thread_2STATE = new std::array<bool, 3>();//todo: number of concurrent threads.
-        while (_stat_REG_LaunchEnableForConcurrentThreadsAt_ENDS_Global_ptr_FLAG_thread_2STATE == nullptr) {
+        _stat_REG_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global_ptr_FLAG_thread_2STATE = new std::array<bool, 3>();//todo: number of concurrent threads.
+        while (_stat_REG_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global_ptr_FLAG_thread_2STATE == nullptr) {
 
         }
-        for (int index = 0; index < *stat_REG_get_LaunchEnableForConcurrentThreadsAt_ENDS_Global_ptr_number_Implemented_Threads(); index++) {
-            stat_REG_set_Item_On_Array_Of_FLAG_LaunchEnableForConcurrentThreadsAt_ENDS_Global_thread_2STATE_ACTIVE(index, true);
+        for (int index = 0; index < *stat_REG_get_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global_ptr_number_Implemented_Threads(); index++) {
+            stat_REG_set_Item_On_Array_Of_FLAG_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global_thread_2STATE_ACTIVE(index, true);
         }
         std::cout << "exiting stat_REG_boot2_SUBSTANTIATE_flag_thread_2STATE()" << std::endl;
     }
-    void CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Global::stat_REG_boot2_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_ENDS_Global_number_Implemented_Threads() {
+    void CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global::stat_REG_boot2_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global_number_Implemented_Threads() {
         std::cout << "entered stat_REG_boot2_SUBSTANTIATE_number_Implemented_Threads()" << std::endl;
-        _stat_REG_LaunchEnableForConcurrentThreadsAt_ENDS_Global_ptr_number_Implemented_Threads = new uint8_t(UINT8_MAX);
+        _stat_REG_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global_ptr_number_Implemented_Threads = new uint8_t(UINT8_MAX);
         std::cout << "exiting stat_REG_boot2_SUBSTANTIATE_number_Implemented_Threads()" << std::endl;
     }
-    void CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Global::stat_REG_boot3_INITIALISE_FLAG_LaunchEnableForConcurrentThreadsAt_ENDS_Global_thread_2STATE() {
+    void CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global::stat_REG_boot3_INITIALISE_FLAG_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global_thread_2STATE() {
         std::cout << "entered stat_REG_boot3_INITIALISE_flag_thread_2STATE()" << std::endl;
-        for (int index = 0; index < *stat_REG_get_LaunchEnableForConcurrentThreadsAt_ENDS_Global_ptr_number_Implemented_Threads(); index++) {
-            stat_REG_set_Item_On_Array_Of_FLAG_LaunchEnableForConcurrentThreadsAt_ENDS_Global_thread_2STATE_ACTIVE(index, false);
+        for (int index = 0; index < *stat_REG_get_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global_ptr_number_Implemented_Threads(); index++) {
+            stat_REG_set_Item_On_Array_Of_FLAG_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global_thread_2STATE_ACTIVE(index, false);
         }
         std::cout << "exiting stat_REG_boot3_INITIALISE_flag_thread_2STATE()" << std::endl;
     }
-    void CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Global::stat_REG_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_ENDS_Global_number_Implemented_Threads() {
-        *_stat_REG_LaunchEnableForConcurrentThreadsAt_ENDS_Global_ptr_number_Implemented_Threads = static_cast<uint8_t>(3);//todo: number of concurrent threads.
+    void CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global::stat_REG_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global_number_Implemented_Threads() {
+        *_stat_REG_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global_ptr_number_Implemented_Threads = static_cast<uint8_t>(3);//todo: number of concurrent threads.
     }
-    bool CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Global::stat_REG_get_Item_On_Array_Of_FLAG_LaunchEnableForConcurrentThreadsAt_ENDS_Global_thread_2STATE(uint8_t concurrentThreadId) {
-        return _stat_REG_LaunchEnableForConcurrentThreadsAt_ENDS_Global_ptr_FLAG_thread_2STATE->at(concurrentThreadId);
+    bool CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global::stat_REG_get_Item_On_Array_Of_FLAG_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global_thread_2STATE(uint8_t concurrentThreadId) {
+        return _stat_REG_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global_ptr_FLAG_thread_2STATE->at(concurrentThreadId);
     }
-    uint8_t* CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Global::stat_REG_get_LaunchEnableForConcurrentThreadsAt_ENDS_Global_ptr_number_Implemented_Threads() {
-        return _stat_REG_LaunchEnableForConcurrentThreadsAt_ENDS_Global_ptr_number_Implemented_Threads;
+    uint8_t* CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global::stat_REG_get_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global_ptr_number_Implemented_Threads() {
+        return _stat_REG_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global_ptr_number_Implemented_Threads;
     }
-    void CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Global::stat_REG_set_Item_On_Array_Of_FLAG_LaunchEnableForConcurrentThreadsAt_ENDS_Global_thread_2STATE_ACTIVE(uint8_t concurrentThreadId, bool FLAG_bool) {
-        _stat_REG_LaunchEnableForConcurrentThreadsAt_ENDS_Global_ptr_FLAG_thread_2STATE->at(concurrentThreadId) = FLAG_bool;
+    void CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global::stat_REG_set_Item_On_Array_Of_FLAG_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global_thread_2STATE_ACTIVE(uint8_t concurrentThreadId, bool FLAG_bool) {
+        _stat_REG_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global_ptr_FLAG_thread_2STATE->at(concurrentThreadId) = FLAG_bool;
     }
-    void CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Global::stat_REG_set_LaunchEnableForConcurrentThreadsAt_ENDS_Global_number_Implemented_Threads(uint8_t number_Implemented_Threads) {
-	    *_stat_REG_LaunchEnableForConcurrentThreadsAt_ENDS_Global_ptr_number_Implemented_Threads = number_Implemented_Threads;
+    void CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global::stat_REG_set_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global_number_Implemented_Threads(uint8_t number_Implemented_Threads) {
+	    *_stat_REG_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global_ptr_number_Implemented_Threads = number_Implemented_Threads;
     }

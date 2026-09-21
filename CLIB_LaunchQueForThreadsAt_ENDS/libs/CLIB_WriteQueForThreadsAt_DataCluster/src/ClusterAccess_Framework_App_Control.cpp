@@ -20,7 +20,7 @@
         std::cout << "thread " << std::to_string(threadId) << " :: exiting LIB :: wq : ClusterAccess_Framework_App_Control : ClusterAccess_Framework_App_Control(threadId)." << std::endl;
     }
     wq::ClusterAccess_Framework_App_Control::~ClusterAccess_Framework_App_Control() {
-        std::cout << "thread "  << 0 << " :: entered LIB :: wq : ClusterAccess_Framework_App_Control : ClusterAccess_Framework_App_Control(threadId)." << std::endl;
+        std::cout << "thread "  << 0 << " :: entered LIB :: wq : ClusterAccess_Framework_App_Control : ~ClusterAccess_Framework_App_Control(threadId)." << std::endl;
         delete _stat_REG_FLAG_ClusterAccess_FLAG_Control_isWriteStartThreadRELASE_ONE;
         delete _stat_REG_FLAG_ClusterAccess_FLAG_Control_isWriteStartThreadRELASE_REMAINING;
         delete _stat_REG_FLAG_ClusterAccess_FLAG_Control_isWriteEndThreadRELASE_ONE;
@@ -32,7 +32,7 @@
         delete _stat_REG_QUE_Of_ClusterAccess_Framework_App_Control_threadId_To_WRITE;
         delete _stat_REG_ptr_ClusterAccess_Framework_App_Control_writeCycle_Try_WriteStartthreadId_Index;
         delete _stat_REG_ptr_ClusterAccess_Framework_App_Control_writeCycle_Try_WriteEndthreadId_Index;
-        std::cout << "thread "  << 0 << " :: exiting LIB :: wq : ClusterAccess_Framework_App_Control : ClusterAccess_Framework_App_Control(threadId)." << std::endl;
+        std::cout << "thread "  << 0 << " :: exiting LIB :: wq : ClusterAccess_Framework_App_Control : ~ClusterAccess_Framework_App_Control(threadId)." << std::endl;
     }
     void wq::ClusterAccess_Framework_App_Control::dyn_APP_FUNCT_ClusterAccess_Framework_App_Control_dynamicIn(uint8_t threadId, ClusterAccess_Framework* obj, uint8_t coreId) {
         std::cout << "thread " << std::to_string(threadId) << " :: entered LIB :: wq : ClusterAccess_Framework_App_Control : dyn_APP_FUNCT_ClusterAccess_Framework_App_Control_dynamicIn(threadId)." << std::endl;
@@ -135,30 +135,30 @@
         }
         std::cout << "thread " << std::to_string(threadId) << " :: exiting LIB :: wq : ClusterAccess_Framework_App_Control : dyn_APP_FUNCT_ClusterAccess_Framework_App_Control_writeEnable_SortQue(threadId)." << std::endl;
     }
-    void wq::ClusterAccess_Framework_App_Control::dyn_APP_FUNCT_ClusterAccess_Framework_App_Control_writeQue_Update(uint8_t threadId, ClusterAccess_Framework* obj) {
-        std::cout << "thread " << std::to_string(threadId) << " :: entered LIB :: wq : ClusterAccess_Framework_App_Control : dyn_APP_FUNCT_ClusterAccess_Framework_App_Control_writeQue_Update(threadId)." << std::endl;
-        for (uint8_t concurrenctthreadId = 0; concurrenctthreadId < static_cast<uint8_t>(obj->dyn_CLASS_get_ptr_ClusterAccess_Global(threadId)->dyn_REG_get_ClusterAccess_number_Of_Implemented_Threads(threadId)); concurrenctthreadId++)
+    void wq::ClusterAccess_Framework_App_Control::dyn_APP_FUNCT_ClusterAccess_Framework_App_Control_writeQue_Update(uint8_t threadId, class ClusterAccess_Framework* obj) {
+        std::cout << "thread " << std::to_string(threadId) << " :: entered LIB :: writeQue : ClusterAccess_Framework_App_Control : dyn_APP_FUNCT_ClusterAccess_Framework_App_Control_Update(threadId)." << std::endl;
+        for (uint8_t concurrenctThreadID = 0; concurrenctThreadID < static_cast<uint8_t>(obj->dyn_CLASS_get_ptr_ClusterAccess_Global(threadId)->dyn_REG_get_ClusterAccess_number_Of_Implemented_Threads(threadId)); concurrenctThreadID++)
         {
-            if (obj->dyn_CLASS_get_ptr_ClusterAccess_App(threadId)->dyn_CLASS_get_ptr_ClusterAccess_App_Control(threadId)->dyn_REG_get_ptr_ClusterAccess_Framework_App_Control_list_Of_2ibt_FLAG_WriteState(threadId, concurrenctthreadId) == obj->dyn_CLASS_get_ptr_ClusterAccess_Global(threadId)->dyn_REG_get_ptr_CONST_ClusterAccess_2bitFLAG_IDLE(threadId))
+            if (obj->dyn_CLASS_get_ptr_ClusterAccess_App(threadId)->dyn_CLASS_get_ptr_ClusterAccess_App_Control(threadId)->dyn_REG_get_ptr_ClusterAccess_Framework_App_Control_list_Of_2ibt_FLAG_WriteState(threadId, concurrenctThreadID) == obj->dyn_CLASS_get_ptr_ClusterAccess_Global(threadId)->dyn_REG_get_ptr_CONST_ClusterAccess_2bitFLAG_IDLE(threadId))
             {
-                obj->dyn_CLASS_get_ptr_ClusterAccess_App(threadId)->dyn_CLASS_get_ptr_ClusterAccess_App_Control(threadId)->dyn_REG_set_Item_On_list_Of_ClusterAccess_Framework_App_Control_WriteActive_Count_For_threadId(threadId, concurrenctthreadId, 0);
-                obj->dyn_CLASS_get_ptr_ClusterAccess_App(threadId)->dyn_CLASS_get_ptr_ClusterAccess_App_Control(threadId)->stat_REG_set_Item_On_list_Of_ClusterAccess_Framework_App_Control_WriteIdle_Count_For_threadId(threadId, concurrenctthreadId, obj->dyn_CLASS_get_ptr_ClusterAccess_App(threadId)->dyn_CLASS_get_ptr_ClusterAccess_App_Control(threadId)->dyn_REG_get_Item_On_ClusterAccess_Framework_App_Control_list_Of_WriteWait_Count_For_threadId(threadId, concurrenctthreadId) + 1);
-                obj->dyn_CLASS_get_ptr_ClusterAccess_App(threadId)->dyn_CLASS_get_ptr_ClusterAccess_App_Control(threadId)->stat_REG_set_Item_On_list_Of_ClusterAccess_Framework_App_Control_WriteWait_Count_For_threadId(threadId, concurrenctthreadId, 0);
+                obj->dyn_CLASS_get_ptr_ClusterAccess_App(threadId)->dyn_CLASS_get_ptr_ClusterAccess_App_Control(threadId)->dyn_REG_set_Item_On_list_Of_ClusterAccess_Framework_App_Control_WriteActive_Count_For_threadId(threadId, concurrenctThreadID, 0);
+                obj->dyn_CLASS_get_ptr_ClusterAccess_App(threadId)->dyn_CLASS_get_ptr_ClusterAccess_App_Control(threadId)->dyn_REG_set_Item_On_list_Of_ClusterAccess_Framework_App_Control_WriteIdle_Count_For_threadId(threadId, concurrenctThreadID, obj->dyn_CLASS_get_ptr_ClusterAccess_App(threadId)->dyn_CLASS_get_ptr_ClusterAccess_App_Control(threadId)->dyn_REG_get_Item_On_ClusterAccess_Framework_App_Control_list_Of_WriteWait_Count_For_threadId(threadId, concurrenctThreadID) + 1);
+                obj->dyn_CLASS_get_ptr_ClusterAccess_App(threadId)->dyn_CLASS_get_ptr_ClusterAccess_App_Control(threadId)->dyn_REG_set_Item_On_list_Of_ClusterAccess_Framework_App_Control_WriteWait_Count_For_threadId(threadId, concurrenctThreadID, 0);
             }
-            else if (obj->dyn_CLASS_get_ptr_ClusterAccess_App(threadId)->dyn_CLASS_get_ptr_ClusterAccess_App_Control(threadId)->dyn_REG_get_ptr_ClusterAccess_Framework_App_Control_list_Of_2ibt_FLAG_WriteState(threadId, concurrenctthreadId) == obj->dyn_CLASS_get_ptr_ClusterAccess_Global(threadId)->dyn_REG_get_ptr_CONST_ClusterAccess_2bitFLAG_WAIT(threadId))
+            else if (obj->dyn_CLASS_get_ptr_ClusterAccess_App(threadId)->dyn_CLASS_get_ptr_ClusterAccess_App_Control(threadId)->dyn_REG_get_ptr_ClusterAccess_Framework_App_Control_list_Of_2ibt_FLAG_WriteState(threadId, concurrenctThreadID) == obj->dyn_CLASS_get_ptr_ClusterAccess_Global(threadId)->dyn_REG_get_ptr_CONST_ClusterAccess_2bitFLAG_WAIT(threadId))
             {
-                obj->dyn_CLASS_get_ptr_ClusterAccess_App(threadId)->dyn_CLASS_get_ptr_ClusterAccess_App_Control(threadId)->dyn_REG_set_Item_On_list_Of_ClusterAccess_Framework_App_Control_WriteActive_Count_For_threadId(threadId, concurrenctthreadId, 0);
-                obj->dyn_CLASS_get_ptr_ClusterAccess_App(threadId)->dyn_CLASS_get_ptr_ClusterAccess_App_Control(threadId)->stat_REG_set_Item_On_list_Of_ClusterAccess_Framework_App_Control_WriteIdle_Count_For_threadId(threadId, concurrenctthreadId, 0);
-                obj->dyn_CLASS_get_ptr_ClusterAccess_App(threadId)->dyn_CLASS_get_ptr_ClusterAccess_App_Control(threadId)->stat_REG_set_Item_On_list_Of_ClusterAccess_Framework_App_Control_WriteWait_Count_For_threadId(threadId, concurrenctthreadId, obj->dyn_CLASS_get_ptr_ClusterAccess_App(threadId)->dyn_CLASS_get_ptr_ClusterAccess_App_Control(threadId)->dyn_REG_get_Item_On_ClusterAccess_Framework_App_Control_list_Of_WriteWait_Count_For_threadId(threadId, concurrenctthreadId) + 1);
+                obj->dyn_CLASS_get_ptr_ClusterAccess_App(threadId)->dyn_CLASS_get_ptr_ClusterAccess_App_Control(threadId)->dyn_REG_set_Item_On_list_Of_ClusterAccess_Framework_App_Control_WriteActive_Count_For_threadId(threadId, concurrenctThreadID, 0);
+                obj->dyn_CLASS_get_ptr_ClusterAccess_App(threadId)->dyn_CLASS_get_ptr_ClusterAccess_App_Control(threadId)->dyn_REG_set_Item_On_list_Of_ClusterAccess_Framework_App_Control_WriteIdle_Count_For_threadId(threadId, concurrenctThreadID, 0);
+                obj->dyn_CLASS_get_ptr_ClusterAccess_App(threadId)->dyn_CLASS_get_ptr_ClusterAccess_App_Control(threadId)->dyn_REG_set_Item_On_list_Of_ClusterAccess_Framework_App_Control_WriteWait_Count_For_threadId(threadId, concurrenctThreadID, obj->dyn_CLASS_get_ptr_ClusterAccess_App(threadId)->dyn_CLASS_get_ptr_ClusterAccess_App_Control(threadId)->dyn_REG_get_Item_On_ClusterAccess_Framework_App_Control_list_Of_WriteWait_Count_For_threadId(threadId,concurrenctThreadID) + 1);
             }
-            else if (obj->dyn_CLASS_get_ptr_ClusterAccess_App(threadId)->dyn_CLASS_get_ptr_ClusterAccess_App_Control(threadId)->dyn_REG_get_ptr_ClusterAccess_Framework_App_Control_list_Of_2ibt_FLAG_WriteState(threadId, concurrenctthreadId) == obj->dyn_CLASS_get_ptr_ClusterAccess_Global(threadId)->dyn_REG_get_ptr_CONST_ClusterAccess_2bitFLAG_WRITE(threadId))
+            else if (obj->dyn_CLASS_get_ptr_ClusterAccess_App(threadId)->dyn_CLASS_get_ptr_ClusterAccess_App_Control(threadId)->dyn_REG_get_ptr_ClusterAccess_Framework_App_Control_list_Of_2ibt_FLAG_WriteState(threadId, concurrenctThreadID) == obj->dyn_CLASS_get_ptr_ClusterAccess_Global(threadId)->dyn_REG_get_ptr_CONST_ClusterAccess_2bitFLAG_WRITE(threadId))
             {
-                obj->dyn_CLASS_get_ptr_ClusterAccess_App(threadId)->dyn_CLASS_get_ptr_ClusterAccess_App_Control(threadId)->dyn_REG_set_Item_On_list_Of_ClusterAccess_Framework_App_Control_WriteActive_Count_For_threadId(threadId, concurrenctthreadId, obj->dyn_CLASS_get_ptr_ClusterAccess_App(threadId)->dyn_CLASS_get_ptr_ClusterAccess_App_Control(threadId)->dyn_REG_get_Item_On_ClusterAccess_Framework_App_Control_list_Of_WriteActive_Count_For_threadId(threadId, concurrenctthreadId) + 1);
-                obj->dyn_CLASS_get_ptr_ClusterAccess_App(threadId)->dyn_CLASS_get_ptr_ClusterAccess_App_Control(threadId)->stat_REG_set_Item_On_list_Of_ClusterAccess_Framework_App_Control_WriteIdle_Count_For_threadId(threadId, concurrenctthreadId, 0);
-                obj->dyn_CLASS_get_ptr_ClusterAccess_App(threadId)->dyn_CLASS_get_ptr_ClusterAccess_App_Control(threadId)->stat_REG_set_Item_On_list_Of_ClusterAccess_Framework_App_Control_WriteWait_Count_For_threadId(threadId, concurrenctthreadId, 0);
+                obj->dyn_CLASS_get_ptr_ClusterAccess_App(threadId)->dyn_CLASS_get_ptr_ClusterAccess_App_Control(threadId)->dyn_REG_set_Item_On_list_Of_ClusterAccess_Framework_App_Control_WriteActive_Count_For_threadId(threadId, concurrenctThreadID, obj->dyn_CLASS_get_ptr_ClusterAccess_App(threadId)->dyn_CLASS_get_ptr_ClusterAccess_App_Control(threadId)->dyn_REG_get_Item_On_ClusterAccess_Framework_App_Control_list_Of_WriteActive_Count_For_threadId(threadId, concurrenctThreadID) + 1);
+                obj->dyn_CLASS_get_ptr_ClusterAccess_App(threadId)->dyn_CLASS_get_ptr_ClusterAccess_App_Control(threadId)->dyn_REG_set_Item_On_list_Of_ClusterAccess_Framework_App_Control_WriteIdle_Count_For_threadId(threadId, concurrenctThreadID, 0);
+                obj->dyn_CLASS_get_ptr_ClusterAccess_App(threadId)->dyn_CLASS_get_ptr_ClusterAccess_App_Control(threadId)->dyn_REG_set_Item_On_list_Of_ClusterAccess_Framework_App_Control_WriteWait_Count_For_threadId(threadId, concurrenctThreadID, 0);
             }
         }
-        std::cout << "thread " << std::to_string(threadId) << " :: exiting LIB :: wq : ClusterAccess_Framework_App_Control : dyn_APP_FUNCT_ClusterAccess_Framework_App_Control_writeQue_Update(threadId)." << std::endl;
+        std::cout << "thread " << std::to_string(threadId) << " :: exiting LIB :: writeQue : ClusterAccess_Framework_App_Control : dyn_APP_FUNCT_ClusterAccess_Framework_App_Control_Update(threadId)." << std::endl;
     }
     void wq::ClusterAccess_Framework_App_Control::dyn_REG_boot1_DEFINE_ClusterAccess_Framework_App_Control(uint8_t threadId, ClusterAccess_Framework* obj) {
         std::cout << "thread " << std::to_string(threadId) << " :: entered LIB :: wq : ClusterAccess_Framework_App_Control : dyn_REG_boot1_DEFINE_ClusterAccess_Framework_App_Control(threadId)." << std::endl;
@@ -234,81 +234,81 @@
         return *stat_REG_get_ptr_ClusterAccess_Framework_App_Control_writeCycle_Try_WriteStartthreadId_Index(threadId);
     }
     uint8_t wq::ClusterAccess_Framework_App_Control::dyn_REG_get_FLAG_ClusterAccess_Framework_App_Control_writeCycle_Try_WriteEndthreadId_Index(uint8_t threadId) {
-        std::cout << "thread " << std::to_string(threadId) << " :: <= bool : dyn_REG_get_FLAG_ClusterAccess_Framework_App_Control_writeCycle_Try_WriteEndthreadId_Index(threadId)." << std::endl;
+        std::cout << "thread " << std::to_string(threadId) << " :: <= uint8_t : dyn_REG_get_FLAG_ClusterAccess_Framework_App_Control_writeCycle_Try_WriteEndthreadId_Index(threadId)." << std::endl;
         return *stat_REG_get_ptr_ClusterAccess_Framework_App_Control_writeCycle_Try_WriteEndthreadId_Index(threadId);
     }
     std::array<bool, 2> wq::ClusterAccess_Framework_App_Control::dyn_REG_get_ptr_ClusterAccess_Framework_App_Control_list_Of_2ibt_FLAG_WriteState(uint8_t threadId, uint8_t concurrentthreadId) {
         auto temp = stat_REG_get_ptr_Array_Of_ClusterAccess_Framework_App_Control_3STATE_FLAG_WriteState(threadId)->begin();
         std::advance(temp, concurrentthreadId);
-        std::cout << "thread " << std::to_string(threadId) << " :: <= bool : dyn_REG_get_ptr_ClusterAccess_Framework_App_Control_list_Of_2ibt_FLAG_WriteState(threadId)." << std::endl;
+        std::cout << "thread " << std::to_string(threadId) << " :: <= std::array<bool, 2> : dyn_REG_get_ptr_ClusterAccess_Framework_App_Control_list_Of_2ibt_FLAG_WriteState(threadId)." << std::endl;
         return *temp;
     }
     unsigned long long wq::ClusterAccess_Framework_App_Control::dyn_REG_get_Item_On_ClusterAccess_Framework_App_Control_list_Of_WriteActive_Count_For_threadId(uint8_t threadId, uint8_t concurrentthreadId) {
         auto temp = stat_REG_get_ptr_list_Of_ClusterAccess_Framework_App_Control_WriteActive_Count_For_threadId(threadId)->begin();
         std::advance(temp, concurrentthreadId);
-        std::cout << "thread " << std::to_string(threadId) << " :: <= bool : dyn_REG_get_Item_On_ClusterAccess_Framework_App_Control_list_Of_WriteActive_Count_For_threadId(threadId)." << std::endl;
+        std::cout << "thread " << std::to_string(threadId) << " :: <= unsigned long long : dyn_REG_get_Item_On_ClusterAccess_Framework_App_Control_list_Of_WriteActive_Count_For_threadId(threadId)." << std::endl;
         return *temp;
     }
     unsigned long long wq::ClusterAccess_Framework_App_Control::dyn_REG_get_Item_On_ClusterAccess_Framework_App_Control_list_Of_WriteIdle_Count_For_threadId(uint8_t threadId, uint8_t concurrentthreadId) {
         auto temp = stat_REG_get_ptr_list_Of_ClusterAccess_Framework_App_Control_WriteIdle_Count_For_threadId(threadId)->begin();
         std::advance(temp, concurrentthreadId);
-        std::cout << "thread " << std::to_string(threadId) << " :: <= bool : dyn_REG_get_Item_On_ClusterAccess_Framework_App_Control_list_Of_WriteIdle_Count_For_threadId(threadId)." << std::endl;
+        std::cout << "thread " << std::to_string(threadId) << " :: <= unsigned long long : dyn_REG_get_Item_On_ClusterAccess_Framework_App_Control_list_Of_WriteIdle_Count_For_threadId(threadId)." << std::endl;
         return *temp;
     }
     unsigned long long wq::ClusterAccess_Framework_App_Control::dyn_REG_get_Item_On_ClusterAccess_Framework_App_Control_list_Of_WriteWait_Count_For_threadId(uint8_t threadId, uint8_t concurrentthreadId) {
         auto temp = stat_REG_get_ptr_list_Of_ClusterAccess_Framework_App_Control_WriteWait_Count_For_threadId(threadId)->begin();
         std::advance(temp, concurrentthreadId);
-        std::cout << "thread " << std::to_string(threadId) << " :: <= bool : dyn_REG_get_Item_On_ClusterAccess_Framework_App_Control_list_Of_WriteWait_Count_For_threadId(threadId)." << std::endl;
+        std::cout << "thread " << std::to_string(threadId) << " :: <= unsigned long long : dyn_REG_get_Item_On_ClusterAccess_Framework_App_Control_list_Of_WriteWait_Count_For_threadId(threadId)." << std::endl;
         return *temp;
     }
     uint8_t wq::ClusterAccess_Framework_App_Control::dyn_REG_get_Item_On_QUE_ClusterAccess_Framework_App_Control_List_Of_ThreadToWrite(uint8_t threadId, uint8_t slotID) {
         auto temp = stat_REG_get_ptr_QUE_ClusterAccess_Framework_App_Control_List_Of_ThreadToWrite(threadId)->begin();
         std::advance(temp, slotID);
-        std::cout << "thread " << std::to_string(threadId) << " :: <= bool : dyn_REG_get_Item_On_QUE_ClusterAccess_Framework_App_Control_List_Of_ThreadToWrite(threadId)." << std::endl;
+        std::cout << "thread " << std::to_string(threadId) << " :: <= uint8_t : dyn_REG_get_Item_On_QUE_ClusterAccess_Framework_App_Control_List_Of_ThreadToWrite(threadId)." << std::endl;
         return *temp;
     }
     void wq::ClusterAccess_Framework_App_Control::dyn_REG_set_FLAG_ClusterAccess_Framework_App_Control_isWriteStartThreadRELASE_ONE(uint8_t threadId, bool FLAGState) {
         std::cout << "thread " << std::to_string(threadId) << " :: => bool : dyn_REG_set_FLAG_ClusterAccess_Framework_App_Control_isWriteStartThreadRELASE_ONE(threadId)." << std::endl;
-        stat_REG_set_FLAG_ClusterAccess_Framework_App_Control_isWriteStartThreadRELASE_ONE(threadId,FLAGState);
+        stat_REG_set_FLAG_ClusterAccess_Framework_App_Control_isWriteStartThreadRELASE_ONE(threadId, FLAGState);
     }
     void wq::ClusterAccess_Framework_App_Control::dyn_REG_set_FLAG_ClusterAccess_Framework_App_Control_isWriteStartThreadRELASE_REMAINING(uint8_t threadId, bool FLAGState) {
         std::cout << "thread " << std::to_string(threadId) << " :: => bool : dyn_REG_set_FLAG_ClusterAccess_Framework_App_Control_isWriteStartThreadRELASE_REMAINING(threadId)." << std::endl;
-        stat_REG_set_FLAG_ClusterAccess_Framework_App_Control_isWriteStartThreadRELASE_REMAINING(threadId,FLAGState);
+        stat_REG_set_FLAG_ClusterAccess_Framework_App_Control_isWriteStartThreadRELASE_REMAINING(threadId, FLAGState);
     }
     void wq::ClusterAccess_Framework_App_Control::dyn_REG_set_FLAG_ClusterAccess_Framework_App_Control_isWriteEndThreadRELASE_ONE(uint8_t threadId, bool FLAGState) {
         std::cout << "thread " << std::to_string(threadId) << " :: => bool : dyn_REG_set_FLAG_ClusterAccess_Framework_App_Control_isWriteEndThreadRELASE_ONE(threadId)." << std::endl;
-        stat_REG_set_FLAG_ClusterAccess_Framework_App_Control_isWriteEndThreadRELASE_ONE(threadId,FLAGState);
+        stat_REG_set_FLAG_ClusterAccess_Framework_App_Control_isWriteEndThreadRELASE_ONE(threadId, FLAGState);
     }
     void wq::ClusterAccess_Framework_App_Control::dyn_REG_set_FLAG_ClusterAccess_Framework_App_Control_isWriteEndThreadRELASE_REMAINING(uint8_t threadId, bool FLAGState) {
         std::cout << "thread " << std::to_string(threadId) << " :: => bool : dyn_REG_set_FLAG_ClusterAccess_Framework_App_Control_isWriteEndThreadRELASE_REMAINING(threadId)." << std::endl;
-        stat_REG_set_FLAG_ClusterAccess_Framework_App_Control_isWriteEndThreadRELASE_REMAINING(threadId,FLAGState);
+        stat_REG_set_FLAG_ClusterAccess_Framework_App_Control_isWriteEndThreadRELASE_REMAINING(threadId, FLAGState);
     }
     void wq::ClusterAccess_Framework_App_Control::dyn_REG_set_Item_On_list_Of_ClusterAccess_Framework_App_Control_2ibt_FLAG_WriteState(uint8_t threadId, uint8_t concurrentthreadId, std::array<bool, 2> new2bitState) {
-        std::cout << "thread " << std::to_string(threadId) << " :: => bool : dyn_REG_set_Item_On_list_Of_ClusterAccess_Framework_App_Control_2ibt_FLAG_WriteState(threadId)." << std::endl;
-        stat_REG_set_Item_On_Of_ClusterAccess_Framework_App_Control_3STATE_FLAG_WriteState(threadId,concurrentthreadId, new2bitState);
+        std::cout << "thread " << std::to_string(threadId) << " :: => std::array<bool, 2> : dyn_REG_set_Item_On_list_Of_ClusterAccess_Framework_App_Control_2ibt_FLAG_WriteState(threadId)." << std::endl;
+        stat_REG_set_Item_On_Of_ClusterAccess_Framework_App_Control_3STATE_FLAG_WriteState(threadId, concurrentthreadId, new2bitState);
     }
     void wq::ClusterAccess_Framework_App_Control::dyn_REG_set_Item_On_list_Of_ClusterAccess_Framework_App_Control_WriteActive_Count_For_threadId(uint8_t threadId, uint8_t concurrentthreadId, unsigned long long newCount) {
-        std::cout << "thread " << std::to_string(threadId) << " :: => bool : dyn_REG_set_Item_On_list_Of_ClusterAccess_Framework_App_Control_WriteActive_Count_For_threadId(threadId)." << std::endl;
+        std::cout << "thread " << std::to_string(threadId) << " :: => unsigned long long : dyn_REG_set_Item_On_list_Of_ClusterAccess_Framework_App_Control_WriteActive_Count_For_threadId(threadId)." << std::endl;
         stat_REG_set_Item_On_list_Of_ClusterAccess_Framework_App_Control_WriteACTIVE_Count_For_threadId(threadId,concurrentthreadId, newCount);
     }
     void wq::ClusterAccess_Framework_App_Control::dyn_REG_set_Item_On_list_Of_ClusterAccess_Framework_App_Control_WriteIdle_Count_For_threadId(uint8_t threadId, uint8_t concurrentthreadId, unsigned long long newCount) {
-        std::cout << "thread " << std::to_string(threadId) << " :: => bool : dyn_REG_set_Item_On_list_Of_ClusterAccess_Framework_App_Control_WriteIdle_Count_For_threadId(threadId)." << std::endl;
+        std::cout << "thread " << std::to_string(threadId) << " :: => unsigned long long : dyn_REG_set_Item_On_list_Of_ClusterAccess_Framework_App_Control_WriteIdle_Count_For_threadId(threadId)." << std::endl;
         stat_REG_set_Item_On_list_Of_ClusterAccess_Framework_App_Control_WriteIdle_Count_For_threadId(threadId,concurrentthreadId, newCount);
     }
     void wq::ClusterAccess_Framework_App_Control::dyn_REG_set_Item_On_list_Of_ClusterAccess_Framework_App_Control_WriteWait_Count_For_threadId(uint8_t threadId, uint8_t concurrentthreadId, unsigned long long newCount){
-        std::cout << "thread " << std::to_string(threadId) << " :: => bool : dyn_REG_set_Item_On_list_Of_ClusterAccess_Framework_App_Control_WriteWait_Count_For_threadId(threadId)." << std::endl;
+        std::cout << "thread " << std::to_string(threadId) << " :: => unsigned long long : dyn_REG_set_Item_On_list_Of_ClusterAccess_Framework_App_Control_WriteWait_Count_For_threadId(threadId)." << std::endl;
         stat_REG_set_Item_On_list_Of_ClusterAccess_Framework_App_Control_WriteWait_Count_For_threadId(threadId,concurrentthreadId, newCount);
     }
     void wq::ClusterAccess_Framework_App_Control::dyn_REG_set_Item_On_QUE_ClusterAccess_Framework_App_Control_List_Of_ThreadToWrite(uint8_t threadId, uint8_t slotID, uint8_t newID){
-        std::cout << "thread " << std::to_string(threadId) << " :: => bool : dyn_REG_set_Item_On_QUE_ClusterAccess_Framework_App_Control_List_Of_ThreadToWrite(threadId)." << std::endl;
+        std::cout << "thread " << std::to_string(threadId) << " :: => uint8_t : dyn_REG_set_Item_On_QUE_ClusterAccess_Framework_App_Control_List_Of_ThreadToWrite(threadId)." << std::endl;
         stat_REG_set_Item_On_QUE_ClusterAccess_Framework_App_Control_List_Of_ThreadToWrite(threadId,slotID, newID);
     }
     void wq::ClusterAccess_Framework_App_Control::dyn_REG_set_FLAG_ClusterAccess_Framework_App_Control_writeCycle_Try_WriteStartthreadId_Index(uint8_t threadId, uint8_t newValue) {
-        std::cout << "thread " << std::to_string(threadId) << " :: => bool : dyn_REG_set_FLAG_ClusterAccess_Framework_App_Control_writeCycle_Try_WriteStartthreadId_Index(threadId)." << std::endl;
+        std::cout << "thread " << std::to_string(threadId) << " :: => uint8_t : dyn_REG_set_FLAG_ClusterAccess_Framework_App_Control_writeCycle_Try_WriteStartthreadId_Index(threadId)." << std::endl;
         stat_REG_get_ptr_ClusterAccess_Framework_App_Control_writeCycle_Try_WriteStartthreadId_Index(newValue);
     }
     void wq::ClusterAccess_Framework_App_Control::dyn_REG_set_FLAG_ClusterAccess_Framework_App_Control_writeCycle_Try_WriteEndthreadId_Index(uint8_t threadId, uint8_t newValue) {
-        std::cout << "thread " << std::to_string(threadId) << " :: => bool : dyn_REG_set_FLAG_ClusterAccess_Framework_App_Control_writeCycle_Try_WriteEndthreadId_Index(threadId)." << std::endl;
+        std::cout << "thread " << std::to_string(threadId) << " :: => uint8_t : dyn_REG_set_FLAG_ClusterAccess_Framework_App_Control_writeCycle_Try_WriteEndthreadId_Index(threadId)." << std::endl;
        stat_REG_get_ptr_ClusterAccess_Framework_App_Control_writeCycle_Try_WriteEndthreadId_Index(newValue);
     }
 // private.
@@ -491,7 +491,7 @@
     }
     void wq::ClusterAccess_Framework_App_Control::stat_REG_boot3_INITIALISE_ptr_ClusterAccess_Framework_App_Control_WriteACTIVE_Count_For_threadId(uint8_t threadId, ClusterAccess_Framework* obj) {
         std::cout << "thread " << std::to_string(threadId) << " :: entered LIB :: wq : ClusterAccess_Framework_App_Control : stat_REG_boot3_INITIALISE_ptr_ClusterAccess_Framework_App_Control_WriteACTIVE_Count_For_threadId(threadId)." << std::endl;
-        stat_REG_get_ptr_list_Of_ClusterAccess_Framework_App_Control_WriteActive_Count_For_threadId(threadId)->resize( static_cast<int>(obj->dyn_CLASS_get_ptr_ClusterAccess_Global(threadId)->dyn_REG_get_ClusterAccess_number_Of_Implemented_Threads(threadId)));
+        stat_REG_get_ptr_list_Of_ClusterAccess_Framework_App_Control_WriteActive_Count_For_threadId(threadId)->resize( static_cast<unsigned long long>(obj->dyn_CLASS_get_ptr_ClusterAccess_Global(threadId)->dyn_REG_get_ClusterAccess_number_Of_Implemented_Threads(threadId)));
         for (int threadId = 0; threadId < stat_REG_get_ptr_list_Of_ClusterAccess_Framework_App_Control_WriteActive_Count_For_threadId(threadId)->size(); threadId++) {
             auto temp = stat_REG_get_ptr_list_Of_ClusterAccess_Framework_App_Control_WriteActive_Count_For_threadId(threadId)->begin();
             std::advance(temp, threadId);
@@ -501,7 +501,7 @@
     }
     void wq::ClusterAccess_Framework_App_Control::stat_REG_boot3_INITIALISE_ptr_ClusterAccess_Framework_App_Control_WriteIDLE_Count_For_threadId(uint8_t threadId, ClusterAccess_Framework* obj) {
         std::cout << "thread " << std::to_string(threadId) << " :: entered LIB :: wq : ClusterAccess_Framework_App_Control : stat_REG_boot3_INITIALISE_ptr_ClusterAccess_Framework_App_Control_WriteIDLE_Count_For_threadId(threadId)." << std::endl;
-        stat_REG_get_ptr_list_Of_ClusterAccess_Framework_App_Control_WriteIdle_Count_For_threadId(threadId)->resize( static_cast<int>(obj->dyn_CLASS_get_ptr_ClusterAccess_Global(threadId)->dyn_REG_get_ClusterAccess_number_Of_Implemented_Threads(threadId)));
+        stat_REG_get_ptr_list_Of_ClusterAccess_Framework_App_Control_WriteIdle_Count_For_threadId(threadId)->resize( static_cast<unsigned long long>(obj->dyn_CLASS_get_ptr_ClusterAccess_Global(threadId)->dyn_REG_get_ClusterAccess_number_Of_Implemented_Threads(threadId)));
         for (int threadId = 0; threadId < stat_REG_get_ptr_list_Of_ClusterAccess_Framework_App_Control_WriteIdle_Count_For_threadId(threadId)->size(); threadId++) {
             auto temp = stat_REG_get_ptr_list_Of_ClusterAccess_Framework_App_Control_WriteIdle_Count_For_threadId(threadId)->begin();
             std::advance(temp, threadId);
@@ -511,7 +511,7 @@
     }
     void wq::ClusterAccess_Framework_App_Control::stat_REG_boot3_INITIALISE_ptr_ClusterAccess_Framework_App_Control_WriteWAIT_Count_For_threadIdd(uint8_t threadId, ClusterAccess_Framework* obj) {
         std::cout << "thread " << std::to_string(threadId) << " :: entered LIB :: wq : ClusterAccess_Framework_App_Control : stat_REG_boot3_INITIALISE_ptr_ClusterAccess_Framework_App_Control_WriteWAIT_Count_For_threadIdd(threadId)." << std::endl;
-        stat_REG_get_ptr_list_Of_ClusterAccess_Framework_App_Control_WriteWait_Count_For_threadId(threadId)->resize( static_cast<int>(obj->dyn_CLASS_get_ptr_ClusterAccess_Global(threadId)->dyn_REG_get_ClusterAccess_number_Of_Implemented_Threads(threadId)));
+        stat_REG_get_ptr_list_Of_ClusterAccess_Framework_App_Control_WriteWait_Count_For_threadId(threadId)->resize( static_cast<unsigned long long>(obj->dyn_CLASS_get_ptr_ClusterAccess_Global(threadId)->dyn_REG_get_ClusterAccess_number_Of_Implemented_Threads(threadId)));
         for (int threadId = 0; threadId < stat_REG_get_ptr_list_Of_ClusterAccess_Framework_App_Control_WriteWait_Count_For_threadId(threadId)->size(); threadId++) {
             auto temp = stat_REG_get_ptr_list_Of_ClusterAccess_Framework_App_Control_WriteWait_Count_For_threadId(threadId)->begin();
             std::advance(temp, threadId);
@@ -540,58 +540,58 @@
         std::cout << "thread " << std::to_string(threadId) << " :: exiting LIB :: wq : ClusterAccess_Framework_App_Control : stat_REG_boot3_INITIALISE_ptr_ClusterAccess_Framework_App_Control_writeCycle_Try_WriteEndthreadId_Index(threadId)." << std::endl;
     }
     bool wq::ClusterAccess_Framework_App_Control::stat_REG_get_FLAG_ClusterAccess_Framework_App_Control_isWriteStartThreadRELASE_ONE(uint8_t threadId) {
-        std::cout << "thread " << std::to_string(threadId) << " :: => bool : stat_REG_get_FLAG_ClusterAccess_Framework_App_Control_isWriteStartThreadRELASE_ONE(threadId)." << std::endl;
+        std::cout << "thread " << std::to_string(threadId) << " :: <= bool : stat_REG_get_FLAG_ClusterAccess_Framework_App_Control_isWriteStartThreadRELASE_ONE(threadId)." << std::endl;
         return _stat_REG_FLAG_ClusterAccess_FLAG_Control_isWriteStartThreadRELASE_ONE;
     }
     bool wq::ClusterAccess_Framework_App_Control::stat_REG_get_FLAG_ClusterAccess_Framework_App_Control_isWriteStartThreadRELASE_REMAINING(uint8_t threadId) {
-        std::cout << "thread " << std::to_string(threadId) << " :: => bool : stat_REG_get_FLAG_ClusterAccess_Framework_App_Control_isWriteStartThreadRELASE_REMAINING(threadId)." << std::endl;
+        std::cout << "thread " << std::to_string(threadId) << " :: <= bool : stat_REG_get_FLAG_ClusterAccess_Framework_App_Control_isWriteStartThreadRELASE_REMAINING(threadId)." << std::endl;
         return _stat_REG_FLAG_ClusterAccess_FLAG_Control_isWriteStartThreadRELASE_REMAINING;
     }
     bool wq::ClusterAccess_Framework_App_Control::stat_REG_get_FLAG_ClusterAccess_Framework_App_Control_isWriteEndThreadRELASE_ONE(uint8_t threadId) {
-        std::cout << "thread " << std::to_string(threadId) << " :: => bool : stat_REG_get_FLAG_ClusterAccess_Framework_App_Control_isWriteEndThreadRELASE_ONE(threadId)." << std::endl;
+        std::cout << "thread " << std::to_string(threadId) << " :: <= bool : stat_REG_get_FLAG_ClusterAccess_Framework_App_Control_isWriteEndThreadRELASE_ONE(threadId)." << std::endl;
         return _stat_REG_FLAG_ClusterAccess_FLAG_Control_isWriteEndThreadRELASE_ONE;
     }
     bool wq::ClusterAccess_Framework_App_Control::stat_REG_get_FLAG_ClusterAccess_Framework_App_Control_isWriteEndThreadRELASE_REMAINING(uint8_t threadId) {
-        std::cout << "thread " << std::to_string(threadId) << " :: => bool : stat_REG_get_FLAG_ClusterAccess_Framework_App_Control_isWriteEndThreadRELASE_REMAINING(threadId)." << std::endl;
+        std::cout << "thread " << std::to_string(threadId) << " :: <= bool : stat_REG_get_FLAG_ClusterAccess_Framework_App_Control_isWriteEndThreadRELASE_REMAINING(threadId)." << std::endl;
         return _stat_REG_FLAG_ClusterAccess_FLAG_Control_isWriteEndThreadRELASE_REMAINING;
     }
     std::array<std::array<bool, 2>, 3>* wq::ClusterAccess_Framework_App_Control::stat_REG_get_ptr_Array_Of_ClusterAccess_Framework_App_Control_3STATE_FLAG_WriteState(uint8_t threadId) {
-        std::cout << "thread " << std::to_string(threadId) << " :: => bool : stat_REG_get_ptr_Array_Of_ClusterAccess_Framework_App_Control_3STATE_FLAG_WriteState(threadId)." << std::endl;
+        std::cout << "thread " << std::to_string(threadId) << " :: <= std::array<std::array<bool, 2>, 3>* : stat_REG_get_ptr_Array_Of_ClusterAccess_Framework_App_Control_3STATE_FLAG_WriteState(threadId)." << std::endl;
         return _stat_REG_CONST_ClusterAccess_Framework_App_Control_2bitFLAG_STATE;
     }
     std::list<unsigned long long>* wq::ClusterAccess_Framework_App_Control::stat_REG_get_ptr_list_Of_ClusterAccess_Framework_App_Control_WriteActive_Count_For_threadId(uint8_t threadId) {
-        std::cout << "thread " << std::to_string(threadId) << " :: => bool : stat_REG_get_ptr_list_Of_ClusterAccess_Framework_App_Control_WriteActive_Count_For_threadId(threadId)." << std::endl;
+        std::cout << "thread " << std::to_string(threadId) << " :: <= std::list<unsigned long long>* : stat_REG_get_ptr_list_Of_ClusterAccess_Framework_App_Control_WriteActive_Count_For_threadId(threadId)." << std::endl;
         return _stat_REG_LIST_Of_ClusterAccess_Framework_App_Control_WriteACTIVE_Count_For_threadId;
     }
     std::list<unsigned long long>* wq::ClusterAccess_Framework_App_Control::stat_REG_get_ptr_list_Of_ClusterAccess_Framework_App_Control_WriteIdle_Count_For_threadId(uint8_t threadId) {
-        std::cout << "thread " << std::to_string(threadId) << " :: => bool : stat_REG_get_ptr_list_Of_ClusterAccess_Framework_App_Control_WriteIdle_Count_For_threadId(threadId)." << std::endl;
+        std::cout << "thread " << std::to_string(threadId) << " :: <= std::list<unsigned long long>* : stat_REG_get_ptr_list_Of_ClusterAccess_Framework_App_Control_WriteIdle_Count_For_threadId(threadId)." << std::endl;
         return _stat_REG_LIST_Of_ClusterAccess_Framework_App_Control_WriteIDLE_Count_For_threadId;
     }
     std::list<unsigned long long>* wq::ClusterAccess_Framework_App_Control::stat_REG_get_ptr_list_Of_ClusterAccess_Framework_App_Control_WriteWait_Count_For_threadId(uint8_t threadId) {
-        std::cout << "thread " << std::to_string(threadId) << " :: => bool : stat_REG_get_ptr_list_Of_ClusterAccess_Framework_App_Control_WriteWait_Count_For_threadId(threadId)." << std::endl;
+        std::cout << "thread " << std::to_string(threadId) << " :: <= std::list<unsigned long long>* : stat_REG_get_ptr_list_Of_ClusterAccess_Framework_App_Control_WriteWait_Count_For_threadId(threadId)." << std::endl;
         return _stat_REG_LIST_Of_ClusterAccess_Framework_App_Control_WriteWAIT_Count_For_threadId;
     }
     std::list<uint8_t>* wq::ClusterAccess_Framework_App_Control::stat_REG_get_ptr_QUE_ClusterAccess_Framework_App_Control_List_Of_ThreadToWrite(uint8_t threadId) {
-        std::cout << "thread " << std::to_string(threadId) << " :: => bool : stat_REG_get_ptr_QUE_ClusterAccess_Framework_App_Control_List_Of_ThreadToWrite(threadId)." << std::endl;
+        std::cout << "thread " << std::to_string(threadId) << " :: <= std::list<uint8_t>* : stat_REG_get_ptr_QUE_ClusterAccess_Framework_App_Control_List_Of_ThreadToWrite(threadId)." << std::endl;
         return _stat_REG_QUE_Of_ClusterAccess_Framework_App_Control_threadId_To_WRITE;
     }
     uint8_t* wq::ClusterAccess_Framework_App_Control::stat_REG_get_ptr_ClusterAccess_Framework_App_Control_writeCycle_Try_WriteStartthreadId_Index(uint8_t threadId) {
-        std::cout << "thread " << std::to_string(threadId) << " :: => bool : stat_REG_get_ptr_ClusterAccess_Framework_App_Control_writeCycle_Try_WriteStartthreadId_Index(threadId)." << std::endl;
+        std::cout << "thread " << std::to_string(threadId) << " :: <= uint8_t* : stat_REG_get_ptr_ClusterAccess_Framework_App_Control_writeCycle_Try_WriteStartthreadId_Index(threadId)." << std::endl;
         return _stat_REG_ptr_ClusterAccess_Framework_App_Control_writeCycle_Try_WriteStartthreadId_Index;
     }
     uint8_t* wq::ClusterAccess_Framework_App_Control::stat_REG_get_ptr_ClusterAccess_Framework_App_Control_writeCycle_Try_WriteEndthreadId_Index(uint8_t threadId) {
-        std::cout << "thread " << std::to_string(threadId) << " :: => bool : stat_REG_get_ptr_ClusterAccess_Framework_App_Control_writeCycle_Try_WriteEndthreadId_Index(threadId)." << std::endl;
+        std::cout << "thread " << std::to_string(threadId) << " :: <= uint8_t* : stat_REG_get_ptr_ClusterAccess_Framework_App_Control_writeCycle_Try_WriteEndthreadId_Index(threadId)." << std::endl;
         return _stat_REG_ptr_ClusterAccess_Framework_App_Control_writeCycle_Try_WriteEndthreadId_Index;
     }
-    void wq::ClusterAccess_Framework_App_Control::stat_REG_set_FLAG_ClusterAccess_Framework_App_Control_isWriteStartThreadRELASE_ONE(uint8_t threadId,bool newFLAG) {
+    void wq::ClusterAccess_Framework_App_Control::stat_REG_set_FLAG_ClusterAccess_Framework_App_Control_isWriteStartThreadRELASE_ONE(uint8_t threadId, bool newFLAG) {
         std::cout << "thread " << std::to_string(threadId) << " :: => bool : stat_REG_set_FLAG_ClusterAccess_Framework_App_Control_isWriteStartThreadRELASE_ONE(threadId)." << std::endl;
         *_stat_REG_FLAG_ClusterAccess_FLAG_Control_isWriteStartThreadRELASE_ONE = newFLAG;
     }
-    void wq::ClusterAccess_Framework_App_Control::stat_REG_set_FLAG_ClusterAccess_Framework_App_Control_isWriteStartThreadRELASE_REMAINING(uint8_t threadId,bool newFLAG) {
+    void wq::ClusterAccess_Framework_App_Control::stat_REG_set_FLAG_ClusterAccess_Framework_App_Control_isWriteStartThreadRELASE_REMAINING(uint8_t threadId, bool newFLAG) {
         std::cout << "thread " << std::to_string(threadId) << " :: => bool : stat_REG_set_FLAG_ClusterAccess_Framework_App_Control_isWriteStartThreadRELASE_REMAINING(threadId)." << std::endl;
         *_stat_REG_FLAG_ClusterAccess_FLAG_Control_isWriteStartThreadRELASE_REMAINING = newFLAG;
     }
-    void wq::ClusterAccess_Framework_App_Control::stat_REG_set_FLAG_ClusterAccess_Framework_App_Control_isWriteEndThreadRELASE_ONE(uint8_t threadId,bool newFLAG) {
+    void wq::ClusterAccess_Framework_App_Control::stat_REG_set_FLAG_ClusterAccess_Framework_App_Control_isWriteEndThreadRELASE_ONE(uint8_t threadId, bool newFLAG) {
         std::cout << "thread " << std::to_string(threadId) << " :: => bool : stat_REG_set_FLAG_ClusterAccess_Framework_App_Control_isWriteEndThreadRELASE_ONE(threadId)." << std::endl;
         *_stat_REG_FLAG_ClusterAccess_FLAG_Control_isWriteEndThreadRELASE_ONE = newFLAG;
     }
@@ -630,7 +630,7 @@
         *temp = concurrentthreadId;
     }
     void wq::ClusterAccess_Framework_App_Control::stat_REG_get_ptr_ClusterAccess_Framework_App_Control_writeCycle_Try_WriteStartthreadId_Index(uint8_t threadId, uint8_t newValue) {
-        std::cout << "thread " << std::to_string(threadId) << " :: => uint8_t : stat_REG_get_ptr_ClusterAccess_Framework_App_Control_writeCycle_Try_WriteStartthreadId_Index(threadId)." << std::endl;
+        std::cout << "thread " << std::to_string(threadId) << " :: <= uint8_t : stat_REG_get_ptr_ClusterAccess_Framework_App_Control_writeCycle_Try_WriteStartthreadId_Index(threadId)." << std::endl;
         *_stat_REG_ptr_ClusterAccess_Framework_App_Control_writeCycle_Try_WriteStartthreadId_Index = newValue;
     }
     void wq::ClusterAccess_Framework_App_Control::stat_REG_get_ptr_ClusterAccess_Framework_App_Control_writeCycle_Try_WriteEndthreadId_Index(uint8_t threadId, uint8_t newValue) {

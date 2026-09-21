@@ -1,6 +1,6 @@
 #include "../include/CLIB_ThreadLogs.h"
 #include "../include/CLIB_ThreadLogs_Framework_Global.h"
-#include "../libs/CLIB_WriteQueForThreadsAt_DataCluster/include/ClusterAccess.h"
+#include "../libs/CLIB_WriteQueForThreadsAt_LoggingThread/include/LoggingThread.h"
 #include <array>
 #include <cstdint>
 #include <iostream>
@@ -8,9 +8,9 @@
 	static std::array<bool, 4>* _stat_REG_flag_CLIB_ThreadLogs_isMemberFunctionINSTANTIATED;
 	static const uint8_t* dataClusterId = new uint8_t(0);
 // public.
-	void* CLIB_ThreadLogs::CLIB_ThreadLogs::stat_App_FUNCT_CLIB_ThreadLogs_generate_Program(uint8_t threadId) {
+	void* CLIB_ThreadLogs::CLIB_ThreadLogs::stat_App_FUNCT_CLIB_ThreadLogs_generate_Program(uint8_t threadId, std::byte* MAX_NUMBER_OF_DATA_CLUSTERS, std::list<std::byte>* MAX_NUMBER_OF_THREADS_FOR_ACCESS_ARRAY) {
 		void* result = nullptr;
-		wq::ClusterAccess::CLIB_WriteEnableForThreadsAt_App_FUNCT_write_Start_DataClusterId_ThreadId(threadId, *dataClusterId, wq::ClusterAccess_Framework_Global::stat_APP_CONVERT_ClusterAccess_Msb_uint8_t_to_MsbByteArray(threadId, threadId));
+		writeQue::LoggingThread::CLIB_WriteEnableForThreadsAt_App_FUNCT_write_Start_DataClusterId_ThreadId(threadId, *dataClusterId, writeQue::LoggingThread_Framework_Global::stat_APP_CONVERT_LoggingThread_Msb_uint8_t_to_MsbByteArray(threadId, threadId));
 		std::cout << "thread " << std::to_string(threadId) << " :: entered LIB :: CLIB_ThreadLogs : CLIB_ThreadLogs : stat_App_FUNCT_CLIB_ThreadLogs_generate_Program(threadId)." << std::endl;
 		
 		std::cout << "thread " << std::to_string(threadId) << " :: started Architecture Framework CLASS - DECLARE DEFINE INITIALISE." << std::endl;
@@ -25,11 +25,10 @@
 		std::cout << "thread " << std::to_string(threadId) << " :: done CLIB_OpenEpiCentre_Global Meta-Data and Settings." << std::endl;
 
 		std::cout << "thread " << std::to_string(threadId) << " :: started Independent STRUCT(s) - DECLARE DEFINE INITIALISE, Registers - DECLARE SUBSTANTIATE INITIALISE." << std::endl;
-		stat_CLASS_get_ptr_CLIB_ThreadLogs_Framework(threadId)->dyn_CLASS_CLIB_ThreadLogs_create_Architecture(threadId);
-		std::cout << "thread " << std::to_string(threadId) << " :: done Independent STRUCT(s) - DECLARE DEFINE INITIALISE, Registers - DECLARE SUBSTANTIATE INITIALISE." << std::endl;
+				std::cout << "thread " << std::to_string(threadId) << " :: done Independent STRUCT(s) - DECLARE DEFINE INITIALISE, Registers - DECLARE SUBSTANTIATE INITIALISE." << std::endl;
 
 		std::cout << "thread " << std::to_string(threadId) << " :: started Architecture Application CLASS(s) - DECLARE DEFINE INITIALISE, Registers - DECLARE SUBSTANTIATE INITIALISE." << std::endl;
-		stat_CLASS_get_ptr_CLIB_ThreadLogs_Framework(threadId)->dyn_CLASS_CLIB_ThreadLogs_create_Architecture(threadId);
+		stat_CLASS_get_ptr_CLIB_ThreadLogs_Framework(threadId)->dyn_CLASS_CLIB_ThreadLogs_create_Architecture(threadId, MAX_NUMBER_OF_DATA_CLUSTERS, MAX_NUMBER_OF_THREADS_FOR_ACCESS_ARRAY);
 		std::cout << "thread " << std::to_string(threadId) << " :: started Registers - DEFINE" << std::endl;
 
 		std::cout << "thread " << std::to_string(threadId) << " :: done Registers - DEFINE." << std::endl;
@@ -65,12 +64,12 @@
 		std::cout << "thread " << std::to_string(threadId) << " :: `                 V                 '" << std::endl;
 		std::cout << "thread " << std::to_string(threadId) << " :: exiting LIB :: CLIB_ThreadLogs : CLIB_ThreadLogs : stat_App_FUNCT_CLIB_ThreadLogs_generate_Program(threadId)." << std::endl;
 		result = static_cast<void*>(stat_CLASS_get_ptr_CLIB_ThreadLogs_Framework(threadId));
-		wq::ClusterAccess::CLIB_WriteEnableForThreadsAt_App_FUNCT_write_End_DataClusterId_ThreadId(threadId, *dataClusterId, wq::ClusterAccess_Framework_Global::stat_APP_CONVERT_ClusterAccess_Msb_uint8_t_to_MsbByteArray(threadId, threadId));
+		writeQue::LoggingThread::CLIB_WriteEnableForThreadsAt_App_FUNCT_write_End_DataClusterId_ThreadId(threadId, *dataClusterId, writeQue::LoggingThread_Framework_Global::stat_APP_CONVERT_LoggingThread_Msb_uint8_t_to_MsbByteArray(threadId, threadId));
 		return result;
 	}
 	unsigned char* CLIB_ThreadLogs::CLIB_ThreadLogs::stat_App_FUNCT_CLIB_ThreadLogs_get_flag_isPGM_INSTANTIATED(uint8_t threadId) {
 		unsigned char* result = nullptr;
-		wq::ClusterAccess::CLIB_WriteEnableForThreadsAt_App_FUNCT_write_Start_DataClusterId_ThreadId(threadId, *dataClusterId, wq::ClusterAccess_Framework_Global::stat_APP_CONVERT_ClusterAccess_Msb_uint8_t_to_MsbByteArray(threadId, threadId));
+		writeQue::LoggingThread::CLIB_WriteEnableForThreadsAt_App_FUNCT_write_Start_DataClusterId_ThreadId(threadId, *dataClusterId, writeQue::LoggingThread_Framework_Global::stat_APP_CONVERT_LoggingThread_Msb_uint8_t_to_MsbByteArray(threadId, threadId));
 		std::cout << "thread " << std::to_string(threadId) << " :: entered LIB :: CLIB_ThreadLogs : CLIB_ThreadLogs : stat_App_FUNCT_CLIB_ThreadLogs_get_flag_isPGM_INSTANTIATED(threadId)." << std::endl;
 		bool* resultA = nullptr;
 		resultA = new bool(threadId);
@@ -84,11 +83,11 @@
 		}
 		result = CLIB_ThreadLogs_Framework_Global::stat_APP_CONVERT_CLIB_ThreadLogs_Framework_Global_MsbBoolean_To_MsbByteArray(threadId, *resultA);
 		std::cout << "thread " << std::to_string(threadId) << " ::  exiting LIB :: CLIB_ThreadLogs : CLIB_ThreadLogs : stat_App_FUNCT_CLIB_ThreadLogs_get_flag_isPGM_INSTANTIATED(threadId)." << std::endl;
-		wq::ClusterAccess::CLIB_WriteEnableForThreadsAt_App_FUNCT_write_End_DataClusterId_ThreadId(threadId, *dataClusterId, wq::ClusterAccess_Framework_Global::stat_APP_CONVERT_ClusterAccess_Msb_uint8_t_to_MsbByteArray(threadId, threadId));
+		writeQue::LoggingThread::CLIB_WriteEnableForThreadsAt_App_FUNCT_write_End_DataClusterId_ThreadId(threadId, *dataClusterId, writeQue::LoggingThread_Framework_Global::stat_APP_CONVERT_LoggingThread_Msb_uint8_t_to_MsbByteArray(threadId, threadId));
 		return result;
 	}
 	void CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(uint8_t threadId, std::string* stringForLogPrint) {
-		wq::ClusterAccess::CLIB_WriteEnableForThreadsAt_App_FUNCT_write_Start_DataClusterId_ThreadId(threadId, *dataClusterId, wq::ClusterAccess_Framework_Global::stat_APP_CONVERT_ClusterAccess_Msb_uint8_t_to_MsbByteArray(threadId, threadId));
+		writeQue::LoggingThread::CLIB_WriteEnableForThreadsAt_App_FUNCT_write_Start_DataClusterId_ThreadId(threadId, *dataClusterId, writeQue::LoggingThread_Framework_Global::stat_APP_CONVERT_LoggingThread_Msb_uint8_t_to_MsbByteArray(threadId, threadId));
 		std::cout << "thread " << std::to_string(threadId) << " :: exiting LIB :: CLIB_ThreadLogs : CLIB_ThreadLogs : stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId)." << std::endl;
 		if (!stat_REG_get_CLIB_ThreadLogs_array_Of_flag_isINSTANTIATED(threadId)->at(0)) {
 			stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, stringForLogPrint);
@@ -98,10 +97,10 @@
 			stat_REG_get_CLIB_ThreadLogs_array_Of_flag_isINSTANTIATED(threadId);
 		}
 		std::cout << "thread " << std::to_string(threadId) << " :: exiting LIB :: CLIB_ThreadLogs : CLIB_ThreadLogs : stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId)." << std::endl;
-		wq::ClusterAccess::CLIB_WriteEnableForThreadsAt_App_FUNCT_write_End_DataClusterId_ThreadId(threadId, *dataClusterId, wq::ClusterAccess_Framework_Global::stat_APP_CONVERT_ClusterAccess_Msb_uint8_t_to_MsbByteArray(threadId, threadId));
+		writeQue::LoggingThread::CLIB_WriteEnableForThreadsAt_App_FUNCT_write_End_DataClusterId_ThreadId(threadId, *dataClusterId, writeQue::LoggingThread_Framework_Global::stat_APP_CONVERT_LoggingThread_Msb_uint8_t_to_MsbByteArray(threadId, threadId));
 	}
 	void CLIB_ThreadLogs::CLIB_ThreadLogs::stat_App_FUNCT_CLIB_ThreadLogs_terminate_Program(uint8_t threadId) {
-		wq::ClusterAccess::CLIB_WriteEnableForThreadsAt_App_FUNCT_write_Start_DataClusterId_ThreadId(threadId, *dataClusterId, wq::ClusterAccess_Framework_Global::stat_APP_CONVERT_ClusterAccess_Msb_uint8_t_to_MsbByteArray(threadId, threadId));
+		writeQue::LoggingThread::CLIB_WriteEnableForThreadsAt_App_FUNCT_write_Start_DataClusterId_ThreadId(threadId, *dataClusterId, writeQue::LoggingThread_Framework_Global::stat_APP_CONVERT_LoggingThread_Msb_uint8_t_to_MsbByteArray(threadId, threadId));
 		std::cout << "thread " << std::to_string(threadId) << " :: exiting LIB :: CLIB_ThreadLogs : CLIB_ThreadLogs : stat_App_FUNCT_CLIB_ThreadLogs_terminate_Program(threadId)." << std::endl;
 		if (!stat_REG_get_CLIB_ThreadLogs_array_Of_flag_isINSTANTIATED(threadId)->at(0)) {
 			delete _stat_REG_CLIB_ThreadLogs_Framework;
@@ -111,7 +110,7 @@
 			stat_REG_get_CLIB_ThreadLogs_array_Of_flag_isINSTANTIATED(threadId)->at(3) = !stat_REG_get_CLIB_ThreadLogs_array_Of_flag_isINSTANTIATED(threadId)->at(2);
 		}
 		std::cout << "thread " << std::to_string(threadId) << " :: exiting LIB :: CLIB_ThreadLogs : CLIB_ThreadLogs : stat_App_FUNCT_CLIB_ThreadLogs_terminate_Program(threadId)." << std::endl;
-		wq::ClusterAccess::CLIB_WriteEnableForThreadsAt_App_FUNCT_write_End_DataClusterId_ThreadId(threadId, *dataClusterId, wq::ClusterAccess_Framework_Global::stat_APP_CONVERT_ClusterAccess_Msb_uint8_t_to_MsbByteArray(threadId, threadId));
+		writeQue::LoggingThread::CLIB_WriteEnableForThreadsAt_App_FUNCT_write_End_DataClusterId_ThreadId(threadId, *dataClusterId, writeQue::LoggingThread_Framework_Global::stat_APP_CONVERT_LoggingThread_Msb_uint8_t_to_MsbByteArray(threadId, threadId));
 	}
 // private.
 	void CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_Calc_IsAllINSTANTIATED(uint8_t threadId) {

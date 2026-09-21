@@ -8,7 +8,7 @@ extern "C" {
     namespace CLIB_ThreadLogs {
         class CLIB_ThreadLogs {
             public:
-            static void* stat_App_FUNCT_CLIB_ThreadLogs_generate_Program(uint8_t threadId);
+            static void* stat_App_FUNCT_CLIB_ThreadLogs_generate_Program(uint8_t threadId, std::byte* MAX_NUMBER_OF_DATA_CLUSTERS, std::list<std::byte>* MAX_NUMBER_OF_THREADS_FOR_ACCESS_ARRAY);
             static unsigned char* stat_App_FUNCT_CLIB_ThreadLogs_get_flag_isPGM_INSTANTIATED(uint8_t threadId);
             static void stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(uint8_t threadId, std::string* stringForLogPrint);
             static void stat_App_FUNCT_CLIB_ThreadLogs_terminate_Program(uint8_t threadId);

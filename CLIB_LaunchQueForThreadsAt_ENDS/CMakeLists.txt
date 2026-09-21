@@ -5,25 +5,24 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_library(CLIB_LaunchQueForThreadsAt_ENDS STATIC
-        libs/CLIB_WriteQueForThreadsAt_ENDS_LaunchQueConditionCode/src/CLIB_WriteEnableForThreadsAt_ENDS_LaunchQueConditionCode.cpp
-        libs/CLIB_WriteQueForThreadsAt_ENDS_LaunchQueConditionCode/src/WriteEnableForThreadsAt_ENDS_LaunchQueConditionCode_Framework.cpp
-        libs/CLIB_WriteQueForThreadsAt_ENDS_LaunchQueConditionCode/src/WriteEnableForThreadsAt_ENDS_LaunchQueConditionCode_Global.cpp
-        libs/CLIB_WriteQueForThreadsAt_ENDS_LaunchQueConditionCode/src/WriteEnableForThreadsAt_ENDS_LaunchQueConditionCode_App.cpp
-        libs/CLIB_WriteQueForThreadsAt_ENDS_LaunchQueConditionCode/src/WriteEnableForThreadsAt_ENDS_LaunchQueConditionCode_Control.cpp
+        libs/CLIB_WriteQueForThreadsAt_DataCluster/src/ClusterAccess.cpp
+        libs/CLIB_WriteQueForThreadsAt_DataCluster/src/ClusterAccess_Framework.cpp
+        libs/CLIB_WriteQueForThreadsAt_DataCluster/src/ClusterAccess_Framework_Global.cpp
+        libs/CLIB_WriteQueForThreadsAt_DataCluster/src/ClusterAccess_Framework_App.cpp
+        libs/CLIB_WriteQueForThreadsAt_DataCluster/src/ClusterAccess_Framework_App_Control.cpp
         src/CLIB_LaunchEnableForConcurrentThreadsAt_ENDS.cpp
         src/LaunchEnableForConcurrentThreadsAt_ENDS_Framework.cpp
         src/LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global.cpp
         src/LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App.cpp
-        src/LaunchEnableForConcurrentThreadsAt_ENDS_App_Control.cpp
+        src/LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control.cpp
         src/LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Execute.cpp
 )
 
 target_include_directories(CLIB_LaunchQueForThreadsAt_ENDS PUBLIC
         "${CMAKE_CURRENT_SOURCE_DIR}/include"
-        "${CMAKE_CURRENT_SOURCE_DIR}/libs/CLIB_WriteQueForThreadsAt_ENDS_LaunchQueConditionCode/include"
+        "${CMAKE_CURRENT_SOURCE_DIR}/libs/CLIB_WriteQueForThreadsAt_DataCluster/include"
 )
 
 target_link_libraries(CLIB_LaunchQueForThreadsAt_ENDS PRIVATE
-
-        CLIB_WriteQueForThreadsAt_ENDS_LaunchQueConditionCode
+        CLIB_WriteQueForThreadsAt_DataCluster
 )
