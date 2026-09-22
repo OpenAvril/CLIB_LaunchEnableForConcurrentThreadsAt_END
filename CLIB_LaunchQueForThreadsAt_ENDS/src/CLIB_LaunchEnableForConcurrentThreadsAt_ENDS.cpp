@@ -5,7 +5,6 @@
 #include "../include/LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global.h"
 #include "../libs/CLIB_WriteQueForThreadsAt_lqDataCluster/include/lqClusterAccess.h"
 #include <iostream>
-#include <thread>
 using namespace CLIBLaunchQueAtENDS;
     static CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework* CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_dyn_CLASS_ptr_Framework_LaunchEnableForConcurrentThreadsAt_ENDS;
     static std::array<bool, 2>* CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_stat_REG_flag_isMemberFunctionINSTANTIATED_Native;
@@ -31,7 +30,6 @@ using namespace CLIBLaunchQueAtENDS;
 		std::cout << "done IndepENDSent STRUCT(s) - DECLARE DEFINE INITIALISE, Registers - DECLARE SUBSTANTIATE INITIALISE." << std::endl;
 
 		std::cout << "started Architecture Application CLASS(s) - DECLARE DEFINE INITIALISE, Registers - DECLARE SUBSTANTIATE INITIALISE." << std::endl;
-        std::this_thread::sleep_for(std::chrono::seconds(5));
         CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_For_Native(threadId)->dyn_CLASS_create_Architecture(threadId, reinterpret_cast<std::byte*>(CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global::stat_CONVERT_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global_uint8_t_To_ByteArray(threadId, *CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_For_Native(threadId)->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global(threadId)->dyn_REG_get_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global_number_Implemented_Threads(threadId))));
 		std::cout << "started Registers - DEFINE" << std::endl;
 

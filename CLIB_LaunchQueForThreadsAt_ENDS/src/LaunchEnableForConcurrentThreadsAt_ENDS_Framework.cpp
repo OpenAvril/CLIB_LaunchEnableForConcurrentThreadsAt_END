@@ -1,6 +1,7 @@
 #include "../include/LaunchEnableForConcurrentThreadsAt_ENDS_Framework.h"
 #include <iostream>
-	CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App* CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework::_stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App;
+#include <thread>
+CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App* CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework::_stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App;
 	CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global* CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework::_stat_CLASS_ptr_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global;
 // public.
 	CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework::LaunchEnableForConcurrentThreadsAt_ENDS_Framework(uint8_t threadId) {
@@ -57,7 +58,6 @@
 	void CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework::stat_CLASS_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_ENDS_Framework(uint8_t threadId) {
 		std::cout << "thread " << std::to_string(threadId) << " :: entered LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework : boot0_REG_DECLARE_LaunchEnableForConcurrentThreadsAt_ENDS_Framework(threadId)." << std::endl;
 		stat_CLASS_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App(threadId);
-		stat_CLASS_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_ENDS_Framework(threadId);
 		std::cout << "thread " << std::to_string(threadId) << " :: exiting LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework : boot0_REG_DECLARE_LaunchEnableForConcurrentThreadsAt_ENDS_Framework(threadId)." << std::endl;
 	}
 	void CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework::stat_CLASS_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_ENDS_Framework(uint8_t threadId, std::byte* MAX_NUMBER_OF_THREADS_FOR_ACCESS) {
