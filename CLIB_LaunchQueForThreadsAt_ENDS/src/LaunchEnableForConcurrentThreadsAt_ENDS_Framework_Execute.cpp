@@ -39,8 +39,6 @@ std::list<void*>* CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_F
         wq::lqClusterAccess::CLIB_lqClusterAccess_App_FUNCT_terminate_Program(threadId, *dataClusterId);
         wq::lqClusterAccess::CLIB_WriteEnableForThreadsAt_App_FUNCT_write_End_DataClusterId_ThreadId(threadId, *dataClusterId, byte_uint8_t);
         wq::lqClusterAccess::CLIB_WriteEnableForThreadsAt_App_FUNCT_write_Start_DataClusterId_ThreadId(threadId, *dataClusterId, byte_uint8_t);
-        delete dataClusterId;
-        delete byte_uint8_t;
         std::cout << "thread " << std::to_string(threadId) << " :: entered LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Execute : dyn_PGM_boot4_INSTANTIATE_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Execute(threadId)." << std::endl;
     }
     void CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Execute::stat_CLASS_boot0_DECLARE_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Execute(uint8_t threadId) {
