@@ -5,6 +5,7 @@
 #include "../include/LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global.h"
 #include "../libs/CLIB_WriteQueForThreadsAt_lqDataCluster/include/lqClusterAccess.h"
 #include <iostream>
+#include <thread>
 using namespace CLIBLaunchQueAtENDS;
     static CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework* CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_dyn_CLASS_ptr_Framework_LaunchEnableForConcurrentThreadsAt_ENDS;
     static std::array<bool, 2>* CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_stat_REG_flag_isMemberFunctionINSTANTIATED_Native;
@@ -30,8 +31,10 @@ using namespace CLIBLaunchQueAtENDS;
 		std::cout << "done IndepENDSent STRUCT(s) - DECLARE DEFINE INITIALISE, Registers - DECLARE SUBSTANTIATE INITIALISE." << std::endl;
 
 		std::cout << "started Architecture Application CLASS(s) - DECLARE DEFINE INITIALISE, Registers - DECLARE SUBSTANTIATE INITIALISE." << std::endl;
-		CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_For_Native(threadId)->dyn_CLASS_create_Architecture(threadId, reinterpret_cast<std::byte*>(CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global::stat_CONVERT_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global_uint8_t_To_ByteArray(threadId, *CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_For_Native(threadId)->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global(threadId)->dyn_REG_get_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global_number_Implemented_Threads(threadId))));
+        std::this_thread::sleep_for(std::chrono::seconds(5));
+        CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_For_Native(threadId)->dyn_CLASS_create_Architecture(threadId, reinterpret_cast<std::byte*>(CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global::stat_CONVERT_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global_uint8_t_To_ByteArray(threadId, *CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_For_Native(threadId)->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global(threadId)->dyn_REG_get_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global_number_Implemented_Threads(threadId))));
 		std::cout << "started Registers - DEFINE" << std::endl;
+
 		CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_For_Native(threadId)->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App(threadId)->dyn_CLASS_get_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control(threadId)->dyn_REG_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control(threadId);
 		std::cout << "done Registers - DEFINE." << std::endl;
 		std::cout << "started Registers - SUBSTANTIATE." << std::endl;
@@ -94,7 +97,7 @@ using namespace CLIBLaunchQueAtENDS;
     }
     void lq::Native::CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_stat_boot3_CLASS_INITIALISE_LaunchEnableForConcurrentThreadsAt_ENDS_Framework(uint8_t threadId) {
         CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_dyn_CLASS_ptr_Framework_LaunchEnableForConcurrentThreadsAt_ENDS = new CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework(threadId);
-        while (CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED_Native(threadId) == nullptr) {}
+        while (CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_For_Native(threadId) == nullptr) {}
     }
     CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework* lq::Native::CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_For_Native(uint8_t threadId) {
         return CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_dyn_CLASS_ptr_Framework_LaunchEnableForConcurrentThreadsAt_ENDS;

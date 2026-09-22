@@ -11,7 +11,7 @@ int main() {
     unsigned char* byteDEFAULT = LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global::stat_CONVERT_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global_uint8_t_To_ByteArray(0,static_cast<uint8_t>(0));
     std::cout << "SIMULATION Start." << std::endl;
     lq::Native::generateHandle(*threadId, MAX_NUMBER_OF_THREADS_FOR_ACCESS);
-
+/*
     std::cout << "SIMULATION start instantiation." << std::endl;
     lq::Native::CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_FUNCT_terminate_Progaram(*threadId);
     auto byte_uint8_t = LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global::stat_CONVERT_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global_uint8_t_To_ByteArray(*threadId, 255);
@@ -26,8 +26,7 @@ int main() {
     unsigned char * tampA5 = lq::Control::CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_REG_get_State_launchBit(*threadId);
     lq::Control::CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_REG_set_Flag_ConcurrentCoreState(*threadId, byte_uint8_t, byte_uint8_t);
     std::cout << "SIMULATION end instantiation." << std::endl;
-
-    std::cout << "SIMULATION Start." << std::endl;
+*/
 
     std::cout << "SIMULATION End." << std::endl;
     return 0;
