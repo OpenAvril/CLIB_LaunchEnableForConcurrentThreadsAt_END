@@ -14,7 +14,7 @@
         stat_CLASS_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control(threadId);
         stat_CLASS_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control(threadId);
         stat_REG_boot0_DECLARE_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control(threadId);
-        std::cout << "thread " << std::to_string(threadId) << " :: entered LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control(threadId)." << std::endl;
+        std::cout << "thread " << std::to_string(threadId) << " :: exiting LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control(threadId)." << std::endl;
     }
     CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control::~LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control() {
         std::cout << "thread " << std::to_string(0) << " :: entered LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control : ~LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control(threadId)." << std::endl;
@@ -22,7 +22,7 @@
         delete _stat_REG_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control_ptr_list_Of_launchIdle_Count_For_ThreadID;
         delete _stat_REG_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control_ptr_list_Of_STATE_For_ConcurrentCore;
         delete _stat_REG_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control_ptr_list_for_Que_Of_CoreTolaunch;
-        std::cout << "thread " << std::to_string(0) << " :: entered LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control : ~LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control(threadId)." << std::endl;
+        std::cout << "thread " << std::to_string(0) << " :: exiting LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control : ~LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control(threadId)." << std::endl;
     }
     void CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control::dyn_App_FUNCT_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control_launchEnable_SortQue(uint8_t threadId, CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework* obj, uint8_t* number_Implemented_Threads) {
         std::cout << "thread " << std::to_string(threadId) << " :: entered LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control : dyn_App_FUNCT_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control_launchEnable_SortQue(threadId)." << std::endl;
@@ -47,7 +47,7 @@
                 }
             }
         }
-        std::cout << "thread " << std::to_string(threadId) << " :: entered LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control : dyn_App_FUNCT_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control_launchEnable_SortQue(threadId)." << std::endl;
+        std::cout << "thread " << std::to_string(threadId) << " :: exiting LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control : dyn_App_FUNCT_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control_launchEnable_SortQue(threadId)." << std::endl;
     }
     void CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control::dyn_App_FUNCT_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control_launchQue_Update(uint8_t threadId, CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework* obj, uint8_t* number_Implemented_Threads) {
         std::cout << "thread " << std::to_string(threadId) << " :: entered LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control : dyn_App_FUNCT_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control_launchQue_Update(threadId)." << std::endl;
@@ -67,7 +67,7 @@
                     break;
             }
         }
-        std::cout << "thread " << std::to_string(threadId) << " :: entered LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control : dyn_App_FUNCT_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control_launchQue_Update(threadId)." << std::endl;
+        std::cout << "thread " << std::to_string(threadId) << " :: exiting LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control : dyn_App_FUNCT_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control_launchQue_Update(threadId)." << std::endl;
     }
     void CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control::dyn_REG_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control(uint8_t threadId) {
         std::cout << "thread " << std::to_string(threadId) << " :: entered LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control(threadId)." << std::endl;
@@ -75,7 +75,7 @@
         stat_REG_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_ENDS_ptr_list_Of_launchIdle_Count_For_ThreadID(threadId);
         stat_REG_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_ENDS_ptr_list_Of_STATE_For_ConcurrentCore(threadId);
         stat_REG_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_ENDS_ptr_list_for_Que_Of_CoreTolaunch(threadId);
-        std::cout << "thread " << std::to_string(threadId) << " :: entered LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control(threadId)." << std::endl;
+        std::cout << "thread " << std::to_string(threadId) << " :: exiting LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control(threadId)." << std::endl;
     }
     void CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control::dyn_REG_boot2_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control(uint8_t threadId, class LaunchEnableForConcurrentThreadsAt_ENDS_Framework* obj) {
         std::cout << "thread " << std::to_string(threadId) << " :: entered LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control(threadId)." << std::endl;
@@ -83,7 +83,7 @@
         stat_REG_boot2_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_ENDS_ptr_list_Of_launchIdle_Count_For_ThreadID(threadId, obj);
         stat_REG_boot2_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_ENDS_ptr_list_Of_STATE_For_ConcurrentCore(threadId, obj);
         stat_REG_boot2_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_ENDS_ptr_list_for_Que_Of_CoreTolaunch(threadId, obj);
-        std::cout << "thread " << std::to_string(threadId) << " :: entered LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control(threadId)." << std::endl;
+        std::cout << "thread " << std::to_string(threadId) << " :: exiting LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control(threadId)." << std::endl;
     }
     void CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control::dyn_REG_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control(uint8_t threadId) {
         std::cout << "thread " << std::to_string(threadId) << " :: entered LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control(threadId)." << std::endl;
@@ -91,7 +91,7 @@
         stat_REG_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_ENDS_ptr_list_Of_launchIdle_Count_For_ThreadID(threadId);
         stat_REG_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_ENDS_ptr_list_Of_STATE_For_ConcurrentCore(threadId);
         stat_REG_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_ENDS_ptr_list_for_Que_Of_CoreTolaunch(threadId);
-        std::cout << "thread " << std::to_string(threadId) << " :: entered LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control(threadId)." << std::endl;
+        std::cout << "thread " << std::to_string(threadId) << " :: exiting LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control(threadId)." << std::endl;
     }
     unsigned long long CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control::dyn_REG_get_LaunchEnableForConcurrentThreadsAt_ENDS_Item_On_list_Of_launchActive_Count_For_ThreadID(uint8_t threadId, uint8_t concurrentThreadId) {
         auto temp = stat_REG_get_LaunchEnableForConcurrentThreadsAt_ENDS_ptr_list_Of_launchActive_Count_For_ThreadID(threadId)->begin();
@@ -143,19 +143,19 @@
     }
     void CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control::stat_CLASS_boot0_DECLARE_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control(uint8_t threadId) {
         std::cout << "thread " << std::to_string(threadId) << " :: entered LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control : stat_CLASS_boot0_DECLARE_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control(threadId)." << std::endl;
-        std::cout << "thread " << std::to_string(threadId) << " :: entered LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control : stat_CLASS_boot0_DECLARE_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control(threadId)." << std::endl;
+        std::cout << "thread " << std::to_string(threadId) << " :: exiting LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control : stat_CLASS_boot0_DECLARE_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control(threadId)." << std::endl;
     }
     void CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control::stat_CLASS_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control(uint8_t threadId) {
         std::cout << "thread " << std::to_string(threadId) << " :: entered LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control : stat_CLASS_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control(threadId)." << std::endl;
-        std::cout << "thread " << std::to_string(threadId) << " :: entered LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control : stat_CLASS_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control(threadId)." << std::endl;
+        std::cout << "thread " << std::to_string(threadId) << " :: exiting LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control : stat_CLASS_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control(threadId)." << std::endl;
     }
     void CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control::stat_CLASS_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control(uint8_t threadId) {
         std::cout << "thread " << std::to_string(threadId) << " :: entered LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control : stat_CLASS_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control(threadId)." << std::endl;
-        std::cout << "thread " << std::to_string(threadId) << " :: entered LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control : stat_CLASS_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control(threadId)." << std::endl;
+        std::cout << "thread " << std::to_string(threadId) << " :: exiting LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control : stat_CLASS_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control(threadId)." << std::endl;
     }
     void CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control::stat_REG_boot0_DECLARE_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control(uint8_t threadId) {
         std::cout << "thread " << std::to_string(threadId) << " :: entered LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control : stat_REG_boot0_DECLARE_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control(threadId)." << std::endl;
-        std::cout << "thread " << std::to_string(threadId) << " :: entered LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control : stat_REG_boot0_DECLARE_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control(threadId)." << std::endl;
+        std::cout << "thread " << std::to_string(threadId) << " :: exiting LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control : stat_REG_boot0_DECLARE_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control(threadId)." << std::endl;
     }
 // private.
     void CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control::dyn_App_FUNCT_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control_launchEnable_ShiftQueValues(uint8_t threadId, CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework* obj, uint8_t concurrentThreadId_A, uint8_t concurrentThreadId_B) {
@@ -175,27 +175,27 @@
         obj->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App(threadId)->dyn_CLASS_get_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control(threadId)->dyn_REG_set_LaunchEnableForConcurrentThreadsAt_ENDS_Item_On_list_for_Que_Of_CoreTolaunch(threadId, concurrentThreadId_B, *temp_UnnsignedChar);
         delete temp_Int;
         delete temp_UnnsignedChar;
-        std::cout << "thread " << std::to_string(threadId) << " :: entered LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control : dyn_App_FUNCT_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control_launchEnable_ShiftQueValues(threadId)." << std::endl;
+        std::cout << "thread " << std::to_string(threadId) << " :: exiting LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control : dyn_App_FUNCT_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control_launchEnable_ShiftQueValues(threadId)." << std::endl;
     }
     void CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control::stat_REG_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_ENDS_ptr_list_Of_launchActive_Count_For_ThreadID(uint8_t threadId) {
         std::cout << "thread " << std::to_string(threadId) << " :: entered LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control : stat_REG_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_ENDS_ptr_list_Of_launchActive_Count_For_ThreadID(threadId)." << std::endl;
         _stat_REG_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control_ptr_list_Of_launchActive_Count_For_ThreadID = nullptr;
-        std::cout << "thread " << std::to_string(threadId) << " :: entered LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control : stat_REG_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_ENDS_ptr_list_Of_launchActive_Count_For_ThreadID(threadId)." << std::endl;
+        std::cout << "thread " << std::to_string(threadId) << " :: exiting LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control : stat_REG_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_ENDS_ptr_list_Of_launchActive_Count_For_ThreadID(threadId)." << std::endl;
     }
     void CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control::stat_REG_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_ENDS_ptr_list_Of_launchIdle_Count_For_ThreadID(uint8_t threadId) {
         std::cout << "thread " << std::to_string(threadId) << " :: entered LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control : stat_REG_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_ENDS_ptr_list_Of_launchIdle_Count_For_ThreadID(threadId)." << std::endl;
         _stat_REG_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control_ptr_list_Of_launchIdle_Count_For_ThreadID = nullptr;
-        std::cout << "thread " << std::to_string(threadId) << " :: entered LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control : stat_REG_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_ENDS_ptr_list_Of_launchIdle_Count_For_ThreadID(threadId)." << std::endl;
+        std::cout << "thread " << std::to_string(threadId) << " :: exiting LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control : stat_REG_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_ENDS_ptr_list_Of_launchIdle_Count_For_ThreadID(threadId)." << std::endl;
     }
     void CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control::stat_REG_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_ENDS_ptr_list_Of_STATE_For_ConcurrentCore(uint8_t threadId) {
         std::cout << "thread " << std::to_string(threadId) << " :: entered LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control : stat_REG_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_ENDS_ptr_list_Of_STATE_For_ConcurrentCore(threadId)." << std::endl;
         _stat_REG_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control_ptr_list_Of_STATE_For_ConcurrentCore = nullptr;
-        std::cout << "thread " << std::to_string(threadId) << " :: entered LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control : stat_REG_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_ENDS_ptr_list_Of_STATE_For_ConcurrentCore(threadId)." << std::endl;
+        std::cout << "thread " << std::to_string(threadId) << " :: exiting LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control : stat_REG_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_ENDS_ptr_list_Of_STATE_For_ConcurrentCore(threadId)." << std::endl;
     }
     void CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control::stat_REG_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_ENDS_ptr_list_for_Que_Of_CoreTolaunch(uint8_t threadId) {
         std::cout << "thread " << std::to_string(threadId) << " :: entered LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control : stat_REG_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_ENDS_ptr_list_for_Que_Of_CoreTolaunch(threadId)." << std::endl;
         _stat_REG_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control_ptr_list_for_Que_Of_CoreTolaunch = nullptr;
-        std::cout << "thread " << std::to_string(threadId) << " :: entered LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control : stat_REG_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_ENDS_ptr_list_for_Que_Of_CoreTolaunch(threadId)." << std::endl;
+        std::cout << "thread " << std::to_string(threadId) << " :: exiting LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control : stat_REG_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_ENDS_ptr_list_for_Que_Of_CoreTolaunch(threadId)." << std::endl;
     }
     void CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control::stat_REG_boot2_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_ENDS_ptr_list_Of_launchActive_Count_For_ThreadID(uint8_t threadId, class LaunchEnableForConcurrentThreadsAt_ENDS_Framework* obj) {
         std::cout << "thread " << std::to_string(threadId) << " :: entered LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control : stat_REG_boot2_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_ENDS_ptr_list_Of_launchActive_Count_For_ThreadID(threadId)." << std::endl;
@@ -208,7 +208,7 @@
             std::advance(temp, index);
             *temp = UINT64_MAX;
         }
-        std::cout << "thread " << std::to_string(threadId) << " :: entered LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control : stat_REG_boot2_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_ENDS_ptr_list_Of_launchActive_Count_For_ThreadID(threadId)." << std::endl;
+        std::cout << "thread " << std::to_string(threadId) << " :: exiting LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control : stat_REG_boot2_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_ENDS_ptr_list_Of_launchActive_Count_For_ThreadID(threadId)." << std::endl;
     }
     void CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control::stat_REG_boot2_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_ENDS_ptr_list_Of_launchIdle_Count_For_ThreadID(uint8_t threadId, class LaunchEnableForConcurrentThreadsAt_ENDS_Framework* obj) {
         std::cout << "thread " << std::to_string(threadId) << " :: entered LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control : stat_REG_boot2_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_ENDS_ptr_list_Of_launchIdle_Count_For_ThreadID(threadId)." << std::endl;
@@ -220,7 +220,7 @@
             std::advance(temp, index);
             *temp = UINT64_MAX;
         }
-        std::cout << "thread " << std::to_string(threadId) << " :: entered LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control : stat_REG_boot2_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_ENDS_ptr_list_Of_launchIdle_Count_For_ThreadID(threadId)." << std::endl;
+        std::cout << "thread " << std::to_string(threadId) << " :: exiting LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control : stat_REG_boot2_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_ENDS_ptr_list_Of_launchIdle_Count_For_ThreadID(threadId)." << std::endl;
     }
     void CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control::stat_REG_boot2_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_ENDS_ptr_list_Of_STATE_For_ConcurrentCore(uint8_t threadId, class LaunchEnableForConcurrentThreadsAt_ENDS_Framework* obj) {
         std::cout << "thread " << std::to_string(threadId) << " :: entered LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control : stat_REG_boot2_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_ENDS_ptr_list_Of_STATE_For_ConcurrentCore(threadId)." << std::endl;
@@ -232,7 +232,7 @@
             std::advance(temp, index);
             *temp = true;
         }
-        std::cout << "thread " << std::to_string(threadId) << " :: entered LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control : stat_REG_boot2_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_ENDS_ptr_list_Of_STATE_For_ConcurrentCore(threadId)." << std::endl;
+        std::cout << "thread " << std::to_string(threadId) << " :: exiting LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control : stat_REG_boot2_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_ENDS_ptr_list_Of_STATE_For_ConcurrentCore(threadId)." << std::endl;
     }
     void CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control::stat_REG_boot2_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_ENDS_ptr_list_for_Que_Of_CoreTolaunch(uint8_t threadId, class LaunchEnableForConcurrentThreadsAt_ENDS_Framework* obj) {
         std::cout << "thread " << std::to_string(threadId) << " :: entered LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control : stat_REG_boot2_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_ENDS_ptr_list_for_Que_Of_CoreTolaunch(threadId)." << std::endl;
@@ -244,7 +244,7 @@
             std::advance(temp, index);
             *temp = UINT8_MAX;
         }
-        std::cout << "thread " << std::to_string(threadId) << " :: entered LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control : stat_REG_boot2_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_ENDS_ptr_list_for_Que_Of_CoreTolaunch(threadId)." << std::endl;
+        std::cout << "thread " << std::to_string(threadId) << " :: exiting LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control : stat_REG_boot2_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_ENDS_ptr_list_for_Que_Of_CoreTolaunch(threadId)." << std::endl;
     }
     void CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control::stat_REG_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_ENDS_ptr_list_Of_launchActive_Count_For_ThreadID(uint8_t threadId) {
         std::cout << "thread " << std::to_string(threadId) << " :: entered LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control : stat_REG_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_ENDS_ptr_list_Of_launchActive_Count_For_ThreadID(threadId)." << std::endl;
@@ -253,7 +253,7 @@
             std::advance(temp, index);
             *temp = static_cast<unsigned long long>(0);
         }
-        std::cout << "thread " << std::to_string(threadId) << " :: entered LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control : stat_REG_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_ENDS_ptr_list_Of_launchActive_Count_For_ThreadID(threadId)." << std::endl;
+        std::cout << "thread " << std::to_string(threadId) << " :: exiting LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control : stat_REG_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_ENDS_ptr_list_Of_launchActive_Count_For_ThreadID(threadId)." << std::endl;
     }
     void CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control::stat_REG_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_ENDS_ptr_list_Of_launchIdle_Count_For_ThreadID(uint8_t threadId) {
         std::cout << "thread " << std::to_string(threadId) << " :: entered LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control : stat_REG_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_ENDS_ptr_list_Of_launchIdle_Count_For_ThreadID(threadId)." << std::endl;
@@ -262,7 +262,7 @@
             std::advance(temp, index);
             *temp = static_cast<unsigned long long>(0);
         }
-        std::cout << "thread " << std::to_string(threadId) << " :: entered LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control : stat_REG_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_ENDS_ptr_list_Of_launchIdle_Count_For_ThreadID(threadId)." << std::endl;
+        std::cout << "thread " << std::to_string(threadId) << " :: exiting LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control : stat_REG_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_ENDS_ptr_list_Of_launchIdle_Count_For_ThreadID(threadId)." << std::endl;
     }
     void CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control::stat_REG_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_ENDS_ptr_list_Of_STATE_For_ConcurrentCore(uint8_t threadId) {
         std::cout << "thread " << std::to_string(threadId) << " :: entered LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control : stat_REG_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_ENDS_ptr_list_Of_STATE_For_ConcurrentCore(threadId)." << std::endl;
@@ -271,7 +271,7 @@
             std::advance(temp, index);
             *temp = false;
         }
-        std::cout << "thread " << std::to_string(threadId) << " :: entered LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control : stat_REG_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_ENDS_ptr_list_Of_STATE_For_ConcurrentCore(threadId)." << std::endl;
+        std::cout << "thread " << std::to_string(threadId) << " :: exiting LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control : stat_REG_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_ENDS_ptr_list_Of_STATE_For_ConcurrentCore(threadId)." << std::endl;
     }
     void CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control::stat_REG_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_ENDS_ptr_list_for_Que_Of_CoreTolaunch(uint8_t threadId) {
         std::cout << "thread " << std::to_string(threadId) << " :: entered LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control : stat_REG_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_ENDS_ptr_list_for_Que_Of_CoreTolaunch(threadId)." << std::endl;
@@ -280,7 +280,7 @@
             std::advance(temp, index);
             *temp = static_cast<uint8_t>(index);
         }
-        std::cout << "thread " << std::to_string(threadId) << " :: entered LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control : stat_REG_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_ENDS_ptr_list_for_Que_Of_CoreTolaunch(threadId)." << std::endl;
+        std::cout << "thread " << std::to_string(threadId) << " :: exiting LIB :: wq : LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control : stat_REG_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_ENDS_ptr_list_for_Que_Of_CoreTolaunch(threadId)." << std::endl;
     }
     std::list<unsigned long long>* CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_Control::stat_REG_get_LaunchEnableForConcurrentThreadsAt_ENDS_ptr_list_Of_launchActive_Count_For_ThreadID(uint8_t threadId) {
         std::cout << "thread " << std::to_string(threadId) << " :: <= std::list<unsigned long long>* : stat_REG_get_LaunchEnableForConcurrentThreadsAt_ENDS_ptr_list_Of_launchActive_Count_For_ThreadID(threadId)." << std::endl;

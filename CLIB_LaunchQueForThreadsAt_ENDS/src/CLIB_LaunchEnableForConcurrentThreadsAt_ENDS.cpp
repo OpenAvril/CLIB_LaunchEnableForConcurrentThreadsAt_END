@@ -45,8 +45,11 @@ using namespace CLIBLaunchQueAtENDS;
 
 		std::cout << "started Program - INSTANTIATION." << std::endl;
 		CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_stat_REG_boot1_DEFINE_flag_isMemberFunctionINSTANTIATED_Native(threadId);
+        CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_stat_REG_boot1_DEFINE_flag_isMemberFunctionINSTANTIATED_Control(threadId);
 		CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_stat_REG_boot2_SUBSTANTIATE_flag_isMemberFunctionINSTANTIATED_Native(threadId);
+        CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_stat_REG_boot2_SUBSTANTIATE_flag_isMemberFunctionINSTANTIATED_Control(threadId);
 		CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_stat_REG_boot3_INITIALISE_flag_isMemberFunctionINSTANTIATED_Native(threadId);
+        CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_stat_REG_boot3_INITIALISE_flag_isMemberFunctionINSTANTIATED_Control(threadId);
         CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_For_Native(threadId)->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App(threadId)->dyn_CLASS_get_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Execute(threadId)->dyn_PGM_boot4_INSTANTIATE_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Execute(threadId);
 		std::cout << "done Program - INSTANTIATION." << std::endl;
 
@@ -103,6 +106,9 @@ using namespace CLIBLaunchQueAtENDS;
     void lq::Native::CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_stat_REG_boot1_DEFINE_flag_isMemberFunctionINSTANTIATED_Native(uint8_t threadId) {
         CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_stat_REG_flag_isMemberFunctionINSTANTIATED_Native = nullptr;
     }
+    void lq::Native::CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_stat_REG_boot1_DEFINE_flag_isMemberFunctionINSTANTIATED_Control(uint8_t threadId) {
+        CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_stat_REG_flag_isMemberFunctionINSTANTIATED_Control = nullptr;
+    }
     void lq::Native::CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_stat_REG_boot2_SUBSTANTIATE_flag_isMemberFunctionINSTANTIATED_Native(uint8_t threadId) {
         CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_stat_REG_flag_isMemberFunctionINSTANTIATED_Native = new std::array<bool, 2>();
         while (CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED_Native(threadId) == nullptr) { }
@@ -110,13 +116,28 @@ using namespace CLIBLaunchQueAtENDS;
             CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED_Native(threadId)->at(index) = true;
         }
     }
+    void lq::Native::CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_stat_REG_boot2_SUBSTANTIATE_flag_isMemberFunctionINSTANTIATED_Control(uint8_t threadId) {
+        CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_stat_REG_flag_isMemberFunctionINSTANTIATED_Control = new std::array<bool, 10>();
+        while (CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED_Control(threadId) == nullptr) { }
+        for (int index = 0; index < CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED_Control(threadId)->size(); index++) {
+            CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED_Control(threadId)->at(index) = true;
+        }
+    }
     void lq::Native::CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_stat_REG_boot3_INITIALISE_flag_isMemberFunctionINSTANTIATED_Native(uint8_t threadId) {
         for (int index = 0; index < CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED_Native(threadId)->size(); index++) {
             CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED_Native(threadId)->at(index) = true;
         }
     }
+    void lq::Native::CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_stat_REG_boot3_INITIALISE_flag_isMemberFunctionINSTANTIATED_Control(uint8_t threadId) {
+        for (int index = 0; index < CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED_Control(threadId)->size(); index++) {
+            CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED_Control(threadId)->at(index) = true;
+        }
+    }
     std::array<bool, 2>* lq::Native::CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED_Native(uint8_t threadId) {
         return CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_stat_REG_flag_isMemberFunctionINSTANTIATED_Native;
+    }
+    std::array<bool, 10>* lq::Native::CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED_Control(uint8_t threadId) {
+        return CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_stat_REG_flag_isMemberFunctionINSTANTIATED_Control;
     }
 // Control.
     // public.

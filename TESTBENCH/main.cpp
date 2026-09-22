@@ -13,7 +13,6 @@ int main() {
     lq::Native::generateHandle(*threadId, MAX_NUMBER_OF_THREADS_FOR_ACCESS);
 
     std::cout << "SIMULATION start instantiation." << std::endl;
-    lq::Native::CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_FUNCT_terminate_Progaram(*threadId);
     auto byte_uint8_t = LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global::stat_CONVERT_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global_uint8_t_To_ByteArray(*threadId, 255);
     lq::Native::CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_FUNCT_terminate_Progaram(*threadId);
     lq::Control::CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_FUNCT_request_Wait_launch(*threadId, byte_uint8_t);
