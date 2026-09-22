@@ -262,27 +262,27 @@
         std::cout << "thread " << std::to_string(threadId) << " :: <= uint8_t : dyn_REG_get_FLAG_LoggingThread_Framework_App_Control_writeCycle_Try_WriteEndthreadId_Index(threadId)." << std::endl;
         return *stat_REG_get_ptr_LoggingThread_Framework_App_Control_writeCycle_Try_WriteEndthreadId_Index(threadId);
     }
-    std::array<bool, 2> writeQue::LoggingThread_Framework_App_Control::dyn_REG_get_ptr_LoggingThread_Framework_App_Control_list_Of_2ibt_FLAG_WriteState(uint8_t threadId, uint8_t concurrentthreadId) {
+    std::array<bool, 2> writeQue::LoggingThread_Framework_App_Control::dyn_REG_get_ptr_LoggingThread_Framework_App_Control_list_Of_2ibt_FLAG_WriteState(uint8_t threadId, uint8_t concurrentThreadId) {
         auto temp = stat_REG_get_ptr_Array_Of_LoggingThread_Framework_App_Control_3STATE_FLAG_WriteState(threadId)->begin();
-        std::advance(temp, concurrentthreadId);
+        std::advance(temp, concurrentThreadId);
         std::cout << "thread " << std::to_string(threadId) << " :: <= std::array<bool, 2> : dyn_REG_get_ptr_LoggingThread_Framework_App_Control_list_Of_2ibt_FLAG_WriteState(threadId)." << std::endl;
         return *temp;
     }
-    unsigned long long writeQue::LoggingThread_Framework_App_Control::dyn_REG_get_Item_On_LoggingThread_Framework_App_Control_list_Of_WriteActive_Count_For_threadId(uint8_t threadId, uint8_t concurrentthreadId) {
+    unsigned long long writeQue::LoggingThread_Framework_App_Control::dyn_REG_get_Item_On_LoggingThread_Framework_App_Control_list_Of_WriteActive_Count_For_threadId(uint8_t threadId, uint8_t concurrentThreadId) {
         auto temp = stat_REG_get_ptr_list_Of_LoggingThread_Framework_App_Control_WriteActive_Count_For_threadId(threadId)->begin();
-        std::advance(temp, concurrentthreadId);
+        std::advance(temp, concurrentThreadId);
         std::cout << "thread " << std::to_string(threadId) << " :: <= unsigned long long : dyn_REG_get_Item_On_LoggingThread_Framework_App_Control_list_Of_WriteActive_Count_For_threadId(threadId)." << std::endl;
         return *temp;
     }
-    unsigned long long writeQue::LoggingThread_Framework_App_Control::dyn_REG_get_Item_On_LoggingThread_Framework_App_Control_list_Of_WriteIdle_Count_For_threadId(uint8_t threadId, uint8_t concurrentthreadId) {
+    unsigned long long writeQue::LoggingThread_Framework_App_Control::dyn_REG_get_Item_On_LoggingThread_Framework_App_Control_list_Of_WriteIdle_Count_For_threadId(uint8_t threadId, uint8_t concurrentThreadId) {
         auto temp = stat_REG_get_ptr_list_Of_LoggingThread_Framework_App_Control_WriteIdle_Count_For_threadId(threadId)->begin();
-        std::advance(temp, concurrentthreadId);
+        std::advance(temp, concurrentThreadId);
         std::cout << "thread " << std::to_string(threadId) << " :: <= unsigned long long : dyn_REG_get_Item_On_LoggingThread_Framework_App_Control_list_Of_WriteIdle_Count_For_threadId(threadId)." << std::endl;
         return *temp;
     }
-    unsigned long long writeQue::LoggingThread_Framework_App_Control::dyn_REG_get_Item_On_LoggingThread_Framework_App_Control_list_Of_WriteWait_Count_For_threadId(uint8_t threadId, uint8_t concurrentthreadId) {
+    unsigned long long writeQue::LoggingThread_Framework_App_Control::dyn_REG_get_Item_On_LoggingThread_Framework_App_Control_list_Of_WriteWait_Count_For_threadId(uint8_t threadId, uint8_t concurrentThreadId) {
         auto temp = stat_REG_get_ptr_list_Of_LoggingThread_Framework_App_Control_WriteWait_Count_For_threadId(threadId)->begin();
-        std::advance(temp, concurrentthreadId);
+        std::advance(temp, concurrentThreadId);
         std::cout << "thread " << std::to_string(threadId) << " :: <= unsigned long long : dyn_REG_get_Item_On_LoggingThread_Framework_App_Control_list_Of_WriteWait_Count_For_threadId(threadId)." << std::endl;
         return *temp;
     }
@@ -308,21 +308,21 @@
         std::cout << "thread " << std::to_string(threadId) << " :: => bool : dyn_REG_set_FLAG_LoggingThread_Framework_App_Control_isWriteEndThreadRELASE_REMAINING(threadId)." << std::endl;
         stat_REG_set_FLAG_LoggingThread_Framework_App_Control_isWriteEndThreadRELASE_REMAINING(threadId, FLAGState);
     }
-    void writeQue::LoggingThread_Framework_App_Control::dyn_REG_set_Item_On_list_Of_LoggingThread_Framework_App_Control_2ibt_FLAG_WriteState(uint8_t threadId, uint8_t concurrentthreadId, std::array<bool, 2> new2bitState) {
+    void writeQue::LoggingThread_Framework_App_Control::dyn_REG_set_Item_On_list_Of_LoggingThread_Framework_App_Control_2ibt_FLAG_WriteState(uint8_t threadId, uint8_t concurrentThreadId, std::array<bool, 2> new2bitState) {
         std::cout << "thread " << std::to_string(threadId) << " :: => std::array<bool, 2> : dyn_REG_set_Item_On_list_Of_LoggingThread_Framework_App_Control_2ibt_FLAG_WriteState(threadId)." << std::endl;
-        stat_REG_set_Item_On_Of_LoggingThread_Framework_App_Control_3STATE_FLAG_WriteState(threadId, concurrentthreadId, new2bitState);
+        stat_REG_set_Item_On_Of_LoggingThread_Framework_App_Control_3STATE_FLAG_WriteState(threadId, concurrentThreadId, new2bitState);
     }
-    void writeQue::LoggingThread_Framework_App_Control::dyn_REG_set_Item_On_list_Of_LoggingThread_Framework_App_Control_WriteActive_Count_For_threadId(uint8_t threadId, uint8_t concurrentthreadId, unsigned long long newCount) {
+    void writeQue::LoggingThread_Framework_App_Control::dyn_REG_set_Item_On_list_Of_LoggingThread_Framework_App_Control_WriteActive_Count_For_threadId(uint8_t threadId, uint8_t concurrentThreadId, unsigned long long newCount) {
         std::cout << "thread " << std::to_string(threadId) << " :: => unsigned long long : dyn_REG_set_Item_On_list_Of_LoggingThread_Framework_App_Control_WriteActive_Count_For_threadId(threadId)." << std::endl;
-        stat_REG_set_Item_On_list_Of_LoggingThread_Framework_App_Control_WriteACTIVE_Count_For_threadId(threadId,concurrentthreadId, newCount);
+        stat_REG_set_Item_On_list_Of_LoggingThread_Framework_App_Control_WriteACTIVE_Count_For_threadId(threadId,concurrentThreadId, newCount);
     }
-    void writeQue::LoggingThread_Framework_App_Control::dyn_REG_set_Item_On_list_Of_LoggingThread_Framework_App_Control_WriteIdle_Count_For_threadId(uint8_t threadId, uint8_t concurrentthreadId, unsigned long long newCount) {
+    void writeQue::LoggingThread_Framework_App_Control::dyn_REG_set_Item_On_list_Of_LoggingThread_Framework_App_Control_WriteIdle_Count_For_threadId(uint8_t threadId, uint8_t concurrentThreadId, unsigned long long newCount) {
         std::cout << "thread " << std::to_string(threadId) << " :: => unsigned long long : dyn_REG_set_Item_On_list_Of_LoggingThread_Framework_App_Control_WriteIdle_Count_For_threadId(threadId)." << std::endl;
-        stat_REG_set_Item_On_list_Of_LoggingThread_Framework_App_Control_WriteIdle_Count_For_threadId(threadId,concurrentthreadId, newCount);
+        stat_REG_set_Item_On_list_Of_LoggingThread_Framework_App_Control_WriteIdle_Count_For_threadId(threadId,concurrentThreadId, newCount);
     }
-    void writeQue::LoggingThread_Framework_App_Control::dyn_REG_set_Item_On_list_Of_LoggingThread_Framework_App_Control_WriteWait_Count_For_threadId(uint8_t threadId, uint8_t concurrentthreadId, unsigned long long newCount){
+    void writeQue::LoggingThread_Framework_App_Control::dyn_REG_set_Item_On_list_Of_LoggingThread_Framework_App_Control_WriteWait_Count_For_threadId(uint8_t threadId, uint8_t concurrentThreadId, unsigned long long newCount){
         std::cout << "thread " << std::to_string(threadId) << " :: => unsigned long long : dyn_REG_set_Item_On_list_Of_LoggingThread_Framework_App_Control_WriteWait_Count_For_threadId(threadId)." << std::endl;
-        stat_REG_set_Item_On_list_Of_LoggingThread_Framework_App_Control_WriteWait_Count_For_threadId(threadId,concurrentthreadId, newCount);
+        stat_REG_set_Item_On_list_Of_LoggingThread_Framework_App_Control_WriteWait_Count_For_threadId(threadId,concurrentThreadId, newCount);
     }
     void writeQue::LoggingThread_Framework_App_Control::dyn_REG_set_Item_On_QUE_LoggingThread_Framework_App_Control_List_Of_ThreadToWrite(uint8_t threadId, uint8_t slotID, uint8_t newID){
         std::cout << "thread " << std::to_string(threadId) << " :: => uint8_t : dyn_REG_set_Item_On_QUE_LoggingThread_Framework_App_Control_List_Of_ThreadToWrite(threadId)." << std::endl;
@@ -624,35 +624,35 @@
         std::cout << "thread " << std::to_string(threadId) << " :: => bool : stat_REG_set_FLAG_LoggingThread_Framework_App_Control_isWriteEndThreadRELASE_REMAINING(threadId)." << std::endl;
         *_stat_REG_FLAG_LoggingThread_FLAG_Control_isWriteEndThreadRELASE_REMAINING = newFLAG;
     }
-    void writeQue::LoggingThread_Framework_App_Control::stat_REG_set_Item_On_Of_LoggingThread_Framework_App_Control_3STATE_FLAG_WriteState(uint8_t threadId, uint8_t concurrentthreadId, std::array<bool, 2> new2bitState) {
+    void writeQue::LoggingThread_Framework_App_Control::stat_REG_set_Item_On_Of_LoggingThread_Framework_App_Control_3STATE_FLAG_WriteState(uint8_t threadId, uint8_t concurrentThreadId, std::array<bool, 2> new2bitState) {
         auto temp = stat_REG_get_ptr_Array_Of_LoggingThread_Framework_App_Control_3STATE_FLAG_WriteState(threadId)->begin();
-        std::advance(temp, concurrentthreadId);
+        std::advance(temp, concurrentThreadId);
         std::cout << "thread " << std::to_string(threadId) << " :: => std::array<bool, 2> : stat_REG_set_Item_On_Of_LoggingThread_Framework_App_Control_3STATE_FLAG_WriteState(threadId)." << std::endl;
         *temp = new2bitState;
     }
-    void writeQue::LoggingThread_Framework_App_Control::stat_REG_set_Item_On_list_Of_LoggingThread_Framework_App_Control_WriteACTIVE_Count_For_threadId(uint8_t threadId, uint8_t concurrentthreadId, unsigned long long newCount) {
+    void writeQue::LoggingThread_Framework_App_Control::stat_REG_set_Item_On_list_Of_LoggingThread_Framework_App_Control_WriteACTIVE_Count_For_threadId(uint8_t threadId, uint8_t concurrentThreadId, unsigned long long newCount) {
         auto temp = stat_REG_get_ptr_list_Of_LoggingThread_Framework_App_Control_WriteActive_Count_For_threadId(threadId)->begin();
-        std::advance(temp, concurrentthreadId);
+        std::advance(temp, concurrentThreadId);
         std::cout << "thread " << std::to_string(threadId) << " :: => unsigned long long : stat_REG_set_Item_On_list_Of_LoggingThread_Framework_App_Control_WriteACTIVE_Count_For_threadId(threadId)." << std::endl;
         *temp = newCount;
     }
-    void writeQue::LoggingThread_Framework_App_Control::stat_REG_set_Item_On_list_Of_LoggingThread_Framework_App_Control_WriteIdle_Count_For_threadId(uint8_t threadId, uint8_t concurrentthreadId, unsigned long long newCount) {
+    void writeQue::LoggingThread_Framework_App_Control::stat_REG_set_Item_On_list_Of_LoggingThread_Framework_App_Control_WriteIdle_Count_For_threadId(uint8_t threadId, uint8_t concurrentThreadId, unsigned long long newCount) {
         auto temp = stat_REG_get_ptr_list_Of_LoggingThread_Framework_App_Control_WriteIdle_Count_For_threadId(threadId)->begin();
-        std::advance(temp, concurrentthreadId);
+        std::advance(temp, concurrentThreadId);
         std::cout << "thread " << std::to_string(threadId) << " :: => unsigned long long : stat_REG_set_Item_On_list_Of_LoggingThread_Framework_App_Control_WriteIdle_Count_For_threadId(threadId)." << std::endl;
         *temp = newCount;
     }
-    void writeQue::LoggingThread_Framework_App_Control::stat_REG_set_Item_On_list_Of_LoggingThread_Framework_App_Control_WriteWait_Count_For_threadId(uint8_t threadId, uint8_t concurrentthreadId, unsigned long long newCount) {
+    void writeQue::LoggingThread_Framework_App_Control::stat_REG_set_Item_On_list_Of_LoggingThread_Framework_App_Control_WriteWait_Count_For_threadId(uint8_t threadId, uint8_t concurrentThreadId, unsigned long long newCount) {
         auto temp = stat_REG_get_ptr_list_Of_LoggingThread_Framework_App_Control_WriteWait_Count_For_threadId(threadId)->begin();
-        std::advance(temp, concurrentthreadId);
+        std::advance(temp, concurrentThreadId);
         std::cout << "thread " << std::to_string(threadId) << " :: => unsigned long long : stat_REG_set_Item_On_list_Of_LoggingThread_Framework_App_Control_WriteWait_Count_For_threadId(threadId)." << std::endl;
         *temp = newCount;
     }
-    void writeQue::LoggingThread_Framework_App_Control::stat_REG_set_Item_On_QUE_LoggingThread_Framework_App_Control_List_Of_ThreadToWrite(uint8_t threadId, uint8_t slotID, uint8_t concurrentthreadId) {
+    void writeQue::LoggingThread_Framework_App_Control::stat_REG_set_Item_On_QUE_LoggingThread_Framework_App_Control_List_Of_ThreadToWrite(uint8_t threadId, uint8_t slotID, uint8_t concurrentThreadId) {
         auto temp = stat_REG_get_ptr_QUE_LoggingThread_Framework_App_Control_List_Of_ThreadToWrite(threadId)->begin();
         std::advance(temp, slotID);
         std::cout << "thread " << std::to_string(threadId) << " :: => uint8_t : stat_REG_set_Item_On_QUE_LoggingThread_Framework_App_Control_List_Of_ThreadToWrite(threadId)." << std::endl;
-        *temp = concurrentthreadId;
+        *temp = concurrentThreadId;
     }
     void writeQue::LoggingThread_Framework_App_Control::stat_REG_get_ptr_LoggingThread_Framework_App_Control_writeCycle_Try_WriteStartthreadId_Index(uint8_t threadId, uint8_t newValue) {
         std::cout << "thread " << std::to_string(threadId) << " :: <= uint8_t : stat_REG_get_ptr_LoggingThread_Framework_App_Control_writeCycle_Try_WriteStartthreadId_Index(threadId)." << std::endl;
