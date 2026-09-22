@@ -5,10 +5,10 @@
 #include <cstdint>
 using namespace CLIBLaunchQueAtENDS;
 extern "C" {
-    namespace lq {
+    namespace slif {
         class Native {
         public:
-            static void* generateHandle(uint8_t threadId, std::byte* MAX_NUMBER_OF_THREADS_FOR_TASKS);
+            static void* generateHandleLQ(uint8_t threadId, std::byte* MAX_NUMBER_OF_THREADS_FOR_TASKS);
             static void CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_FUNCT_terminate_Progaram(uint8_t threadId);
         private:
             static void CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_stat_app_FUNCT_Calc_IsAllINSTANTIATED(uint8_t threadId);
@@ -24,7 +24,7 @@ extern "C" {
             static std::array<bool, 2>* CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED_Native(uint8_t threadId);
             static std::array<bool, 10>* CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED_Control(uint8_t threadId);
         };
-        class Control {
+        class LQ {
         public:
             static void CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_FUNCT_request_Wait_launch(uint8_t threadId, unsigned char* bytes);
             static void CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_FUNCT_thread_End(uint8_t threadId, unsigned char* bytes);
@@ -36,9 +36,9 @@ extern "C" {
             static unsigned char* CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_REG_get_State_launchBit(uint8_t threadId);
             static void CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_REG_set_Flag_ConcurrentCoreState(uint8_t threadId, unsigned char* bytesThreadId, unsigned char* byteBool);
         private:
-            static void CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_stat_app_FUNCT_Calc_IsAllINSTANTIATED_Control(uint8_t threadId);
-            static class CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework* CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_For_Control(uint8_t threadId);
-            static std::array<bool, 10>* CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED_Control(uint8_t threadId);
+            static void CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_stat_app_FUNCT_Calc_IsAllINSTANTIATED_LQ(uint8_t threadId);
+            static class CLIBLaunchQueAtENDS::LaunchEnableForConcurrentThreadsAt_ENDS_Framework* CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_For_LQ(uint8_t threadId);
+            static std::array<bool, 10>* CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED_LQ(uint8_t threadId);
         };
     }
 }

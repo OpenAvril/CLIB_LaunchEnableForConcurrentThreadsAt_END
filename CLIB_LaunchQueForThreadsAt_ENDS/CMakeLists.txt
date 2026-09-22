@@ -20,7 +20,7 @@ add_library(CLIB_LaunchQueForThreadsAt_ENDS STATIC
 
 target_include_directories(CLIB_LaunchQueForThreadsAt_ENDS PUBLIC
         "${CMAKE_CURRENT_SOURCE_DIR}/include"
-        "${CMAKE_CURRENT_SOURCE_DIR}/libs/CLIB_WriteQueForThreadsAt_lqDataCluster/include"
+        "${CMAKE_CURRENT_SOURCE_DIR}/libs/CLIB_WriteQueForThreadsAt_slifDataCluster/include"
 )
 
 target_link_libraries(CLIB_LaunchQueForThreadsAt_ENDS PRIVATE

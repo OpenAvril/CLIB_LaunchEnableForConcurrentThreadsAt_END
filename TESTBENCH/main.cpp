@@ -10,23 +10,24 @@ int main() {
     auto* threadId = new uint8_t(0);
     unsigned char* byteDEFAULT = LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global::stat_CONVERT_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global_uint8_t_To_ByteArray(0,static_cast<uint8_t>(0));
     std::cout << "SIMULATION Start." << std::endl;
-    lq::Native::generateHandle(*threadId, MAX_NUMBER_OF_THREADS_FOR_ACCESS);
+    slif::Native::generateHandleLQ(*threadId, MAX_NUMBER_OF_THREADS_FOR_ACCESS);
 
     std::cout << "SIMULATION start instantiation." << std::endl;
     auto byte_uint8_t = LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global::stat_CONVERT_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_Global_uint8_t_To_ByteArray(*threadId, 255);
-    lq::Native::CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_FUNCT_terminate_Progaram(*threadId);
-    lq::Control::CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_FUNCT_request_Wait_launch(*threadId, byte_uint8_t);
-    lq::Control::CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_FUNCT_thread_End(*threadId, byte_uint8_t);
-    unsigned char * tampA0 = lq::Control::CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_REG_get_coreId_To_launch(*threadId);
-    unsigned char * tampA1 = lq::Control::CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_REG_get_Flag_Active(*threadId);
-    unsigned char * tampA2 = lq::Control::CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_REG_get_Flag_ConcurrentCoreState(*threadId, byte_uint8_t);
-    unsigned char * tampA3 = lq::Control::CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_REG_get_Flag_Idle(*threadId);
-    unsigned char * tampA4 = lq::Control::CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_REG_get_FLAG_isPGM_INSTANTIATED(*threadId);
-    unsigned char * tampA5 = lq::Control::CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_REG_get_State_launchBit(*threadId);
-    lq::Control::CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_REG_set_Flag_ConcurrentCoreState(*threadId, byte_uint8_t, byte_uint8_t);
+    slif::Native::CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_FUNCT_terminate_Progaram(*threadId);
+    slif::LQ::CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_FUNCT_request_Wait_launch(*threadId, byte_uint8_t);
+    slif::LQ::CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_FUNCT_thread_End(*threadId, byte_uint8_t);
+    unsigned char * tampA0 = slif::LQ::CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_REG_get_coreId_To_launch(*threadId);
+    unsigned char * tampA1 = slif::LQ::CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_REG_get_Flag_Active(*threadId);
+    unsigned char * tampA2 = slif::LQ::CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_REG_get_Flag_ConcurrentCoreState(*threadId, byte_uint8_t);
+    unsigned char * tampA3 = slif::LQ::CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_REG_get_Flag_Idle(*threadId);
+    unsigned char * tampA4 = slif::LQ::CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_REG_get_FLAG_isPGM_INSTANTIATED(*threadId);
+    unsigned char * tampA5 = slif::LQ::CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_REG_get_State_launchBit(*threadId);
+    slif::LQ::CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_REG_set_Flag_ConcurrentCoreState(*threadId, byte_uint8_t, byte_uint8_t);
     std::cout << "SIMULATION end instantiation." << std::endl;
 
-
     std::cout << "SIMULATION End." << std::endl;
+    slif::Native::CLIB_LaunchEnableForConcurrentThreadsAt_ENDS_Framework_App_FUNCT_terminate_Progaram(*threadId);
+    std::cout << "...Ending" << std::endl;
     return 0;
 }
